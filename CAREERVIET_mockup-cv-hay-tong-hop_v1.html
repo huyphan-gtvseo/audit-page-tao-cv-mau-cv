@@ -1,0 +1,1196 @@
+<!doctype html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Tạo CV online miễn phí, chuẩn nhà tuyển dụng 2026 | CareerViet</title>
+<!-- Mockup nội bộ: không cho index, không cho bot tìm kiếm / AI lấy nội dung -->
+<meta name="robots" content="noindex, nofollow, noarchive, nosnippet, noimageindex, notranslate">
+<meta name="googlebot" content="noindex, nofollow, noarchive, nosnippet, noimageindex">
+<meta name="googlebot-news" content="noindex, nofollow">
+<meta name="bingbot" content="noindex, nofollow, noarchive, nosnippet">
+<meta name="robots" content="noai, noimageai">
+<meta name="referrer" content="no-referrer">
+<meta name="description" content="Mockup nội bộ, không index.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+/* Thanh chuyển trang của mockup (không thuộc thiết kế trang) */
+.vbar{position:sticky;top:0;z-index:100;display:flex;align-items:center;gap:8px;padding:8px 16px;background:#0F172A;font:600 13px/1 Barlow,system-ui,sans-serif;color:#94A3B8;flex-wrap:wrap}
+.vbar a{color:#CBD5E1;text-decoration:none;padding:7px 12px;border-radius:8px;border:1px solid #334155}
+.vbar a.on{background:#FF2458;border-color:#FF2458;color:#fff}
+.vbar span{margin-right:4px}
+.vbar .dev{display:inline-flex;border:1px solid #334155;border-radius:8px;overflow:hidden;margin-right:8px}
+.vbar .dev button{background:transparent;border:0;color:#CBD5E1;padding:7px 12px;font:inherit;cursor:pointer}
+.vbar .dev button.on{background:#334155;color:#fff}
+.phone{display:none;background:#E5E7EB;padding:20px 0 40px;min-height:calc(100vh - 44px)}
+.phone.on{display:flex;justify-content:center;align-items:flex-start}
+.phone iframe{width:390px;height:min(844px,calc(100vh - 110px));border:10px solid #111827;border-radius:32px;background:#fff;box-shadow:0 20px 50px rgba(0,0,0,.25)}
+body.embed .vbar{display:none}
+body.mobile-mode [data-view]{display:none!important}
+.vbar small{font:inherit;opacity:.75}
+@media (max-width:640px){.vbar span,.vbar small{display:none}}
+.view{display:none}
+.view.on{display:block}
+[data-view] [id]{scroll-margin-top:60px}
+/* ===== Trang 1: Tạo CV ===== */
+:root{
+  --pink:#FF2458; --pink-700:#E0124A; --pink-50:#FFE9EF;
+  --ink:#17012C; --muted:#5D677A; --line:#E7E3F2;
+  --violet:#635AD9; --violet-50:#EFEDFF; --deep:#1B0A3A;
+  --bg-soft:#F7F6FC; --white:#fff;
+  --head:"Plus Jakarta Sans",system-ui,sans-serif; --body:Barlow,system-ui,sans-serif;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;font-family:var(--body);font-weight:500;color:var(--muted);background:#fff;font-size:16px;line-height:1.55}
+#tao-cv a{color:inherit;text-decoration:none}
+#tao-cv img{max-width:100%;display:block}
+#tao-cv h1,#tao-cv h2,#tao-cv h3,#tao-cv h4{font-family:var(--head);color:var(--ink);margin:0}
+#tao-cv .wrap{max-width:1240px;margin:0 auto;padding:0 24px}
+#tao-cv .btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;font-family:var(--head);font-weight:700;font-size:15px;border-radius:8px;padding:13px 26px;cursor:pointer;border:0;transition:.15s}
+#tao-cv .btn-pink{background:var(--pink);color:#fff}
+#tao-cv .btn-pink:hover{background:var(--pink-700)}
+#tao-cv .btn-line{background:#fff;color:var(--pink);border:1px solid var(--pink)}
+#tao-cv .btn-line:hover{background:var(--pink-50)}
+#tao-cv .eyebrow{font-family:var(--head);font-size:13px;font-weight:700;letter-spacing:.6px;text-transform:uppercase;color:var(--violet)}
+#tao-cv .sec{padding:72px 0}
+#tao-cv .sec-head{text-align:center;max-width:760px;margin:0 auto 36px}
+#tao-cv .sec-head h2,#tao-cv .sec-head h1{font-size:38px;line-height:1.2;font-weight:800;margin-top:6px}
+#tao-cv .sec-head p{margin:10px 0 0;font-size:17px}
+#tao-cv .sec-head.wide{max-width:none}
+@media (min-width:1101px){#tao-cv .sec-head.wide h2{white-space:nowrap}}
+#tao-cv .hero{background:#2B1A6B url("https://assets.careerviet.vn/careerviet/_next/static/media/asset-32.a949700e.jpg") center/cover no-repeat;color:#fff}
+#tao-cv .hero-in{display:grid;grid-template-columns:1.25fr .75fr;gap:32px;align-items:center;padding:56px 24px 56px}
+#tao-cv .hero-in > div{min-width:0}
+#tao-cv .hero .kicker{margin:0;font-family:var(--head);font-weight:600;font-size:32px;line-height:1.35;color:#fff}
+#tao-cv .hero .brand{font-family:var(--head);font-weight:700;font-size:64px;letter-spacing:6px;line-height:1.1;color:#fff;margin:10px 0 14px}
+#tao-cv .h1-head{max-width:1100px!important}
+#tao-cv .hero .lead{font-size:18px;color:rgba(255,255,255,.88);max-width:620px;margin:0}
+#tao-cv .tabs{display:flex;flex-wrap:wrap;justify-content:center;gap:12px;margin:24px 0 0}
+#tao-cv .tabs button{background:#fff;color:var(--pink);border:1px solid var(--pink);border-radius:8px;padding:10px 18px;font-family:var(--head);font-weight:700;font-size:14px;letter-spacing:.3px;text-transform:uppercase;cursor:pointer}
+#tao-cv .tabs button:hover{background:var(--pink-50)}
+#tao-cv .tabs button.main{background:var(--pink);color:#fff}
+#tao-cv .tabs button.main:hover{background:var(--pink-700)}
+#tao-cv .hero-act{display:flex;flex-wrap:wrap;align-items:center;gap:14px 10px;max-width:620px;margin-top:24px}
+#tao-cv .hero-act input{flex:1 1 300px;min-width:0;height:52px;border:0;border-radius:8px;padding:0 16px;font:400 15px Roboto,var(--body);color:var(--muted)}
+#tao-cv .hero-act .btn{height:52px;white-space:nowrap}
+#tao-cv .hero-act .break{flex-basis:100%;height:0}
+#tao-cv .trust{display:flex;gap:16px;flex-wrap:wrap;font-size:14px;color:rgba(255,255,255,.85);margin-left:8px}
+#tao-cv .trust span::before{content:"✓ ";color:#7CF0C8;font-weight:700}
+#tao-cv .hero-robot{justify-self:center;width:min(340px,100%);filter:drop-shadow(0 30px 40px rgba(0,0,0,.35))}
+#tao-cv .grid{display:grid;grid-template-columns:repeat(4,1fr);gap:24px}
+#tao-cv .card{background:#fff;border-radius:20px;box-shadow:0 6px 24px rgba(23,1,44,.08);overflow:hidden;transition:.2s;display:flex;flex-direction:column}
+#tao-cv .card:hover{transform:translateY(-4px);box-shadow:0 14px 34px rgba(23,1,44,.14)}
+#tao-cv .card .thumb{position:relative;aspect-ratio:485/293;overflow:hidden;background:var(--bg-soft)}
+#tao-cv .card .thumb img{width:100%;height:100%;object-fit:cover;object-position:top}
+#tao-cv .card .use{position:absolute;inset:0;display:grid;place-items:center;background:rgba(23,1,44,.45);opacity:0;transition:.2s}
+#tao-cv .card:hover .use{opacity:1}
+#tao-cv .card .body{padding:14px 18px 18px}
+#tao-cv .card .tag{display:flex;align-items:center;gap:6px;font-size:13px;color:var(--muted);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+#tao-cv .card .tag svg{flex:0 0 16px}
+#tao-cv .card h3{font-size:18px;font-weight:700;margin-top:6px;line-height:1.3}
+#tao-cv .more-row{display:flex;justify-content:center;margin-top:32px}
+#tao-cv .steps{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;counter-reset:s}
+#tao-cv .step{background:#fff;border:1px solid var(--line);border-radius:20px;padding:28px 24px;position:relative}
+#tao-cv .step .n{width:44px;height:44px;border-radius:12px;background:var(--violet-50);color:var(--violet);display:grid;place-items:center;font-family:var(--head);font-weight:800;font-size:20px}
+#tao-cv .step h3{font-size:19px;margin:16px 0 8px}
+#tao-cv .step p{margin:0;font-size:15px}
+#tao-cv .step:not(:last-child)::after{content:"→";position:absolute;right:-20px;top:40px;font-size:22px;color:#C9C3E8}
+#tao-cv .center{text-align:center;margin-top:32px}
+#tao-cv .svc{background:#F4F4F6 url("https://assets.careerviet.vn/images/topcv/49071571.jpg") center/cover no-repeat}
+#tao-cv .svc-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:24px;max-width:880px;margin:0 auto}
+#tao-cv .svc-card{background:#fff;border-radius:20px;padding:24px 22px}
+#tao-cv .svc-card .ic{width:60px;height:60px;border-radius:50%;background:#EAF2FF center/34px no-repeat}
+#tao-cv .svc-card h3{font-size:17px;margin:16px 0 10px}
+#tao-cv .svc-card p{margin:0;font-size:15.5px}
+#tao-cv .apply{background:var(--violet-50);border-radius:24px;padding:36px;display:grid;grid-template-columns:.9fr 1.1fr;gap:32px;align-items:center}
+#tao-cv .apply h2{font-size:30px;line-height:1.25;font-weight:800;margin-top:6px}
+#tao-cv .apply p{margin:10px 0 0}
+#tao-cv .chips{display:flex;flex-wrap:wrap;gap:10px}
+#tao-cv .chips a{background:#fff;border:1px solid #DCD7F5;border-radius:99px;padding:9px 16px;font-size:14.5px;color:var(--ink);font-weight:600}
+#tao-cv .chips a:hover{border-color:var(--violet);color:var(--violet)}
+#tao-cv .marq{overflow:hidden;white-space:nowrap;padding:24px 0}
+#tao-cv .marq .track{display:inline-flex;gap:36px;animation:mq 28s linear infinite;font-family:var(--head);font-weight:800;font-size:44px;text-transform:uppercase}
+#tao-cv .marq .o{color:transparent;-webkit-text-stroke:1.5px #7FA9E8}
+#tao-cv .marq .f{color:#123C8C}
+#tao-cv .marq .x{color:#1C64D8}
+@keyframes mq{to{transform:translateX(-50%)}}
+#tao-cv .blog{position:relative;max-width:900px;margin:12px auto 0}
+#tao-cv .slides{overflow:hidden;border-radius:24px}
+#tao-cv .slides .rail{display:flex;transition:transform .4s}
+#tao-cv .slide{flex:0 0 100%;display:grid;grid-template-columns:1fr 1fr;background:#fff;border:1px solid var(--line);border-radius:24px;overflow:hidden;min-height:300px}
+#tao-cv .slide .pic{background:#EDEBFA center/cover no-repeat}
+#tao-cv .slide .txt{padding:32px;display:flex;flex-direction:column;justify-content:center;gap:10px}
+#tao-cv .slide .txt small{color:var(--violet);font-weight:600}
+#tao-cv .slide .txt h3{font-size:22px;line-height:1.35}
+#tao-cv .slide .txt p{margin:0;font-size:15.5px;line-height:1.55;color:var(--muted)}
+#tao-cv .slide .txt .go{align-self:flex-start;margin-top:8px;width:44px;height:44px;border-radius:50%;background:var(--violet);color:#fff;display:grid;place-items:center;font-size:18px}
+#tao-cv .arrow{position:absolute;top:50%;transform:translateY(-50%);width:48px;height:48px;border-radius:50%;border:1px solid #D9D4F3;background:#fff;color:var(--violet);font-size:20px;cursor:pointer;box-shadow:0 0 0 6px rgba(99,90,217,.08)}
+#tao-cv .arrow.l{left:-72px}
+#tao-cv .arrow.r{right:-72px}
+#tao-cv .stats{background:#170B3B url("https://assets.careerviet.vn/images/topcv/6354b3fe831cc26ce88406def0bff95c.png") center/cover no-repeat;padding:56px 0}
+#tao-cv .stats-in{display:grid;grid-template-columns:1.15fr 1fr;gap:24px}
+#tao-cv .know{background:linear-gradient(160deg,#B8B3E6 0%,#7C6FE0 55%,#5B4FD9 100%);border-radius:20px;padding:36px 44px;color:#fff}
+#tao-cv .know h2{color:#fff;font-size:34px;line-height:1.2;font-weight:800}
+#tao-cv .know ul{list-style:none;padding:0;margin:22px 0 0}
+#tao-cv .know li a{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:12px 0;color:#fff;font-family:var(--head);font-weight:700;font-size:18px}
+#tao-cv .know li a small{display:block;font-family:var(--body);font-weight:500;font-size:12px;opacity:.85}
+#tao-cv .know li a i{flex:0 0 44px;height:44px;border-radius:50%;border:1px solid rgba(255,255,255,.6);display:grid;place-items:center;font-style:normal}
+#tao-cv .nums{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+#tao-cv .num{background:#14052E;border:1px solid rgba(255,255,255,.25);border-radius:16px;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:22px 10px;color:#fff}
+#tao-cv .num b{font-family:var(--head);font-size:38px;font-weight:800}
+#tao-cv .num span{font-size:17px}
+#tao-cv .guide-box{position:relative;background:#fff;border:1px solid var(--line);border-radius:24px;padding:36px 40px 28px}
+#tao-cv .guide-meta{display:flex;flex-wrap:wrap;gap:6px 18px;font-size:14px;margin-top:10px}
+#tao-cv .guide-meta b{color:var(--ink)}
+#tao-cv .guide{position:relative;max-height:520px;overflow:hidden;transition:max-height .45s ease}
+#tao-cv .guide.open{max-height:none}
+#tao-cv .guide::after{content:"";position:absolute;left:0;right:0;bottom:0;height:140px;background:linear-gradient(rgba(255,255,255,0),#fff);pointer-events:none;transition:opacity .3s}
+#tao-cv .guide.open::after{opacity:0}
+#tao-cv .toc{background:var(--bg-soft);border-radius:16px;padding:18px 22px;margin:22px 0}
+#tao-cv .toc b{font-family:var(--head);color:var(--ink)}
+#tao-cv .toc ol{margin:8px 0 0;padding-left:20px;font-size:15px}
+#tao-cv .toc li{margin-bottom:4px}
+#tao-cv .toc a:hover{color:var(--pink)}
+#tao-cv .guide h2{font-size:26px;margin:28px 0 10px;font-weight:800;scroll-margin-top:90px}
+#tao-cv .guide h3{font-size:19px;margin:18px 0 6px}
+#tao-cv .guide p{margin:0 0 10px}
+#tao-cv .ph{color:#8A8FA3;font-style:italic;background:#FAFAFD;border-left:3px solid #D9D4F3;padding:8px 12px;border-radius:0 8px 8px 0}
+#tao-cv .toggle{display:flex;justify-content:center;margin-top:12px}
+#tao-cv .toggle button{background:#fff}
+#tao-cv .faq-in{display:grid;grid-template-columns:1.2fr .8fr;gap:48px;align-items:start}
+#tao-cv .faq-in h2{font-size:44px;line-height:1.15;font-weight:800;margin:6px 0 24px}
+#tao-cv .faq-in img{border-radius:20px;position:sticky;top:100px}
+#tao-cv details{border-bottom:1px solid var(--line)}
+#tao-cv summary{list-style:none;cursor:pointer;display:flex;justify-content:space-between;align-items:center;gap:16px;padding:16px 0;font-family:var(--head);font-weight:700;color:var(--ink);font-size:17px}
+#tao-cv summary::-webkit-details-marker{display:none}
+#tao-cv summary::after{content:"+";flex:0 0 32px;height:32px;border-radius:50%;background:var(--violet-50);color:var(--violet);display:grid;place-items:center;font-size:20px;font-weight:600}
+#tao-cv details[open] summary::after{content:"–"}
+#tao-cv details .a{padding:0 48px 16px 0}
+#tao-cv .news{padding:24px 0 64px}
+#tao-cv .news-box{position:relative;background:linear-gradient(90deg,#2E2A86,#3B2F9E);border-radius:20px;display:grid;grid-template-columns:.8fr 1.2fr;align-items:center;min-height:200px}
+#tao-cv .news-box img{margin-top:-60px;width:330px;justify-self:center}
+#tao-cv .news-box > div{padding:28px 44px 28px 0}
+#tao-cv .news-box h2{color:#fff;font-size:20px;line-height:1.4;font-weight:700;text-transform:uppercase}
+#tao-cv .news-form{display:flex;background:#fff;border-radius:99px;padding:5px;margin-top:16px;max-width:460px}
+#tao-cv .news-form input{flex:1;border:0;padding:0 16px;font:inherit;min-width:0;border-radius:99px}
+#tao-cv .news-form button{width:42px;height:42px;border-radius:50%;border:0;background:var(--pink);color:#fff;font-size:18px}
+@media (max-width:1100px){#tao-cv .grid{grid-template-columns:repeat(3,1fr)}
+#tao-cv .arrow.l{left:8px}
+#tao-cv .arrow.r{right:8px}}
+@media (max-width:860px){#tao-cv .hero-in{grid-template-columns:1fr;padding:32px 20px 36px}
+#tao-cv .hero-robot{display:none}
+#tao-cv .hero .brand{font-size:48px}
+#tao-cv .grid{grid-template-columns:repeat(2,1fr);gap:14px}
+#tao-cv .steps,#tao-cv .svc-grid{grid-template-columns:1fr 1fr}
+#tao-cv .step::after{display:none}
+#tao-cv .apply,#tao-cv .stats-in,#tao-cv .faq-in{grid-template-columns:1fr}
+#tao-cv .faq-in img{display:none}
+#tao-cv .slide{grid-template-columns:1fr}
+#tao-cv .slide .pic{height:180px}
+#tao-cv .arrow{top:90px;width:40px;height:40px;font-size:17px}
+#tao-cv .news-box{grid-template-columns:1fr;padding:24px}
+#tao-cv .news-box > div{padding:0}
+#tao-cv .news-box img{display:none}}
+@media (max-width:560px){#tao-cv .wrap{padding:0 16px}
+#tao-cv .sec{padding:48px 0}
+#tao-cv .sec-head h2,#tao-cv .sec-head h1{font-size:26px}
+#tao-cv .hero .kicker{font-size:23px}
+#tao-cv .hero .brand{font-size:40px;letter-spacing:4px}
+#tao-cv .lead{font-size:15.5px!important}
+#tao-cv .tabs{flex-wrap:nowrap;justify-content:flex-start;overflow-x:auto;margin:18px 0 0;scrollbar-width:none}
+#tao-cv .tabs::-webkit-scrollbar{display:none}
+#tao-cv .tabs button{flex:0 0 auto;padding:9px 14px;font-size:12.5px;white-space:nowrap}
+#tao-cv .hero-act{gap:10px}
+#tao-cv .hero-act input{flex:1 1 100%;height:46px;font-size:14px}
+#tao-cv .hero-act .break{display:none}
+#tao-cv .hero-act .btn{flex:1 1 0;height:42px;padding:0 10px;font-size:14px}
+#tao-cv .trust{flex-basis:100%;margin-left:0;gap:10px;font-size:13px}
+#tao-cv .chips{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+#tao-cv .chips a{padding:8px 10px;font-size:13px;text-align:center;border-radius:10px}
+#tao-cv .slide .txt{padding:18px 18px 20px;gap:6px}
+#tao-cv .slide .txt h3{font-size:18px}
+#tao-cv .slide .txt p{font-size:14px}
+#tao-cv .slide .txt .go{width:38px;height:38px;margin-top:4px}
+#tao-cv .card .body{padding:10px 12px 14px}
+#tao-cv .card h3{font-size:15px}
+#tao-cv .card .tag{font-size:12px}
+#tao-cv .steps,#tao-cv .svc-grid{grid-template-columns:1fr}
+#tao-cv .apply{padding:24px}
+#tao-cv .apply h2{font-size:24px}
+#tao-cv .marq .track{font-size:28px}
+#tao-cv .know{padding:28px 22px}
+#tao-cv .know h2{font-size:26px}
+#tao-cv .num b{font-size:30px}
+#tao-cv .guide-box{padding:24px 18px 20px}
+#tao-cv .faq-in h2{font-size:30px}
+#tao-cv summary{font-size:15.5px}}
+#tao-cv .chg-row{margin:0 0 10px}
+#tao-cv .chg{display:inline-flex;align-items:center;gap:5px;font-family:var(--body);font-size:12px;font-weight:700;letter-spacing:.2px;line-height:1;padding:5px 10px;border-radius:99px;border:1px solid}
+#tao-cv .chg::before{content:"";width:6px;height:6px;border-radius:50%;background:currentColor}
+#tao-cv .chg.new{color:#15803D;background:#DCFCE7;border-color:#86EFAC}
+#tao-cv .chg.edit{color:#B45309;background:#FEF3C7;border-color:#FCD34D}
+#tao-cv .chg.keep{color:#475569;background:#F1F5F9;border-color:#CBD5E1}
+#tao-cv .chg-row{margin:0 0 6px}
+#tao-cv .chg-wrap{position:relative;display:inline-block}
+#tao-cv button.chg{cursor:pointer;font-family:var(--body)}
+#tao-cv button.chg i{font-style:normal;font-weight:700;opacity:.75;margin-left:2px}
+#tao-cv button.chg:hover{box-shadow:0 0 0 3px rgba(23,1,44,.06)}
+#tao-cv .chg-note{position:absolute;top:calc(100% + 8px);left:0;z-index:60;width:360px;max-width:calc(100vw - 32px);background:#fff;color:#17012C;text-align:left;border:1px solid #E7E3F2;border-radius:12px;box-shadow:0 14px 34px rgba(23,1,44,.18);padding:12px 14px;font-family:var(--body);font-size:13.5px;font-weight:500;line-height:1.5;letter-spacing:0;text-transform:none}
+#tao-cv .chg-note b{display:block;font-family:var(--head);font-size:13px;margin-bottom:4px;color:#17012C}
+#tao-cv .chg-note ul{margin:0;padding-left:18px}
+#tao-cv .chg-note li{margin:2px 0}
+@media (max-width:560px){#tao-cv .chg-note{position:fixed;left:16px;right:16px;bottom:16px;top:auto;width:auto;max-width:none}}
+#tao-cv .chg .pri{margin-left:4px;padding:2px 7px;border-radius:99px;font-size:10.5px;font-weight:800;letter-spacing:.3px}
+#tao-cv .chg .pri.crit{background:#FEE2E2;color:#B91C1C}
+#tao-cv .chg .pri.high{background:#FFEDD5;color:#C2410C}
+#tao-cv .chg-note ul + b{margin-top:8px}
+/* ===== Trang 2: Mẫu CV ===== */
+:root{
+  --pink:#FF2458; --pink-700:#E0124A; --pink-50:#FFE9EF;
+  --ink:#17012C; --muted:#5D677A; --line:#E7E3F2;
+  --violet:#635AD9; --violet-50:#EFEDFF; --deep:#1B0A3A;
+  --bg-soft:#F7F6FC;
+  --head:"Plus Jakarta Sans",system-ui,sans-serif; --body:Barlow,system-ui,sans-serif;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;font-family:var(--body);font-weight:500;color:var(--muted);background:#fff;font-size:16px;line-height:1.5}
+#mau-cv a{color:inherit;text-decoration:none}
+#mau-cv img{max-width:100%;display:block}
+#mau-cv h1,#mau-cv h2,#mau-cv h3,#mau-cv h4{font-family:var(--head);color:var(--ink);margin:0}
+#mau-cv button{font:inherit;cursor:pointer}
+#mau-cv .wrap{max-width:1320px;margin:0 auto;padding:0 24px}
+#mau-cv .btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;font-family:var(--head);font-weight:700;font-size:15px;border-radius:8px;padding:12px 24px;border:0;transition:.15s}
+#mau-cv .btn-pink{background:var(--pink);color:#fff}
+#mau-cv .btn-pink:hover{background:var(--pink-700)}
+#mau-cv .btn-line{background:#fff;color:var(--pink);border:1px solid var(--pink)}
+#mau-cv .btn-line:hover{background:var(--pink-50)}
+#mau-cv .eyebrow{font-family:var(--head);font-size:13px;font-weight:700;letter-spacing:.6px;text-transform:uppercase;color:var(--violet)}
+#mau-cv .top{background:linear-gradient(rgba(246,245,255,.86),rgba(246,245,255,.93)),url("https://assets.careerviet.vn/images/topcv/238233.png") center top/cover;padding:48px 0 56px}
+#mau-cv .top-in{text-align:center;max-width:900px;margin:0 auto}
+#mau-cv .top h1{font-size:46px;line-height:1.15;font-weight:800}
+#mau-cv .top .lead{margin:12px auto 0;font-size:17px;max-width:700px}
+#mau-cv .filters{display:flex;flex-wrap:wrap;justify-content:center;align-items:center;gap:12px;margin:28px 0 30px}
+#mau-cv .tabs-row{display:flex;flex-wrap:wrap;justify-content:center;gap:12px}
+#mau-cv .tab{background:#fff;color:var(--pink);border:1px solid var(--pink);border-radius:8px;height:46px;padding:0 18px;font-family:var(--head);font-weight:700;font-size:14px;text-transform:uppercase;letter-spacing:.3px}
+#mau-cv .tab:hover{background:var(--pink-50)}
+#mau-cv .tab.on{background:var(--pink);color:#fff}
+#mau-cv .dd{position:relative}
+#mau-cv .dd-btn{display:flex;align-items:center;gap:8px;height:46px;min-width:200px;background:#fff;border:1px solid #8C8FA3;border-radius:8px;padding:0 12px;color:var(--ink);font-size:15px;text-align:left}
+#mau-cv .dd-btn .lbl{flex:1;color:#8C8FA3;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;max-width:180px}
+#mau-cv .dd-btn .lbl.has{color:var(--ink);font-weight:600}
+#mau-cv .dd-btn::after{content:"▾";color:var(--muted);font-size:13px}
+#mau-cv .flag{display:inline-flex;width:24px;height:16px;border-radius:3px;overflow:hidden;flex:0 0 24px;box-shadow:0 0 0 1px rgba(0,0,0,.08)}
+#mau-cv .dd-menu{display:none;position:absolute;top:calc(100% + 6px);left:0;z-index:20;min-width:100%;width:max-content;max-width:300px;background:#fff;border:1px solid var(--line);border-radius:12px;box-shadow:0 14px 34px rgba(23,1,44,.14);padding:8px;max-height:320px;overflow:auto;text-align:left}
+#mau-cv .dd.open .dd-menu{display:block}
+#mau-cv .opt{display:flex;align-items:center;gap:10px;padding:8px 10px;border-radius:8px;cursor:pointer;font-size:14.5px;color:var(--ink)}
+#mau-cv .opt:hover{background:var(--bg-soft)}
+#mau-cv .opt input{width:16px;height:16px;accent-color:var(--pink);margin:0}
+#mau-cv .opt em{margin-left:auto;font-style:normal;font-size:12px;color:#9AA0B3}
+#mau-cv .opt.on{background:var(--violet-50);font-weight:600}
+#mau-cv .result{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:12px;margin-bottom:18px;font-size:15px}
+#mau-cv .r-left{display:flex;align-items:center;gap:14px}
+#mau-cv .r-left b{font-family:var(--head);color:var(--ink);font-size:17px}
+#mau-cv .r-left button{background:none;border:0;color:var(--pink);font-weight:600;padding:0}
+#mau-cv .r-right{display:flex;gap:10px}
+#mau-cv .r-right .dd-menu{left:auto;right:0}
+#mau-cv .r-right #ddNganh .dd-menu{left:0;right:auto}
+#mau-cv .grid{display:grid;grid-template-columns:repeat(4,1fr);gap:24px}
+#mau-cv .card{position:relative;background:#fff;border-radius:20px;box-shadow:0 6px 24px rgba(23,1,44,.08);overflow:hidden;display:flex;flex-direction:column;transition:.2s}
+#mau-cv .card:hover{transform:translateY(-4px);box-shadow:0 14px 34px rgba(23,1,44,.14)}
+#mau-cv .card .thumb{position:relative;display:block;aspect-ratio:320/400;overflow:hidden;background:var(--bg-soft);margin:12px 12px 0;border-radius:12px}
+#mau-cv .card .thumb img{width:100%;height:100%;object-fit:cover;object-position:top}
+#mau-cv .badge{position:absolute;top:10px;left:10px;z-index:2;font-family:var(--head);font-size:12px;font-weight:700;color:#fff;background:#FF8A00;border-radius:6px;padding:3px 9px}
+#mau-cv .badge.new{background:var(--pink)}
+#mau-cv .lang{position:absolute;top:10px;right:10px;z-index:2;font-size:11.5px;font-weight:700;background:rgba(23,1,44,.75);color:#fff;border-radius:6px;padding:2px 7px}
+#mau-cv .hover{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:10px;background:rgba(23,1,44,.5);opacity:0;transition:.2s}
+#mau-cv .card:hover .hover{opacity:1}
+#mau-cv .hover .btn{min-width:150px}
+#mau-cv .card .info{padding:12px 16px 14px;display:flex;flex-direction:column;flex:1}
+#mau-cv .card .tag{display:flex;align-items:center;gap:6px;font-size:13px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+#mau-cv .card .tag svg{flex:0 0 16px}
+#mau-cv .card h3{font-size:17px;line-height:1.3;margin-top:6px}
+#mau-cv .card .job{margin-top:auto;padding-top:10px;font-size:13.5px;font-weight:600;color:var(--violet)}
+#mau-cv .card .job:hover{color:var(--pink)}
+#mau-cv .empty{display:none;text-align:center;padding:48px 16px;background:#fff;border:1px dashed var(--line);border-radius:20px}
+#mau-cv .empty b{display:block;font-family:var(--head);color:var(--ink);font-size:18px;margin-bottom:6px}
+#mau-cv .load{display:flex;justify-content:center;margin-top:30px}
+#mau-cv .jobs{background:linear-gradient(120deg,#1B0A3A 0%,#2E1F7A 55%,#5B2CA8 100%);color:#fff;padding:44px 0;position:relative;overflow:hidden}
+#mau-cv .jobs::before{content:"";position:absolute;right:-120px;top:-120px;width:380px;height:380px;border-radius:50%;background:radial-gradient(rgba(255,36,88,.3),transparent 70%)}
+#mau-cv .jobs-in{position:relative;display:grid;grid-template-columns:.9fr 1.1fr;gap:36px;align-items:center}
+#mau-cv .jobs .eyebrow{color:#C9C2FF}
+#mau-cv .jobs h2{color:#fff;font-size:28px;line-height:1.25;font-weight:800;margin-top:6px}
+#mau-cv .jobs p.sub{color:rgba(255,255,255,.8);margin:8px 0 16px;font-size:15.5px}
+#mau-cv .search{display:flex;background:#fff;border-radius:12px;padding:5px;gap:6px;max-width:500px}
+#mau-cv .search input{flex:1;min-width:0;border:0;padding:0 12px;font:inherit;font-size:15px;color:var(--ink);border-radius:8px}
+#mau-cv .search input:focus{outline:none}
+#mau-cv .search .btn{height:42px;padding:0 18px;white-space:nowrap}
+#mau-cv .jobs-all{display:inline-flex;margin-top:14px;color:#fff;font-weight:700;font-size:14.5px;border-bottom:1px solid rgba(255,255,255,.5)}
+#mau-cv .jgrid{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+#mau-cv .jcard{display:flex;align-items:center;gap:12px;background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.16);border-radius:12px;padding:10px 12px;color:#fff;font-weight:600;font-size:15px;transition:.2s}
+#mau-cv .jcard:hover{background:rgba(255,255,255,.16);border-color:rgba(255,255,255,.4)}
+#mau-cv .jcard.hl{background:#fff;border-color:#fff;color:var(--ink)}
+#mau-cv .jcard .ic{flex:0 0 34px;height:34px;border-radius:8px;background:#fff center/22px no-repeat}
+#mau-cv .jcard .jt{flex:1;min-width:0;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+#mau-cv .jcard .go{flex:0 0 28px;height:28px;border-radius:50%;background:rgba(255,255,255,.16);display:grid;place-items:center;font-size:14px}
+#mau-cv .jcard.hl .go{background:var(--pink);color:#fff}
+#mau-cv .guide{padding:64px 0}
+#mau-cv .guide-box{position:relative;background:#fff;border:1px solid var(--line);border-radius:24px;padding:36px 40px 28px}
+#mau-cv .g-title{font-size:32px;font-weight:800;margin-top:6px}
+#mau-cv .g-meta{display:flex;flex-wrap:wrap;gap:6px 18px;font-size:14px;margin-top:10px}
+#mau-cv .g-meta b{color:var(--ink)}
+#mau-cv .g-body{position:relative;max-height:520px;overflow:hidden}
+#mau-cv .g-body.open{max-height:none}
+#mau-cv .g-body::after{content:"";position:absolute;left:0;right:0;bottom:0;height:140px;background:linear-gradient(rgba(255,255,255,0),#fff);pointer-events:none}
+#mau-cv .g-body.open::after{display:none}
+#mau-cv .toc{background:var(--bg-soft);border-radius:16px;padding:18px 22px;margin:22px 0}
+#mau-cv .toc b{font-family:var(--head);color:var(--ink)}
+#mau-cv .toc ol{margin:8px 0 0;padding-left:20px;font-size:15px}
+#mau-cv .toc li{margin-bottom:4px}
+#mau-cv .toc a:hover{color:var(--pink)}
+#mau-cv .g-body h2{font-size:24px;margin:28px 0 10px;font-weight:800;scroll-margin-top:20px}
+#mau-cv .g-body h3{font-size:18px;margin:16px 0 6px}
+#mau-cv .g-body p{margin:0 0 10px}
+#mau-cv .ph{color:#8A8FA3;font-style:italic;background:#FAFAFD;border-left:3px solid #D9D4F3;padding:8px 12px;border-radius:0 8px 8px 0;margin:0 0 8px}
+#mau-cv .g-toggle{display:flex;justify-content:center;margin-top:12px}
+#mau-cv .stats{background:#170B3B url("https://assets.careerviet.vn/images/topcv/6354b3fe831cc26ce88406def0bff95c.png") center/cover no-repeat;padding:56px 0}
+#mau-cv .stats-in{display:grid;grid-template-columns:1.15fr 1fr;gap:24px}
+#mau-cv .know{background:linear-gradient(160deg,#B8B3E6 0%,#7C6FE0 55%,#5B4FD9 100%);border-radius:20px;padding:36px 44px;color:#fff}
+#mau-cv .know h2{color:#fff;font-size:34px;line-height:1.2;font-weight:800}
+#mau-cv .know ul{list-style:none;padding:0;margin:22px 0 0}
+#mau-cv .know li a{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:12px 0;color:#fff;font-family:var(--head);font-weight:700;font-size:18px}
+#mau-cv .know li a small{display:block;font-family:var(--body);font-weight:500;font-size:12px;opacity:.85}
+#mau-cv .know li a i{flex:0 0 44px;height:44px;border-radius:50%;border:1px solid rgba(255,255,255,.6);display:grid;place-items:center;font-style:normal}
+#mau-cv .nums{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+#mau-cv .num{background:#14052E;border:1px solid rgba(255,255,255,.25);border-radius:16px;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:22px 10px;color:#fff}
+#mau-cv .num b{font-family:var(--head);font-size:38px;font-weight:800}
+#mau-cv .num span{font-size:17px}
+#mau-cv .news{padding:64px 0}
+#mau-cv .news-box{background:linear-gradient(90deg,#2E2A86,#3B2F9E);border-radius:20px;display:grid;grid-template-columns:.8fr 1.2fr;align-items:center;min-height:200px}
+#mau-cv .news-box img{margin-top:-60px;width:330px;justify-self:center}
+#mau-cv .news-box > div{padding:28px 44px 28px 0}
+#mau-cv .news-box h2{color:#fff;font-size:20px;line-height:1.4;font-weight:700;text-transform:uppercase}
+#mau-cv .news-form{display:flex;background:#fff;border-radius:99px;padding:5px;margin-top:16px;max-width:460px}
+#mau-cv .news-form input{flex:1;border:0;padding:0 16px;font:inherit;min-width:0;border-radius:99px}
+#mau-cv .news-form button{width:42px;height:42px;border-radius:50%;border:0;background:var(--pink);color:#fff;font-size:18px}
+@media (max-width:1180px){#mau-cv .grid{grid-template-columns:repeat(3,1fr)}
+#mau-cv .jobs-in{grid-template-columns:1fr}}
+@media (max-width:860px){#mau-cv .top h1{font-size:32px}
+#mau-cv .grid{grid-template-columns:repeat(2,1fr);gap:14px}
+#mau-cv .stats-in{grid-template-columns:1fr}
+#mau-cv .news-box{grid-template-columns:1fr;padding:24px}
+#mau-cv .news-box img{display:none}
+#mau-cv .news-box > div{padding:0}}
+@media (max-width:560px){#mau-cv .wrap{padding:0 16px}
+#mau-cv .top{padding:20px 0 36px}
+#mau-cv .top h1{font-size:26px}
+#mau-cv .top .lead{font-size:15px}
+#mau-cv .filters{gap:8px;margin:20px 0 22px}
+#mau-cv .tabs-row{display:flex;flex-wrap:nowrap;justify-content:flex-start;gap:8px;overflow-x:auto;scrollbar-width:none;width:100%;flex:0 0 100%}
+#mau-cv .tabs-row::-webkit-scrollbar{display:none}
+#mau-cv .tab{flex:0 0 auto;height:40px;padding:0 14px;font-size:12.5px}
+#mau-cv .r-right{width:100%}
+#mau-cv .dd{flex:1 1 0;min-width:0}
+#mau-cv .dd-btn{min-width:0;width:100%;height:42px;font-size:14px}
+#mau-cv .dd-btn .lbl{max-width:none}
+#mau-cv .dd-menu{max-width:calc(100vw - 32px)}
+#mau-cv .dd.lang-dd .dd-menu{left:auto;right:0}
+#mau-cv .card{border-radius:14px}
+#mau-cv .card .thumb{margin:8px 8px 0;border-radius:10px}
+#mau-cv .card .info{padding:10px 10px 12px}
+#mau-cv .card h3{font-size:14.5px}
+#mau-cv .card .tag{font-size:11.5px}
+#mau-cv .card .job{font-size:12.5px}
+#mau-cv .hover{display:none}
+#mau-cv .jobs{padding:36px 0}
+#mau-cv .jobs h2{font-size:23px}
+#mau-cv .search{flex-direction:column;padding:8px}
+#mau-cv .search input{height:44px}
+#mau-cv .jgrid{grid-template-columns:1fr 1fr;gap:8px}
+#mau-cv .jcard{padding:8px 10px;font-size:13.5px;gap:8px}
+#mau-cv .jcard .ic{flex-basis:28px;height:28px;background-size:18px}
+#mau-cv .jcard .go{display:none}
+#mau-cv .guide{padding:44px 0}
+#mau-cv .guide-box{padding:24px 18px 20px}
+#mau-cv .g-title{font-size:24px}
+#mau-cv .g-body h2{font-size:20px}
+#mau-cv .know{padding:28px 22px}
+#mau-cv .know h2{font-size:26px}
+#mau-cv .num b{font-size:30px}}
+#mau-cv .chg-row{margin:0 0 10px}
+#mau-cv .chg{display:inline-flex;align-items:center;gap:5px;font-family:var(--body);font-size:12px;font-weight:700;letter-spacing:.2px;line-height:1;padding:5px 10px;border-radius:99px;border:1px solid}
+#mau-cv .chg::before{content:"";width:6px;height:6px;border-radius:50%;background:currentColor}
+#mau-cv .chg.new{color:#15803D;background:#DCFCE7;border-color:#86EFAC}
+#mau-cv .chg.edit{color:#B45309;background:#FEF3C7;border-color:#FCD34D}
+#mau-cv .chg.keep{color:#475569;background:#F1F5F9;border-color:#CBD5E1}
+#mau-cv .chg-row{margin:0 0 6px}
+#mau-cv .chg-wrap{position:relative;display:inline-block}
+#mau-cv button.chg{cursor:pointer;font-family:var(--body)}
+#mau-cv button.chg i{font-style:normal;font-weight:700;opacity:.75;margin-left:2px}
+#mau-cv button.chg:hover{box-shadow:0 0 0 3px rgba(23,1,44,.06)}
+#mau-cv .chg-note{position:absolute;top:calc(100% + 8px);left:0;z-index:60;width:360px;max-width:calc(100vw - 32px);background:#fff;color:#17012C;text-align:left;border:1px solid #E7E3F2;border-radius:12px;box-shadow:0 14px 34px rgba(23,1,44,.18);padding:12px 14px;font-family:var(--body);font-size:13.5px;font-weight:500;line-height:1.5;letter-spacing:0;text-transform:none}
+#mau-cv .chg-note b{display:block;font-family:var(--head);font-size:13px;margin-bottom:4px;color:#17012C}
+#mau-cv .chg-note ul{margin:0;padding-left:18px}
+#mau-cv .chg-note li{margin:2px 0}
+@media (max-width:560px){#mau-cv .chg-note{position:fixed;left:16px;right:16px;bottom:16px;top:auto;width:auto;max-width:none}}
+#mau-cv .chg .pri{margin-left:4px;padding:2px 7px;border-radius:99px;font-size:10.5px;font-weight:800;letter-spacing:.3px}
+#mau-cv .chg .pri.crit{background:#FEE2E2;color:#B91C1C}
+#mau-cv .chg .pri.high{background:#FFEDD5;color:#C2410C}
+#mau-cv .chg-note ul + b{margin-top:8px}
+</style>
+</head>
+<body>
+<nav class="vbar" aria-label="Chuyển trang mockup"><span>Mockup CareerViet:</span><div class="dev" role="group" aria-label="Thiết bị"><button type="button" data-d="desktop" class="on">Desktop</button><button type="button" data-d="mobile">Mobile</button></div>
+  <a href="#tao-cv" data-v="tao-cv">1. Tạo CV<small> · /cv-hay</small></a>
+  <a href="#mau-cv" data-v="mau-cv">2. Mẫu CV<small> · /cv-hay/danh-sach-cv-xin-viec</small></a>
+</nav>
+
+<div class="phone" id="phone"></div>
+
+<div class="view" id="tao-cv" data-view>
+
+
+<!-- 1. HERO: H1 nhắm "tạo CV, tạo CV miễn phí" + 3 tab mẫu CV ngay dưới H1 -->
+<section class="hero">
+  <div class="wrap hero-in">
+    <div>
+      <div class="chg-row"><span class="chg-wrap"><button type="button" class="chg edit" aria-expanded="false">Điều chỉnh<span class="pri crit">Critical</span> <i>ⓘ</i></button><div class="chg-note" hidden><b>Hướng điều chỉnh</b><ul><li>Thu gọn banner, robot thu nhỏ sang phải (ẩn trên mobile)</li><li>Giữ text như trang hiện tại, không đặt làm heading</li><li>Thêm nút "Tạo CV ngay" cạnh ô gợi ý AI + 1 dòng ngắn lợi ích</li></ul></div></span></div>
+      <p class="kicker">Khám phá tiềm năng khởi tạo<br>và thiết kế CV với AI</p>
+      <div class="brand">CV HAY</div>
+      <p class="lead">Chọn mẫu, để AI gợi ý nội dung theo vị trí bạn ứng tuyển, chỉnh sửa trên máy tính hoặc điện thoại và tải CV PDF ngay.</p>
+
+      <form class="hero-act" onsubmit="return false">
+        <input type="text" placeholder="Nhập vị trí bạn muốn ứng tuyển, vd: Nhân viên kế toán" aria-label="Vị trí ứng tuyển">
+        <button class="btn btn-pink ai-btn" type="submit">✦ Gợi ý bởi AI</button>
+        <span class="break"></span>
+        <a class="btn btn-pink create" href="#mau-cv">Tạo CV ngay →</a>
+        <div class="trust"><span>Miễn phí</span><span>Tải PDF</span><span>Tạo trên điện thoại</span></div>
+      </form>
+    </div>
+    <img class="hero-robot" src="https://assets.careerviet.vn/careerviet/_next/static/media/asset-12.328213d3.png" alt="Trợ lý AI tạo CV của CareerViet">
+  </div>
+</section>
+
+<!-- 2. MẪU CV NỔI BẬT (8 mẫu, tên theo ngành, link thật; kho đầy đủ ở trang con mẫu CV) -->
+<section class="sec">
+  <div class="wrap">
+    <div class="sec-head h1-head">
+      <div class="chg-row"><span class="chg-wrap"><button type="button" class="chg edit" aria-expanded="false">Điều chỉnh<span class="pri crit">Critical</span> <i>ⓘ</i></button><div class="chg-note" hidden><b>Hướng điều chỉnh</b><ul><li>Đặt H1 mới ở đầu section, nhắm "tạo CV", "tạo CV miễn phí"</li><li>2 tab "Sử dụng nhiều" / "Nổi bật": đưa từ dưới lưới mẫu lên trên, chỉ đổi mẫu tại chỗ, không gắn link</li><li>Đặt tên mẫu theo ngành</li></ul><b>Mobile (trang hiện tại)</b><ul><li>Hàng tab hiện tại bị tràn ngang, mất chữ "Xem tất cả mẫu CV"</li></ul></div></span></div>
+      <h1>Tạo CV miễn phí với AI CV Hay gây ấn tượng ngay tức thì với Nhà Tuyển Dụng Hàng Đầu</h1>
+      <p>Chọn 1 trong 16 mẫu để bắt đầu tạo CV. Xem toàn bộ mẫu theo ngành nghề và phong cách ở trang Mẫu CV.</p>
+      <!-- 2 tab đổi mẫu ngay tại chỗ, không dẫn sang trang khác -->
+      <div class="tabs" id="cvTabs" role="tablist" aria-label="Nhóm mẫu CV">
+        <button type="button" class="main" data-t="used" role="tab" aria-selected="true">Mẫu CV sử dụng nhiều</button>
+        <button type="button" data-t="hot" role="tab" aria-selected="false">Mẫu CV nổi bật</button>
+      </div>
+    </div>
+    <div class="grid" id="grid1"></div>
+    <div class="chg-row" style="text-align:center;margin:28px 0 -18px"><span class="chg-wrap"><button type="button" class="chg new" aria-expanded="false">Thêm mới<span class="pri crit">Critical</span> <i>ⓘ</i></button><div class="chg-note" hidden><b>Nội dung thêm mới</b><ul><li>Gom thành 1 nút "Xem tất cả mẫu CV" dưới lưới, dẫn sang trang Mẫu CV</li></ul><b>Lý do thêm mới</b><ul><li>Bỏ trùng với tab "Xem tất cả" phía trên, chỉ giữ 1 lối sang trang Mẫu CV sau khi user đã xem mẫu</li></ul></div></span></div>
+    <div class="more-row"><a class="btn btn-line" href="#mau-cv">XEM TẤT CẢ MẪU CV →</a></div>
+  </div>
+</section>
+
+<!-- 3. CÁC BƯỚC TẠO CV (mới) -->
+<section class="sec" style="background:var(--bg-soft)">
+  <div class="wrap">
+    <div class="sec-head wide">
+      <div class="chg-row"><span class="chg-wrap"><button type="button" class="chg new" aria-expanded="false">Thêm mới<span class="pri high">High</span> <i>ⓘ</i></button><div class="chg-note" hidden><b>Nội dung thêm mới</b><ul><li>Thêm section giải thích cách tạo CV qua 3 bước</li></ul><b>Lý do thêm mới</b><ul><li>Trả lời nhu cầu người tìm "tạo CV": tạo như thế nào, mất bao lâu</li><li>Tối ưu keyword "tạo CV miễn phí"</li></ul></div></span></div>
+      <span class="eyebrow">Cách tạo CV</span>
+      <h2>Tạo CV miễn phí trên CareerViet với 3 bước</h2>
+    </div>
+    <div class="steps">
+      <div class="step"><div class="n">1</div><h3>Chọn mẫu CV</h3><p>Chọn mẫu phù hợp ngành nghề và phong cách. Đổi mẫu bất cứ lúc nào, thông tin đã nhập được giữ nguyên.</p></div>
+      <div class="step"><div class="n">2</div><h3>Điền thông tin, AI gợi ý</h3><p>Nhập vị trí ứng tuyển, AI gợi ý mục tiêu nghề nghiệp, kinh nghiệm và kỹ năng để bạn chỉnh lại theo ý mình.</p></div>
+      <div class="step"><div class="n">3</div><h3>Tải PDF và ứng tuyển</h3><p>Tải CV PDF hoặc dùng CV để ứng tuyển ngay các việc làm trên CareerViet.</p></div>
+    </div>
+    <div class="center"><a class="btn btn-pink" href="#mau-cv">Tạo CV ngay</a></div>
+  </div>
+</section>
+
+<!-- 4. DỊCH VỤ (giữ nội dung; tiêu đề đổi cùng kiểu chữ với các section khác) -->
+<section class="sec svc">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="chg-row"><span class="chg-wrap"><button type="button" class="chg edit" aria-expanded="false">Điều chỉnh <i>ⓘ</i></button><div class="chg-note" hidden><b>Hướng điều chỉnh</b><ul><li>Đổi kiểu chữ tiêu đề cho đồng nhất với các section khác</li></ul><b>Mobile (trang hiện tại)</b><ul><li>Tiêu đề viết hoa giãn chữ bị xuống dòng rời rạc</li></ul></div></span></div>
+      <span class="eyebrow">Dịch vụ tốt nhất của chúng tôi</span>
+      <h2>Xây dựng hồ sơ đạt chuẩn giúp khởi đầu thuận lợi</h2>
+      <p>CV Hay được thiết kế giúp tăng tỷ lệ xem hồ sơ lên đến 90%</p>
+    </div>
+    <div class="svc-grid">
+      <div class="svc-card"><div class="ic" style="background-image:url(https://assets.careerviet.vn/images/topcv/choose01.svg)"></div><h3>Nhà tuyển dụng hàng đầu</h3><p>Tiết kiệm thời gian chỉ với 3 bước khởi tạo. Không còn gặp vấn đề về thiết kế CV và thiếu các nội dung quan trọng.</p></div>
+      <div class="svc-card"><div class="ic" style="background-image:url(https://assets.careerviet.vn/images/topcv/choose02.svg)"></div><h3>Đổi mẫu CV trong chớp mắt</h3><p>Quản lý toàn bộ thông tin hồ sơ đã nhập. Tự động điền thông tin, thay áo mới cho CV chỉ bằng một cú nhấp chuột.</p></div>
+      <div class="svc-card"><div class="ic" style="background-image:url(https://assets.careerviet.vn/images/topcv/choose03.svg)"></div><h3>Bật cho phép tìm kiếm hồ sơ</h3><p>CV Hay ngại gì phải giấu! Bật ngay chế độ cho phép tìm kiếm hồ sơ để Nhà Tuyển Dụng dễ dàng tìm thấy bạn. Gia tăng cơ hội phỏng vấn.</p></div>
+      <div class="svc-card"><div class="ic" style="background-image:url(https://assets.careerviet.vn/images/topcv/choose04.svg)"></div><h3>Cập nhật CV thường xuyên</h3><p>Gia tăng cơ hội tiếp cận công việc mong muốn. Nhận ngay công việc mới gợi ý sớm nhất phù hợp với CV.</p></div>
+    </div>
+    <div class="center"><a class="btn btn-pink" href="#mau-cv">Tạo CV Ngay</a></div>
+  </div>
+</section>
+
+<!-- 5. TẠO CV XONG, ỨNG TUYỂN NGAY (mới: link sang việc làm theo ngành) -->
+<section class="sec">
+  <div class="wrap">
+    <div class="apply">
+      <div>
+        <div class="chg-row"><span class="chg-wrap"><button type="button" class="chg new" aria-expanded="false">Thêm mới<span class="pri crit">Critical</span> <i>ⓘ</i></button><div class="chg-note" hidden><b>Nội dung thêm mới</b><ul><li>Thêm section dẫn sang việc làm theo ngành sau khi tạo CV</li></ul><b>Lý do thêm mới</b><ul><li>Dẫn user từ tạo CV sang ứng tuyển, tăng chuyển đổi</li><li>VietCV, JobsGO đều nhấn mạnh tạo CV xong ứng tuyển ngay</li></ul></div></span></div>
+      <span class="eyebrow">Tạo CV xong, ứng tuyển ngay</span>
+        <h2>Dùng CV vừa tạo để ứng tuyển việc làm phù hợp</h2>
+        <p>Hàng nghìn việc làm đang tuyển trên CareerViet. Chọn ngành để xem việc làm phù hợp với CV của bạn.</p>
+      </div>
+      <div class="chips">
+        <a href="https://careerviet.vn/viec-lam/kinh-doanh-k-vi.html">Việc làm kinh doanh</a>
+        <a href="https://careerviet.vn/viec-lam/ke-toan-k-vi.html">Việc làm kế toán</a>
+        <a href="https://careerviet.vn/viec-lam/marketing-k-vi.html">Việc làm marketing</a>
+        <a href="https://careerviet.vn/viec-lam/nhan-su-k-vi.html">Việc làm nhân sự</a>
+        <a href="https://careerviet.vn/viec-lam/it-k-vi.html">Việc làm IT</a>
+        <a href="https://careerviet.vn/viec-lam/logistics-k-vi.html">Việc làm logistics</a>
+        <a href="https://careerviet.vn/viec-lam/thuc-tap-k-vi.html">Việc làm thực tập</a>
+        <a href="https://careerviet.vn/viec-lam/san-xuat-k-vi.html">Việc làm sản xuất</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 6. MARQUEE + CẨM NANG (giữ như trang hiện tại) -->
+<section style="padding-bottom:64px">
+  <div class="marq" aria-hidden="true"><div class="track">
+    <span class="o">Tuyển dụng</span><span class="x">✱</span><span class="f">Tối ưu hoá</span><span class="x">✱</span><span class="o">Truyền thông</span><span class="x">✱</span><span class="f">Tạo CV</span><span class="x">✱</span>
+    <span class="o">Tuyển dụng</span><span class="x">✱</span><span class="f">Tối ưu hoá</span><span class="x">✱</span><span class="o">Truyền thông</span><span class="x">✱</span><span class="f">Tạo CV</span><span class="x">✱</span>
+  </div></div>
+  <div class="wrap">
+    <div class="chg-row" style="text-align:center;margin-bottom:12px"><span class="chg-wrap"><button type="button" class="chg edit" aria-expanded="false">Điều chỉnh<span class="pri high">High</span> <i>ⓘ</i></button><div class="chg-note" hidden><b>Hướng điều chỉnh</b><ul><li>Thêm 1-2 câu tóm tắt dưới tiêu đề mỗi bài để tối ưu thêm từ khoá</li></ul><b>Mobile (trang hiện tại)</b><ul><li>Ảnh bị cắt, chữ tràn, mũi tên đè nội dung: chỉnh lại responsive</li></ul></div></span></div>
+    <div class="blog">
+      <div class="slides"><div class="rail" id="rail">
+        <a class="slide" href="https://careerviet.vn/vi/talentcommunity/mau-cv-ke-toan-truong-dep-huong-dan-cach-viet-cv-chi-tiet-va-an-tuong-nhat.35A52077.html">
+          <div class="pic" style="background-image:url('https://images.careerviet.vn/content/images/CV%20Hay%20-%20Nh%C3%A2n%20vi%C3%AAn%20kinh%20doanh.png');background-position:top"></div>
+          <div class="txt"><small>Hồ sơ ấn tượng</small><h3>Mẫu CV kế toán trưởng đẹp, hướng dẫn cách viết CV chi tiết và ấn tượng nhất</h3><p>Gợi ý cách trình bày kinh nghiệm, chứng chỉ và thành tích quản lý tài chính để CV kế toán trưởng nổi bật, kèm mẫu tham khảo.</p><span class="go">↗</span></div>
+        </a>
+        <a class="slide" href="https://careerviet.vn/vi/talentcommunity/cv-dai-bao-nhieu-la-vua-du.35A51801.html">
+          <div class="pic" style="background-image:url('https://images.careerviet.vn/content/images/CV%20Hay%20-%20Th%E1%BB%B1c%20t%E1%BA%ADp%20sinh%20Marketing.png');background-position:top"></div>
+          <div class="txt"><small>Hồ sơ ấn tượng</small><h3>CV dài bao nhiêu là vừa đủ?</h3><p>Thường 1 trang là đủ với người mới đi làm, 2 trang với người nhiều kinh nghiệm. Quan trọng là chỉ giữ thông tin liên quan đến vị trí ứng tuyển.</p><span class="go">↗</span></div>
+        </a>
+        <a class="slide" href="https://careerviet.vn/vi/talentcommunity/cach-viet-cv-business-analyst-chuan-nhat-kem-cv-ba-mau.35A52372.html">
+          <div class="pic" style="background-image:url('https://images.careerviet.vn/content/images/CV%20Hay%20-%20Business%20Development.png');background-position:top"></div>
+          <div class="txt"><small>Hồ sơ ấn tượng</small><h3>Cách viết CV Business Analyst chuẩn nhất kèm CV BA mẫu</h3><p>Những phần cần có trong CV Business Analyst và cách thể hiện kỹ năng phân tích, làm việc với các bên liên quan, kèm CV mẫu.</p><span class="go">↗</span></div>
+        </a>
+      </div></div>
+      <button class="arrow l" id="prev" aria-label="Bài trước">←</button>
+      <button class="arrow r" id="next" aria-label="Bài sau">→</button>
+    </div>
+  </div>
+</section>
+
+<!-- 7. KHỐI THỐNG KÊ (giữ như cũ; danh sách bên trái đổi thành link nhảy tới nội dung trên trang thay vì /cv-hay/faq) -->
+<section class="stats">
+  <div class="wrap stats-in">
+    <div class="know">
+      <div class="chg-row"><span class="chg-wrap"><button type="button" class="chg edit" aria-expanded="false">Điều chỉnh<span class="pri high">High</span> <i>ⓘ</i></button><div class="chg-note" hidden><b>Hướng điều chỉnh</b><ul><li>Bỏ trang FAQ riêng, gộp FAQ vào trang chính</li><li>Các câu hỏi đóng vai trò mục lục, bấm nhảy tới nội dung bên dưới</li></ul><b>Mobile (trang hiện tại)</b><ul><li>Khung chữ bị bóp hẹp, mỗi câu xuống dòng nhiều lần: chỉnh lại responsive</li></ul></div></span></div>
+      <h2>Những điều bạn cần biết khi tạo CV</h2>
+      <ul>
+        <li><a href="#cac-buoc"><span>Các bước tạo CV miễn phí<small>Hướng dẫn</small></span><i>↗</i></a></li>
+        <li><a href="#dien-thoai"><span>Tạo CV trên điện thoại<small>Hướng dẫn</small></span><i>↗</i></a></li>
+        <li><a href="#ai"><span>Tạo CV với AI gợi ý nội dung<small>Hướng dẫn</small></span><i>↗</i></a></li>
+        <li><a href="#faq"><span>Câu hỏi thường gặp khi tạo CV<small>FAQ</small></span><i>↗</i></a></li>
+      </ul>
+    </div>
+    <div class="nums">
+      <div class="num"><b>18</b><span>Hồ Sơ</span></div>
+      <div class="num"><b>4K+</b><span>Số Người Sử Dụng</span></div>
+      <div class="num"><b>1K+</b><span>Nhà Tuyển Dụng Tìm Kiếm</span></div>
+      <div class="num"><b>6K+</b><span>CV Đã Được Tạo</span></div>
+      <div class="num"><b>300%</b><span>Tiết Kiệm Thời Gian</span></div>
+      <div class="num"><b>250%</b><span>Cơ Hội Việc Làm</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- 8. NỘI DUNG HƯỚNG DẪN (mới) — có nút Xem thêm / Thu gọn.
+     Toàn bộ nội dung nằm sẵn trong HTML (chỉ giới hạn chiều cao), không tải sau, để Google đọc được.
+     Đoạn chữ xám nghiêng = khung nội dung, team Content viết. -->
+<section class="sec">
+  <div class="wrap">
+    <div class="guide-box">
+      <div class="chg-row"><span class="chg-wrap"><button type="button" class="chg new" aria-expanded="false">Thêm mới<span class="pri crit">Critical</span> <i>ⓘ</i></button><div class="chg-note" hidden><b>Nội dung thêm mới</b><ul><li>Thêm box nội dung: tiêu đề, tác giả + ngày cập nhật, mục lục, nội dung</li><li>Có nút thu gọn / mở rộng</li></ul><b>Lý do thêm mới</b><ul><li>Trang thiếu nội dung để Google hiểu và xếp hạng "tạo CV", "tạo CV miễn phí"</li><li>Đối thủ đang xếp trên đều có phần hướng dẫn dài</li></ul></div></span></div>
+      <span class="eyebrow">Hướng dẫn</span>
+      <h2 style="font-size:32px;margin-top:6px">Hướng dẫn tạo CV online miễn phí trên CareerViet</h2>
+      <div class="guide-meta"><span>Tác giả: <b>Ban biên tập CareerViet</b></span><span>Cập nhật: <b>28/10/2026</b></span></div>
+
+      <div class="guide" id="guide">
+        <nav class="toc" aria-label="Mục lục">
+          <b>Mục lục</b>
+          <ol>
+            <li><a href="#cac-buoc">Các bước tạo CV miễn phí trên CareerViet</a></li>
+            <li><a href="#dien-thoai">Tạo CV trên điện thoại</a></li>
+            <li><a href="#ai">Tạo CV với AI gợi ý nội dung</a></li>
+            <li><a href="#tai-pdf">Tải CV PDF và sửa CV sau khi tạo</a></li>
+            <li><a href="#tieng-anh">Tạo CV tiếng Anh</a></li>
+            <li><a href="#loi">Lỗi thường gặp khi tạo CV</a></li>
+            <li><a href="#gui-email">Cách gửi CV qua email</a></li>
+          </ol>
+        </nav>
+
+        <h2 id="cac-buoc">1. Các bước tạo CV miễn phí trên CareerViet</h2>
+        <p class="ph">[Mở đầu 60–80 chữ: tạo CV trên CareerViet miễn phí, cần gì để bắt đầu (tài khoản, vị trí muốn ứng tuyển), mất khoảng bao lâu.]</p>
+        <h3>Bước 1: Đăng nhập và chọn mẫu CV</h3>
+        <p class="ph">[40–60 chữ + ảnh chụp màn hình bước chọn mẫu.]</p>
+        <h3>Bước 2: Điền thông tin cá nhân, kinh nghiệm, kỹ năng</h3>
+        <p class="ph">[60–80 chữ: các mục cần điền, mẹo viết ngắn gọn, ảnh chụp màn hình.]</p>
+        <h3>Bước 3: Xem trước, tải PDF và ứng tuyển</h3>
+        <p class="ph">[40–60 chữ + ảnh chụp màn hình.]</p>
+
+        <h2 id="dien-thoai">2. Tạo CV trên điện thoại</h2>
+        <p class="ph">[80–120 chữ: tạo CV trên trình duyệt điện thoại và ứng dụng CareerViet (Android, iOS), khác gì so với máy tính.]</p>
+
+        <h2 id="ai">3. Tạo CV với AI gợi ý nội dung</h2>
+        <p class="ph">[100–150 chữ: cách dùng ô "Gợi ý bởi AI", AI gợi ý phần nào, cần chỉnh lại gì để CV không bị giống nhau.]</p>
+
+        <h2 id="tai-pdf">4. Tải CV PDF và sửa CV sau khi tạo</h2>
+        <p class="ph">[80–100 chữ: tải PDF, đổi mẫu giữ nguyên nội dung, cập nhật CV khi có kinh nghiệm mới.]</p>
+
+        <h2 id="tieng-anh">5. Tạo CV tiếng Anh</h2>
+        <p class="ph">[80–120 chữ: chọn ngôn ngữ CV, lưu ý khi viết CV tiếng Anh. Link sang /top-cv.]</p>
+
+        <h2 id="loi">6. Lỗi thường gặp khi tạo CV</h2>
+        <p class="ph">[5–7 lỗi, mỗi lỗi 1–2 câu: sai chính tả, email thiếu chuyên nghiệp, CV quá dài, không chỉnh theo vị trí ứng tuyển...]</p>
+
+        <h2 id="gui-email">7. Cách gửi CV qua email</h2>
+        <p class="ph">[80–100 chữ: đặt tên file, tiêu đề email, nội dung email ngắn. Link sang bài cẩm nang liên quan.]</p>
+
+        <p style="margin-top:18px">Muốn xem thêm mẫu theo ngành nghề, chủ đề, phong cách? <a href="#mau-cv" style="color:var(--pink);font-weight:700">Xem tất cả mẫu CV →</a></p>
+      </div>
+      <div class="toggle"><button class="btn btn-line" id="toggle" aria-expanded="false" aria-controls="guide">Xem thêm ▾</button></div>
+    </div>
+  </div>
+</section>
+
+<!-- 9. FAQ (giữ bố cục cũ; câu trả lời nằm ngay trên trang) -->
+<section class="sec" id="faq" style="padding-top:24px">
+  <div class="wrap faq-in">
+    <div>
+      <div class="chg-row"><span class="chg-wrap"><button type="button" class="chg new" aria-expanded="false">Thêm mới<span class="pri high">High</span> <i>ⓘ</i></button><div class="chg-note" hidden><b>Nội dung thêm mới</b><ul><li>Thêm FAQ ngay trên trang, câu hỏi xoay quanh tạo CV</li></ul><b>Lý do thêm mới</b><ul><li>Trả lời ngay trên trang thay vì dẫn sang trang FAQ riêng</li><li>Tối ưu nội dung cho keyword target</li></ul></div></span></div>
+      <span class="eyebrow">FAQ</span>
+      <h2>Các Câu Hỏi &amp; Câu Trả Lời Thường Gặp</h2>
+      <details open><summary>Tạo CV trên CareerViet có mất phí không?</summary><div class="a ph">[Trả lời 40–60 chữ: miễn phí tạo và tải; nêu rõ tính năng nào có tính phí, nếu có.]</div></details>
+      <details><summary>Có tạo CV trên điện thoại được không?</summary><div class="a ph">[Trả lời 40–60 chữ.]</div></details>
+      <details><summary>Tải CV về dạng PDF như thế nào?</summary><div class="a ph">[Trả lời 40–60 chữ.]</div></details>
+      <details><summary>Sau khi tạo, có sửa CV hoặc đổi mẫu được không?</summary><div class="a ph">[Trả lời 40–60 chữ.]</div></details>
+      <details><summary>AI gợi ý nội dung CV như thế nào?</summary><div class="a ph">[Trả lời 40–60 chữ.]</div></details>
+      <details><summary>Nhà tuyển dụng có xem được CV của tôi không?</summary><div class="a ph">[Trả lời 40–60 chữ: chế độ cho phép tìm kiếm hồ sơ.]</div></details>
+      <details><summary>CV nên dài mấy trang?</summary><div class="a ph">[Trả lời 40–60 chữ.]</div></details>
+      <details><summary>CV có cần ảnh đại diện không?</summary><div class="a ph">[Trả lời 40–60 chữ.]</div></details>
+      <details><summary>Có tạo CV tiếng Anh được không?</summary><div class="a ph">[Trả lời 40–60 chữ.]</div></details>
+      <details><summary>Một tài khoản tạo được bao nhiêu CV?</summary><div class="a ph">[Trả lời 40–60 chữ.]</div></details>
+    </div>
+    <img src="https://assets.careerviet.vn/careerviet/_next/static/media/asset-13.d9d4f8c5.png" alt="Câu hỏi thường gặp khi tạo CV">
+  </div>
+</section>
+
+<!-- 10. ĐĂNG KÝ NHẬN TIN (giữ như cũ) -->
+<section class="news">
+  <div class="wrap">
+    <div class="news-box">
+      <img src="https://assets.careerviet.vn/careerviet/_next/static/media/asset-21.dbc535f0.png" alt="">
+      <div>
+        <div class="chg-row"><span class="chg keep">Giữ nguyên</span></div>
+      <h2>Đăng ký theo dõi để nhận cập nhật về cơ hội việc làm mới và phù hợp nhất</h2>
+        <form class="news-form" onsubmit="return false"><input type="email" placeholder="Nhập địa chỉ email của bạn" aria-label="Email"><button aria-label="Gửi">➤</button></form>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+</div>
+
+<div class="view" id="mau-cv" data-view>
+
+
+<!-- 1. ĐẦU TRANG + LỌC + DANH SÁCH MẪU (cùng 1 nền như trang live) -->
+<section class="top">
+  <div class="wrap">
+    <div class="top-in">
+      <div class="chg-row"><span class="chg-wrap"><button type="button" class="chg edit" aria-expanded="false">Điều chỉnh<span class="pri crit">Critical</span> <i>ⓘ</i></button><div class="chg-note" hidden><b>Hướng điều chỉnh</b><ul><li>Đổi H1, khi chọn Tiếng Anh thì H1 đổi theo</li><li>Tab đổi thành phong cách thiết kế, kèm số mẫu, mỗi lần chọn 1 tab</li><li>Thêm lọc ngôn ngữ Tiếng Việt / Tiếng Anh cạnh ô ngành nghề</li><li>Gắn link việc làm theo ngành trên từng thẻ mẫu</li></ul></div></span></div>
+      <h1 id="h1">Danh sách Mẫu CV xin việc miễn phí, chuyên nghiệp cho mọi ngành nghề</h1>
+      <p class="lead">Mẫu CV miễn phí, chọn theo phong cách thiết kế, ngành nghề và ngôn ngữ. Bấm "Dùng mẫu này" để tạo CV, tải PDF và ứng tuyển ngay.</p>
+    </div>
+
+    <div class="filters">
+      <!-- Tab phong cách: mỗi tab là 1 nhóm mẫu riêng, chỉ chọn 1 -->
+      <div class="tabs-row" id="tabs" role="tablist" aria-label="Phong cách thiết kế"></div>
+    </div>
+
+    <!-- Hàng dưới tab: số mẫu bên trái, ô Ngành nghề + Ngôn ngữ bên phải -->
+    <div class="result">
+      <div class="r-left"><b id="count"></b><button id="clear" hidden>Xoá lọc ngành</button></div>
+      <div class="r-right">
+        <!-- Ngành nghề: ô xổ xuống có ô tick, giữ kiểu như trang live -->
+        <div class="dd" id="ddNganh">
+          <button class="dd-btn" type="button" aria-haspopup="listbox" aria-expanded="false"><span class="lbl" id="nganhLabel">Ngành nghề</span></button>
+          <div class="dd-menu" id="nganhMenu" role="listbox" aria-multiselectable="true"></div>
+        </div>
+        <!-- Ngôn ngữ mẫu: Tiếng Việt / Tiếng Anh -->
+        <div class="dd lang-dd" id="ddLang">
+          <button class="dd-btn" type="button" aria-haspopup="listbox" aria-expanded="false"><span class="flag" id="langFlag"></span><span class="lbl has" id="langLabel">Tiếng Việt</span></button>
+          <div class="dd-menu" id="langMenu" role="listbox"></div>
+        </div>
+      </div>
+    </div>
+    <div class="grid" id="grid"></div>
+    <div class="empty" id="empty"><b>Chưa có mẫu phù hợp</b>Thử chọn phong cách khác hoặc bỏ bớt ngành nghề.</div>
+    <div class="load"><button class="btn btn-line" id="loadMore">XEM THÊM MẪU CV</button></div>
+  </div>
+</section>
+
+<!-- 2. KHỐI MỚI: CHỌN XONG MẪU → ỨNG TUYỂN (điều hướng sang danh sách việc làm) -->
+<section class="jobs" id="jobs">
+  <div class="wrap jobs-in">
+    <div>
+      <div class="chg-row"><span class="chg-wrap"><button type="button" class="chg new" aria-expanded="false">Thêm mới<span class="pri crit">Critical</span> <i>ⓘ</i></button><div class="chg-note" hidden><b>Nội dung thêm mới</b><ul><li>Bổ sung section dẫn sang danh sách việc làm</li></ul><b>Lý do thêm mới</b><ul><li>User đang ở bước chọn mẫu: điều hướng sang ứng tuyển việc làm</li></ul></div></span></div>
+      <span class="eyebrow">Chọn xong mẫu CV?</span>
+      <h2>Ứng tuyển ngay việc làm đang tuyển phù hợp với bạn</h2>
+      <p class="sub">Tạo CV từ mẫu bạn thích, rồi dùng CV đó ứng tuyển các việc làm đang tuyển trên CareerViet.</p>
+      <form class="search" id="jobSearch">
+        <input id="jobKw" type="search" placeholder="Nhập vị trí, vd: Kế toán tổng hợp" aria-label="Vị trí muốn ứng tuyển">
+        <button class="btn btn-pink" type="submit">Tìm việc làm</button>
+      </form>
+      <a class="jobs-all" href="https://careerviet.vn/viec-lam/tat-ca-viec-lam-vi.html">Xem tất cả việc làm →</a>
+    </div>
+    <div class="jgrid" id="jgrid"></div>
+  </div>
+</section>
+
+<!-- 3. CONTENT BỔ TRỢ dạng box (giống khung hướng dẫn trên /cv-hay): mục lục + nút Xem thêm / Thu gọn.
+     Toàn bộ nội dung nằm sẵn trong HTML (chỉ giới hạn chiều cao), Google đọc được. Đoạn chữ xám = khung để team Content viết. -->
+<section class="guide">
+  <div class="wrap">
+    <div class="guide-box">
+      <div class="chg-row"><span class="chg-wrap"><button type="button" class="chg new" aria-expanded="false">Thêm mới<span class="pri crit">Critical</span> <i>ⓘ</i></button><div class="chg-note" hidden><b>Nội dung thêm mới</b><ul><li>Bổ sung box nội dung bổ trợ, dạng thu gọn</li></ul><b>Lý do thêm mới</b><ul><li>Trang thiếu nội dung cho keyword "mẫu CV", "mẫu CV xin việc"</li></ul></div></span></div>
+      <span class="eyebrow">Hướng dẫn</span>
+      <h2 class="g-title">Hướng dẫn chọn mẫu CV xin việc phù hợp</h2>
+      <div class="g-meta"><span>Tác giả: <b>Ban biên tập CareerViet</b></span><span>Cập nhật: <b>28/10/2026</b></span></div>
+
+      <div class="g-body" id="gBody">
+        <nav class="toc" aria-label="Mục lục">
+          <b>Mục lục</b>
+          <ol>
+            <li><a href="#mau-cv-la-gi">Mẫu CV là gì, một mẫu CV gồm những phần nào?</a></li>
+            <li><a href="#phong-cach">Nên chọn mẫu CV đơn giản, chuyên nghiệp, hiện đại hay ấn tượng?</a></li>
+            <li><a href="#theo-nganh">Chọn mẫu CV theo ngành nghề</a></li>
+            <li><a href="#ngon-ngu">Nên dùng mẫu CV tiếng Việt hay tiếng Anh?</a></li>
+            <li><a href="#sinh-vien">Mẫu CV cho sinh viên, người chưa có kinh nghiệm</a></li>
+            <li><a href="#loi-mau">Lỗi thường gặp khi chọn và dùng mẫu CV</a></li>
+          </ol>
+        </nav>
+
+        <h2 id="mau-cv-la-gi">1. Mẫu CV là gì, một mẫu CV gồm những phần nào?</h2>
+        <p class="ph">[60–80 chữ: định nghĩa ngắn mẫu CV, vai trò của mẫu khi ứng tuyển.]</p>
+        <h3>Các phần cần có trong CV</h3>
+        <p class="ph">[Liệt kê 6–8 phần: thông tin liên hệ, mục tiêu nghề nghiệp, kinh nghiệm, học vấn, kỹ năng, chứng chỉ… mỗi phần 1 câu.]</p>
+
+        <h2 id="phong-cach">2. Nên chọn mẫu CV đơn giản, chuyên nghiệp, hiện đại hay ấn tượng?</h2>
+        <h3>Mẫu CV đơn giản</h3><p class="ph">[40–60 chữ: phù hợp ngành nào, khi nào nên dùng. Link sang tab Đơn giản.]</p>
+        <h3>Mẫu CV chuyên nghiệp</h3><p class="ph">[40–60 chữ.]</p>
+        <h3>Mẫu CV hiện đại</h3><p class="ph">[40–60 chữ.]</p>
+        <h3>Mẫu CV ấn tượng</h3><p class="ph">[40–60 chữ: hợp ngành sáng tạo, marketing, thiết kế.]</p>
+
+        <h2 id="theo-nganh">3. Chọn mẫu CV theo ngành nghề</h2>
+        <p class="ph">[80–120 chữ: ngành tài chính, kế toán nên chọn mẫu gọn, ít màu; ngành sáng tạo có thể chọn mẫu nhiều màu… Link sang việc làm ngành tương ứng.]</p>
+
+        <h2 id="ngon-ngu">4. Nên dùng mẫu CV tiếng Việt hay tiếng Anh?</h2>
+        <p class="ph">[60–80 chữ: khi nào cần CV tiếng Anh (công ty nước ngoài, vị trí yêu cầu ngoại ngữ), lưu ý khi viết.]</p>
+
+        <h2 id="sinh-vien">5. Mẫu CV cho sinh viên, người chưa có kinh nghiệm</h2>
+        <p class="ph">[60–80 chữ: chọn mẫu làm nổi bật học vấn, hoạt động, kỹ năng thay cho kinh nghiệm.]</p>
+
+        <h2 id="loi-mau">6. Lỗi thường gặp khi chọn và dùng mẫu CV</h2>
+        <p class="ph">[5–6 lỗi, mỗi lỗi 1 câu: mẫu quá nhiều màu, sai font, để nguyên chữ mẫu, CV quá dài…]</p>
+
+        <p style="margin-top:18px">Chọn xong mẫu? <a href="#tao-cv" style="color:var(--pink);font-weight:700">Tạo CV miễn phí ngay →</a></p>
+      </div>
+      <div class="g-toggle"><button class="btn btn-line" id="gToggle" aria-expanded="false" aria-controls="gBody">Xem thêm ▾</button></div>
+    </div>
+  </div>
+</section>
+
+<!-- 4. KHỐI THỐNG KÊ (giữ như trang hiện tại) -->
+<section class="stats">
+  <div class="wrap stats-in">
+    <div class="know">
+      <div class="chg-row"><span class="chg-wrap"><button type="button" class="chg edit" aria-expanded="false">Điều chỉnh<span class="pri high">High</span> <i>ⓘ</i></button><div class="chg-note" hidden><b>Hướng điều chỉnh</b><ul><li>Nội dung dạng thu gọn, tối ưu riêng cho trang Mẫu CV</li></ul></div></span></div>
+      <h2>Những Điều Bạn Cần Biết Về CV Hay</h2>
+      <ul>
+        <li><a href="#faq"><span>CV Hay là gì ?<small>FAQ</small></span><i>↗</i></a></li>
+        <li><a href="#faq"><span>CV online là gì?<small>FAQ</small></span><i>↗</i></a></li>
+        <li><a href="#faq"><span>Các hình thức CV hiện nay<small>FAQ</small></span><i>↗</i></a></li>
+        <li><a href="#faq"><span>Điểm khác biệt giữa resume, cover letter và CV là gì?<small>FAQ</small></span><i>↗</i></a></li>
+      </ul>
+    </div>
+    <div class="nums">
+      <div class="num"><b>18</b><span>Hồ Sơ</span></div>
+      <div class="num"><b>4K+</b><span>Số Người Sử Dụng</span></div>
+      <div class="num"><b>1K+</b><span>Nhà Tuyển Dụng Tìm Kiếm</span></div>
+      <div class="num"><b>7K+</b><span>CV Đã Được Tạo</span></div>
+      <div class="num"><b>300%</b><span>Tiết Kiệm Thời Gian</span></div>
+      <div class="num"><b>250%</b><span>Cơ Hội Việc Làm</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- 5. ĐĂNG KÝ NHẬN TIN (giữ như cũ) -->
+<section class="news">
+  <div class="wrap">
+    <div class="news-box">
+      <img src="https://assets.careerviet.vn/careerviet/_next/static/media/asset-21.dbc535f0.png" alt="">
+      <div>
+        <div class="chg-row"><span class="chg keep">Giữ nguyên</span></div>
+      <h2>Đăng ký theo dõi để nhận cập nhật về cơ hội việc làm mới và phù hợp nhất</h2>
+        <form class="news-form" onsubmit="return false"><input type="email" placeholder="Nhập địa chỉ email của bạn" aria-label="Email"><button aria-label="Gửi">➤</button></form>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+</div>
+
+<script>
+/* ===== Script trang 1 ===== */
+(() => {
+
+/* Mẫu CV: ảnh thật từ CDN CareerViet; tên đổi theo ngành; URL từng mẫu là đề xuất (hiện thẻ mẫu chưa có href).
+   "Nổi bật" = 16 mẫu danh sách templatetype=1 trên trang live (28/10/2026).
+   "Sử dụng nhiều" = 16 mẫu minh hoạ: trên live templatetype=2 đang trả về y hệt templatetype=1, dev cần sắp theo số lượt dùng thật. */
+const CV = {
+  3:  {name:'Mẫu CV nhân viên kinh doanh', tag:'Bán hàng / Kinh doanh', img:'3_1682486901.jpg', slug:'nhan-vien-kinh-doanh'},
+  4:  {name:'Mẫu CV kế toán', tag:'Kế toán / Kiểm toán', img:'4_1682486910.jpg', slug:'ke-toan'},
+  18: {name:'Mẫu CV ngành sản xuất', tag:'An toàn lao động, Ngành khác', img:'18_1682487087.jpg', slug:'san-xuat'},
+  6:  {name:'Mẫu CV marketing', tag:'Tiếp thị / Marketing', img:'6_1682486957.jpg', slug:'marketing'},
+  14: {name:'Mẫu CV sinh viên', tag:'Mới tốt nghiệp / Thực tập', img:'14_1682487044.jpg', slug:'sinh-vien'},
+  13: {name:'Mẫu CV quản lý', tag:'Quản lý điều hành', img:'13_1682487036.jpg', slug:'quan-ly'},
+  12: {name:'Mẫu CV thiết kế, truyền thông', tag:'Quảng cáo / Truyền thông, Thiết kế', img:'12_1682487026.jpg', slug:'thiet-ke-truyen-thong'},
+  11: {name:'Mẫu CV mới tốt nghiệp', tag:'Mới tốt nghiệp / Thực tập', img:'11_1682487016.jpg', slug:'moi-tot-nghiep'},
+  17: {name:'Mẫu CV logistics', tag:'Vận chuyển / Giao nhận / Kho vận', img:'17_1682487076.jpg', slug:'logistics'},
+  5:  {name:'Mẫu CV nhân sự', tag:'Nhân sự', img:'5_1682486919.jpg', slug:'nhan-su'},
+  8:  {name:'Mẫu CV IT phần cứng, mạng', tag:'CNTT - Phần cứng / Mạng', img:'8_1682486989.jpg', slug:'it-phan-cung-mang'},
+  16: {name:'Mẫu CV chăm sóc khách hàng', tag:'Dịch vụ khách hàng', img:'16_1682487064.jpg', slug:'cham-soc-khach-hang'},
+  10: {name:'Mẫu CV IT phần mềm', tag:'CNTT - Phần mềm', img:'10_1682487006.jpg', slug:'it-phan-mem'},
+  9:  {name:'Mẫu CV bất động sản', tag:'Bất động sản', img:'9_1682486998.jpg', slug:'bat-dong-san'},
+  15: {name:'Mẫu CV chuyên viên', tag:'Ngành khác', img:'15_1682487054.jpg', slug:'chuyen-vien'},
+  7:  {name:'Mẫu CV bảo hiểm', tag:'Bảo hiểm', img:'7_1682486977.jpg', slug:'bao-hiem'},
+  19: {name:'Mẫu CV vận chuyển, kho vận', tag:'Vận chuyển / Giao nhận / Kho vận', img:'1791535861171_thumb-template-19.jpg', slug:'van-chuyen-kho-van'},
+  1:  {name:'Mẫu CV hành chính, thư ký', tag:'Hành chính / Thư ký', img:'1_1682486881.jpg', slug:'hanh-chinh-thu-ky'},
+  2:  {name:'Mẫu CV thực tập sinh', tag:'Mới tốt nghiệp / Thực tập', img:'2_1682486891.jpg', slug:'thuc-tap-sinh'},
+  20: {name:'Mẫu CV kỹ thuật mạng', tag:'CNTT - Phần cứng / Mạng', img:'1791535885008_thumb-template-20.jpg', slug:'ky-thuat-mang'},
+  23: {name:'Mẫu CV cơ khí, ô tô', tag:'Cơ khí / Ô tô / Tự động hóa', img:'1791535954854_thum-template-23.jpg', slug:'co-khi-o-to'}
+};
+const NG = {3: "kd", 4: "kt", 18: "sx", 6: "mk", 14: "sv", 13: "ql", 12: "mk", 11: "sv", 17: "lg", 5: "ns", 8: "it", 16: "cs", 10: "it", 9: "bds", 15: "khac", 7: "bh", 19: "lg", 1: "ns", 2: "sv", 20: "it", 23: "sx"};
+const LISTS = {used:[3,4,6,5,8,17,16,10,19,1,2,9,20,23,14,11], hot:[3,4,18,6,14,13,12,11,17,5,8,16,15,10,9,7]};
+const TAG = '<svg width="16" height="16" viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="M11.6 1.5H16.6c.8 0 1.4.6 1.4 1.4v4.4c0 .9-.4 1.8-1 2.4l-7.4 7.4a1.2 1.2 0 0 1-1.7 0L2.4 11.6a1.2 1.2 0 0 1 0-1.7l7.4-7.4c.5-.6 1.1-1 1.8-1Z" stroke="#635AD9" stroke-width="1.4"/><circle cx="13.5" cy="5.3" r="1.4" stroke="#635AD9" stroke-width="1.3"/></svg>';
+function showList(t){
+  document.getElementById('grid1').innerHTML = LISTS[t].map(id => ({...CV[id], id})).map(c => `
+  <a class="card" href="#mau-cv?nganh=${NG[c.id]}" title="${c.name}">
+    <div class="thumb"><img loading="lazy" src="https://static.careerviet.vn/themes/cv_tool/images/template/${c.img}" alt="${c.name} - ${c.tag}"><div class="use"><span class="btn btn-pink">Xem mẫu cùng ngành</span></div></div>
+    <div class="body"><div class="tag">${TAG}<span>${c.tag}</span></div><h3>${c.name}</h3></div>
+  </a>`).join('');
+  document.querySelectorAll('#cvTabs button').forEach(b => { const on = b.dataset.t === t; b.classList.toggle('main', on); b.setAttribute('aria-selected', on); });
+}
+document.getElementById('cvTabs').addEventListener('click', e => { const b = e.target.closest('button'); if (b) showList(b.dataset.t); });
+showList('used');
+
+/* Carousel cẩm nang */
+let cur = 0; const rail = document.getElementById('rail'), total = rail.children.length;
+const go = d => { cur = (cur + d + total) % total; rail.style.transform = `translateX(-${cur * 100}%)`; };
+document.getElementById('prev').onclick = () => go(-1);
+document.getElementById('next').onclick = () => go(1);
+
+/* Nội dung hướng dẫn: Xem thêm / Thu gọn */
+const guide = document.getElementById('guide'), tg = document.getElementById('toggle');
+function setGuide(open){
+  guide.classList.toggle('open', open);
+  tg.textContent = open ? 'Thu gọn ▴' : 'Xem thêm ▾';
+  tg.setAttribute('aria-expanded', open);
+}
+tg.onclick = () => {
+  const open = !guide.classList.contains('open');
+  setGuide(open);
+  if(!open) guide.closest('.guide-box').scrollIntoView({behavior:'smooth', block:'start'});
+};
+/* Bấm mục lục hoặc link "Những điều bạn cần biết" thì tự mở nội dung rồi cuộn tới đúng mục */
+document.getElementById('tao-cv').querySelectorAll('a[href^="#"]').forEach(a => a.addEventListener('click', e => {
+  const t = document.getElementById(a.getAttribute('href').slice(1));
+  if(t && guide.contains(t)){ e.preventDefault(); setGuide(true); setTimeout(() => t.scrollIntoView({behavior:'smooth', block:'start'}), 60); }
+}));
+
+/* Nhãn trạng thái section: bấm để xem hướng điều chỉnh (gắn 1 lần cho cả trang) */
+if (!window.__chgBound) { window.__chgBound = true;
+  document.addEventListener('click', e => {
+    if (e.target.closest('.chg-note')) return;
+    const b = e.target.closest('button.chg');
+    document.querySelectorAll('button.chg').forEach(x => { if (x !== b) { x.setAttribute('aria-expanded', 'false'); x.nextElementSibling.hidden = true; } });
+    if (b) { const n = b.nextElementSibling; n.hidden = !n.hidden; b.setAttribute('aria-expanded', String(!n.hidden)); }
+  });
+  document.addEventListener('keydown', e => { if (e.key === 'Escape') document.querySelectorAll('.chg-note').forEach(n => n.hidden = true); });
+}
+
+})();
+</script>
+<script>
+/* ===== Script trang 2 ===== */
+(() => {
+
+/* 25 mẫu thật của CareerViet (ảnh CDN, nhãn ngành, nhãn Mới/Nổi bật lấy từ trang live 28/10/2026).
+   Tên đổi theo ngành; phong cách là đề xuất gán theo ảnh (mỗi mẫu đúng 1 phong cách), team thiết kế xác nhận.
+   Ngôn ngữ: giả định mọi mẫu có cả bản Tiếng Việt và Tiếng Anh (dev xác nhận lại). */
+const T = 'https://static.careerviet.vn/themes/cv_tool/images/template/';
+const S = {dg:'Đơn giản', cn:'Chuyên nghiệp', hd:'Hiện đại', at:'Ấn tượng'};
+const N = {
+  kd:'Kinh doanh / Bán hàng', kt:'Kế toán / Kiểm toán', mk:'Marketing / Truyền thông', tk:'Thiết kế / Mỹ thuật',
+  ns:'Nhân sự / Hành chính', it:'Công nghệ thông tin', lg:'Logistics / Kho vận', sx:'Sản xuất / Cơ khí',
+  bh:'Bảo hiểm', bds:'Bất động sản', cs:'Chăm sóc khách hàng', gd:'Giáo dục / Đào tạo',
+  ql:'Quản lý điều hành', sv:'Sinh viên / Mới tốt nghiệp', hh:'Hàng hải', tdg:'Hàng tiêu dùng', khac:'Ngành khác'
+};
+/* Từ khoá việc làm cho từng ngành (dạng URL tìm kiếm /viec-lam/{kw}-k-vi.html — dev thay bằng URL ngành chuẩn) */
+const JOB = {
+  kd:{kw:'Kinh doanh', short:'kinh doanh', ic:'icon-cart', pos:['Nhân viên kinh doanh','Sales Admin','Telesales']},
+  kt:{kw:'Kế toán', short:'kế toán', ic:'icon-money', pos:['Kế toán tổng hợp','Kế toán thuế','Kế toán trưởng']},
+  mk:{kw:'Marketing', short:'marketing', ic:'icon-rocket', pos:['Digital Marketing','Content Marketing','Marketing Executive']},
+  tk:{kw:'Thiết kế đồ họa', short:'thiết kế', ic:'icon-lamp', pos:['Thiết kế đồ họa','Thiết kế nội thất','UI/UX Designer']},
+  ns:{kw:'Nhân sự', short:'nhân sự', ic:'icon-user', pos:['Nhân sự tổng hợp','Tuyển dụng','Hành chính văn phòng']},
+  it:{kw:'IT', short:'IT', ic:'icon-monitor', pos:['Lập trình viên','IT Helpdesk','Tester']},
+  lg:{kw:'Logistics', short:'logistics', ic:'icon-travel', pos:['Xuất nhập khẩu','Logistics','Thủ kho']},
+  sx:{kw:'Sản xuất', short:'sản xuất', ic:'icon-produce', pos:['Kỹ sư sản xuất','QA/QC','Kỹ thuật cơ khí']},
+  bh:{kw:'Bảo hiểm', short:'bảo hiểm', ic:'icon-health', pos:['Tư vấn bảo hiểm','Chuyên viên bảo hiểm']},
+  bds:{kw:'Bất động sản', short:'bất động sản', ic:'icon-building', pos:['Môi giới bất động sản','Sales bất động sản']},
+  cs:{kw:'Chăm sóc khách hàng', short:'CSKH', ic:'icon-shop', pos:['Chăm sóc khách hàng','Tư vấn viên','Lễ tân']},
+  gd:{kw:'Giáo viên', short:'giáo dục', ic:'icon-education', pos:['Giáo viên tiếng Anh','Trợ giảng']},
+  ql:{kw:'Quản lý', short:'quản lý', ic:'icon-science', pos:['Trưởng phòng','Quản lý cửa hàng']},
+  sv:{kw:'Thực tập sinh', short:'thực tập', ic:'icon-education', pos:['Thực tập sinh','Fresher','Part-time']},
+  hh:{kw:'Hàng hải', short:'hàng hải', ic:'icon-travel', pos:['Thuyền viên','Logistics cảng biển']},
+  tdg:{kw:'Hàng tiêu dùng', short:'hàng tiêu dùng', ic:'icon-shopping-list', pos:['Sales FMCG','Giám sát bán hàng']},
+  khac:{kw:'Chuyên viên', short:'chuyên viên', ic:'icon-gift', pos:['Chuyên viên','Trợ lý']}
+};
+const JOB_ORDER = ['kd','kt','mk','ns','it','lg','sx','cs'];
+const CV = [
+  {id:19, name:'Mẫu CV vận chuyển, kho vận', tag:'Vận chuyển / Giao nhận / Kho vận', img:'1791535861171_thumb-template-19.jpg', s:'hd', n:['lg'], b:'new'},
+  {id:3,  name:'Mẫu CV nhân viên kinh doanh', tag:'Bán hàng / Kinh doanh', img:'3_1682486901.jpg', s:'cn', n:['kd'], b:'hot'},
+  {id:4,  name:'Mẫu CV kế toán', tag:'Kế toán / Kiểm toán', img:'4_1682486910.jpg', s:'at', n:['kt'], b:'hot'},
+  {id:18, name:'Mẫu CV ngành sản xuất', tag:'An toàn lao động, Ngành khác', img:'18_1682487087.jpg', s:'at', n:['sx','khac'], b:'hot'},
+  {id:6,  name:'Mẫu CV marketing', tag:'Tiếp thị / Marketing', img:'6_1682486957.jpg', s:'cn', n:['mk'], b:'hot'},
+  {id:14, name:'Mẫu CV sinh viên', tag:'Mới tốt nghiệp / Thực tập', img:'14_1682487044.jpg', s:'at', n:['sv'], b:'hot'},
+  {id:13, name:'Mẫu CV quản lý', tag:'Quản lý điều hành', img:'13_1682487036.jpg', s:'dg', n:['ql'], b:'hot'},
+  {id:12, name:'Mẫu CV thiết kế, truyền thông', tag:'Quảng cáo / Truyền thông, Thiết kế', img:'12_1682487026.jpg', s:'hd', n:['mk','tk'], b:'hot'},
+  {id:11, name:'Mẫu CV mới tốt nghiệp', tag:'Mới tốt nghiệp / Thực tập', img:'11_1682487016.jpg', s:'hd', n:['sv'], b:'hot'},
+  {id:17, name:'Mẫu CV logistics', tag:'Vận chuyển / Kho vận, Cơ khí / Tự động hóa', img:'17_1682487076.jpg', s:'dg', n:['lg','sx'], b:'hot'},
+  {id:5,  name:'Mẫu CV nhân sự', tag:'Nhân sự', img:'5_1682486919.jpg', s:'hd', n:['ns'], b:'hot'},
+  {id:8,  name:'Mẫu CV IT phần cứng, mạng', tag:'CNTT - Phần cứng / Mạng', img:'8_1682486989.jpg', s:'cn', n:['it'], b:'hot'},
+  {id:16, name:'Mẫu CV chăm sóc khách hàng', tag:'Dịch vụ khách hàng', img:'16_1682487064.jpg', s:'cn', n:['cs'], b:'hot'},
+  {id:15, name:'Mẫu CV chuyên viên', tag:'Ngành khác', img:'15_1682487054.jpg', s:'dg', n:['khac'], b:'hot'},
+  {id:10, name:'Mẫu CV IT phần mềm', tag:'CNTT - Phần mềm', img:'10_1682487006.jpg', s:'at', n:['it'], b:'hot'},
+  {id:9,  name:'Mẫu CV bất động sản', tag:'Bất động sản', img:'9_1682486998.jpg', s:'at', n:['bds'], b:'hot'},
+  {id:7,  name:'Mẫu CV bảo hiểm', tag:'Bảo hiểm', img:'7_1682486977.jpg', s:'cn', n:['bh'], b:''},
+  {id:2,  name:'Mẫu CV thực tập sinh', tag:'Mới tốt nghiệp / Thực tập', img:'2_1682486891.jpg', s:'at', n:['sv'], b:''},
+  {id:1,  name:'Mẫu CV hành chính, thư ký', tag:'Hành chính / Thư ký', img:'1_1682486881.jpg', s:'hd', n:['ns'], b:'new'},
+  {id:31, name:'Mẫu CV giáo viên, đào tạo', tag:'Giáo dục / Đào tạo', img:'1791536113350_thum-template-31.jpg', s:'dg', n:['gd'], b:'new'},
+  {id:30, name:'Mẫu CV tư vấn bảo hiểm', tag:'Bảo hiểm', img:'1791536091373_thum-template-30.jpg', s:'dg', n:['bh'], b:'new'},
+  {id:27, name:'Mẫu CV hàng hải', tag:'Hàng hải', img:'1791536029946_thum-template-27.jpg', s:'cn', n:['hh','lg'], b:'new'},
+  {id:23, name:'Mẫu CV cơ khí, ô tô', tag:'Cơ khí / Ô tô / Tự động hóa', img:'1791535954854_thum-template-23.jpg', s:'cn', n:['sx'], b:'new'},
+  {id:22, name:'Mẫu CV hàng tiêu dùng', tag:'Hàng gia dụng / Chăm sóc cá nhân', img:'1791535926278_thumb-template-22.jpg', s:'dg', n:['tdg'], b:'new'},
+  {id:20, name:'Mẫu CV kỹ thuật mạng', tag:'CNTT - Phần cứng / Mạng', img:'1791535885008_thumb-template-20.jpg', s:'dg', n:['it'], b:'new'}
+];
+const FLAG = {
+  vi:'<svg viewBox="0 0 30 20" width="24" height="16"><rect width="30" height="20" fill="#DA251D"/><polygon points="15,4 16.2,8.2 20.6,8.2 17,10.8 18.4,15 15,12.4 11.6,15 13,10.8 9.4,8.2 13.8,8.2" fill="#FFFF00"/></svg>',
+  en:'<svg viewBox="0 0 60 40" width="24" height="16"><rect width="60" height="40" fill="#012169"/><path d="M0,0 60,40M60,0 0,40" stroke="#fff" stroke-width="8"/><path d="M0,0 60,40M60,0 0,40" stroke="#C8102E" stroke-width="3"/><path d="M30,0V40M0,20H60" stroke="#fff" stroke-width="12"/><path d="M30,0V40M0,20H60" stroke="#C8102E" stroke-width="7"/></svg>'
+};
+const LANG = {vi:{t:'Tiếng Việt', h:'tiếng Việt'}, en:{t:'Tiếng Anh', h:'tiếng Anh'}};
+const PAGE = 16;
+const st = {style:'', nganh:new Set(), lang:'vi', shown:PAGE};
+const $ = id => document.getElementById(id);
+const TAG = '<svg width="16" height="16" viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="M11.6 1.5H16.6c.8 0 1.4.6 1.4 1.4v4.4c0 .9-.4 1.8-1 2.4l-7.4 7.4a1.2 1.2 0 0 1-1.7 0L2.4 11.6a1.2 1.2 0 0 1 0-1.7l7.4-7.4c.5-.6 1.1-1 1.8-1Z" stroke="#635AD9" stroke-width="1.4"/><circle cx="13.5" cy="5.3" r="1.4" stroke="#635AD9" stroke-width="1.3"/></svg>';
+const vnSlug = s => s.normalize('NFD').replace(/[̀-ͯ]/g, '').replace(/đ/g, 'd').replace(/Đ/g, 'D').toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
+const jobUrl = kw => `https://careerviet.vn/viec-lam/${vnSlug(kw)}-k-vi.html`;
+const byStyleNganh = c => (!st.style || c.s === st.style) && (!st.nganh.size || c.n.some(x => st.nganh.has(x)));
+
+function renderTabs(){
+  const cnt = k => CV.filter(c => (!k || c.s === k) && (!st.nganh.size || c.n.some(x => st.nganh.has(x)))).length;
+  $('tabs').innerHTML = [['', 'Tất cả']].concat(Object.entries(S)).map(([k, t]) =>
+    `<button class="tab ${st.style === k ? 'on' : ''}" data-s="${k}" role="tab" aria-selected="${st.style === k}">${t} (${cnt(k)})</button>`).join('');
+}
+function renderNganh(){
+  const keys = Object.keys(N).sort((a, b) => CV.filter(c => c.n.includes(b)).length - CV.filter(c => c.n.includes(a)).length);
+  const cnt = k => CV.filter(c => c.n.includes(k) && (!st.style || c.s === st.style)).length;
+  $('nganhMenu').innerHTML =
+    `<label class="opt ${st.nganh.size ? '' : 'on'}"><input type="checkbox" data-all="1" ${st.nganh.size ? '' : 'checked'}>Tất cả ngành nghề</label>` +
+    keys.map(k => `<label class="opt ${st.nganh.has(k) ? 'on' : ''}"><input type="checkbox" value="${k}" ${st.nganh.has(k) ? 'checked' : ''}>${N[k]}<em>${cnt(k)}</em></label>`).join('');
+  const sel = [...st.nganh].map(k => N[k].split(' / ')[0]);
+  $('nganhLabel').textContent = !sel.length ? 'Ngành nghề' : sel.length <= 2 ? sel.join(', ') : `${sel.length} ngành nghề`;
+  $('nganhLabel').classList.toggle('has', !!sel.length);
+  $('clear').hidden = !sel.length;
+}
+function renderLang(){
+  $('langMenu').innerHTML = Object.entries(LANG).map(([k, v]) =>
+    `<div class="opt ${st.lang === k ? 'on' : ''}" data-l="${k}" role="option" aria-selected="${st.lang === k}"><span class="flag">${FLAG[k]}</span>${v.t}</div>`).join('');
+  $('langFlag').innerHTML = FLAG[st.lang]; $('langLabel').textContent = LANG[st.lang].t;
+  $('h1').textContent = st.lang === 'en'
+    ? 'Danh sách Mẫu CV tiếng Anh miễn phí, chuyên nghiệp cho mọi ngành nghề'
+    : 'Danh sách Mẫu CV xin việc miễn phí, chuyên nghiệp cho mọi ngành nghề';
+}
+function renderGrid(){
+  const list = CV.filter(byStyleNganh);
+  $('grid').innerHTML = list.slice(0, st.shown).map(c => {
+    const href = `https://careerviet.vn/cv-hay/mau-cv/${vnSlug(c.name.replace(/^Mẫu CV /, ''))}?lang=${st.lang}`;
+    const j = JOB[c.n[0]];
+    return `<article class="card">
+      <a class="thumb" href="${href}" title="${c.name}">
+        ${c.b ? `<span class="badge ${c.b === 'new' ? 'new' : ''}">${c.b === 'new' ? 'Mới' : 'Nổi bật'}</span>` : ''}
+        <span class="lang">${st.lang.toUpperCase()}</span>
+        <img loading="lazy" src="${T + c.img}" alt="${c.name} ${LANG[st.lang].h} - phong cách ${S[c.s].toLowerCase()}">
+        <span class="hover"><span class="btn btn-pink">Dùng mẫu này</span><span class="btn btn-line">Xem trước</span></span>
+      </a>
+      <div class="info">
+        <div class="tag">${TAG}<span>${c.tag}</span></div>
+        <h3><a href="${href}">${c.name}</a></h3>
+        <a class="job" href="${jobUrl(j.kw)}">Việc làm ${j.short} đang tuyển →</a>
+      </div>
+    </article>`;
+  }).join('');
+  $('empty').style.display = list.length ? 'none' : 'block';
+  $('loadMore').style.display = list.length > st.shown ? '' : 'none';
+  const parts = [st.style ? `phong cách ${S[st.style].toLowerCase()}` : '', LANG[st.lang].h].filter(Boolean);
+  $('count').textContent = `${list.length} mẫu CV ${parts.join(', ')}`;
+}
+/* Khối việc làm: mỗi thẻ 1 vị trí cụ thể. Ngành đang lọc → vị trí của ngành đó lên đầu và làm nổi bật */
+function renderJobs(){
+  const picked = [...st.nganh].flatMap(k => JOB[k].pos.map(p => ({p, k, hl:true})));
+  const base = JOB_ORDER.filter(k => !st.nganh.has(k)).map(k => ({p:JOB[k].pos[0], k, hl:false}));
+  const items = picked.concat(base).slice(0, 8);
+  $('jgrid').innerHTML = items.map(({p, k, hl}) =>
+    `<a class="jcard ${hl ? 'hl' : ''}" href="${jobUrl(p)}">
+      <span class="ic" style="background-image:url(https://images.careerviet.vn/content/images/${JOB[k].ic}.png)"></span>
+      <span class="jt">${p}</span><span class="go">→</span>
+    </a>`).join('');
+}
+function render(){ renderTabs(); renderNganh(); renderLang(); renderGrid(); renderJobs(); syncUrl(); }
+function syncUrl(){
+  if (!location.hash.startsWith('#mau-cv')) return;
+  const p = new URLSearchParams();
+  if (st.style) p.set('phong-cach', vnSlug(S[st.style]));
+  if (st.nganh.size) p.set('nganh', [...st.nganh].join(','));
+  if (st.lang !== 'vi') p.set('ngon-ngu', st.lang);
+  try { history.replaceState(null, '', '#mau-cv' + (p.toString() ? '?' + p : '')); } catch (e) {}
+}
+
+/* Sự kiện */
+$('tabs').addEventListener('click', e => { const b = e.target.closest('.tab'); if (!b) return; st.style = b.dataset.s; st.shown = PAGE; render(); });
+document.querySelectorAll('#mau-cv .dd').forEach(dd => dd.querySelector('.dd-btn').addEventListener('click', e => {
+  e.stopPropagation();
+  const open = !dd.classList.contains('open');
+  document.querySelectorAll('#mau-cv .dd').forEach(x => { x.classList.remove('open'); x.querySelector('.dd-btn').setAttribute('aria-expanded', 'false'); });
+  dd.classList.toggle('open', open); dd.querySelector('.dd-btn').setAttribute('aria-expanded', open);
+}));
+document.addEventListener('click', e => { if (!e.target.closest('.dd')) document.querySelectorAll('#mau-cv .dd').forEach(x => x.classList.remove('open')); });
+$('nganhMenu').addEventListener('change', e => {
+  if (e.target.dataset.all) st.nganh.clear();
+  else e.target.checked ? st.nganh.add(e.target.value) : st.nganh.delete(e.target.value);
+  st.shown = PAGE; render(); $('ddNganh').classList.add('open');
+});
+$('langMenu').addEventListener('click', e => { const o = e.target.closest('[data-l]'); if (!o) return; st.lang = o.dataset.l; $('ddLang').classList.remove('open'); render(); });
+$('clear').onclick = () => { st.nganh.clear(); st.shown = PAGE; render(); };
+$('loadMore').onclick = () => { st.shown += PAGE; renderGrid(); };
+/* Khung nội dung: Xem thêm / Thu gọn; bấm mục lục thì tự mở rồi cuộn tới mục */
+const gBody = $('gBody'), gT = $('gToggle');
+const setG = open => { gBody.classList.toggle('open', open); gT.textContent = open ? 'Thu gọn ▴' : 'Xem thêm ▾'; gT.setAttribute('aria-expanded', open); };
+gT.onclick = () => { const o = !gBody.classList.contains('open'); setG(o); if (!o) gBody.closest('.guide-box').scrollIntoView({behavior:'smooth', block:'start'}); };
+gBody.querySelectorAll('.toc a').forEach(a => a.addEventListener('click', e => {
+  e.preventDefault(); setG(true); const t = document.querySelector(a.getAttribute('href'));
+  setTimeout(() => t.scrollIntoView({behavior:'smooth', block:'start'}), 60);
+}));
+$('jobSearch').addEventListener('submit', e => { e.preventDefault(); const kw = $('jobKw').value.trim(); location.href = kw ? jobUrl(kw) : 'https://careerviet.vn/viec-lam/tat-ca-viec-lam-vi.html'; });
+
+/* Đọc bộ lọc từ hash #mau-cv?... (gọi lại mỗi lần chuyển sang trang 2) */
+window.__p2Load = () => {
+  const p = new URLSearchParams(location.hash.split('?')[1] || '');
+  st.style = ''; st.nganh.clear(); st.lang = 'vi'; st.shown = PAGE;
+  const sk = Object.keys(S).find(k => vnSlug(S[k]) === p.get('phong-cach')); if (sk) st.style = sk;
+  (p.get('nganh') || '').split(',').filter(k => N[k]).forEach(k => st.nganh.add(k));
+  if (LANG[p.get('ngon-ngu')]) st.lang = p.get('ngon-ngu');
+  render();
+};
+render();
+
+/* Nhãn trạng thái section: bấm để xem hướng điều chỉnh (gắn 1 lần cho cả trang) */
+if (!window.__chgBound) { window.__chgBound = true;
+  document.addEventListener('click', e => {
+    if (e.target.closest('.chg-note')) return;
+    const b = e.target.closest('button.chg');
+    document.querySelectorAll('button.chg').forEach(x => { if (x !== b) { x.setAttribute('aria-expanded', 'false'); x.nextElementSibling.hidden = true; } });
+    if (b) { const n = b.nextElementSibling; n.hidden = !n.hidden; b.setAttribute('aria-expanded', String(!n.hidden)); }
+  });
+  document.addEventListener('keydown', e => { if (e.key === 'Escape') document.querySelectorAll('.chg-note').forEach(n => n.hidden = true); });
+}
+
+})();
+</script>
+<script>
+/* ===== Chuyển trang theo hash ===== */
+(() => {
+  const TITLES = {'tao-cv':'Tạo CV online miễn phí, chuẩn nhà tuyển dụng 2026 | CareerViet', 'mau-cv':'Mẫu CV xin việc theo ngành nghề và phong cách 2026 | CareerViet'};
+  let cur = null;
+  function show(v){
+    document.querySelectorAll('[data-view]').forEach(el => el.classList.toggle('on', el.id === v));
+    document.querySelectorAll('.vbar a').forEach(a => a.classList.toggle('on', a.dataset.v === v));
+    document.title = TITLES[v];
+  }
+  function route(){
+    const h = location.hash;
+    let v = null, target = null;
+    if (h.startsWith('#mau-cv')) v = 'mau-cv';
+    else if (!h || h === '#tao-cv') v = 'tao-cv';
+    else { target = document.getElementById(decodeURIComponent(h.slice(1))); if (target) v = target.closest('[data-view]').id; }
+    if (!v) return;
+    const changed = v !== cur; cur = v; show(v);
+    if (v === 'mau-cv' && window.__p2Load) window.__p2Load();
+    if (target) setTimeout(() => target.scrollIntoView({block:'start'}), 30);
+    else if (changed) window.scrollTo(0, 0);
+  }
+  window.addEventListener('hashchange', route);
+  route();
+
+  /* Xem bản Mobile: khung điện thoại 390px chạy lại chính file này trong iframe (?frame=1 ẩn thanh trên) */
+  const EMBED = new URLSearchParams(location.search).get('frame') === '1';
+  if (EMBED) {
+    document.body.classList.add('embed');
+    window.addEventListener('hashchange', () => parent.postMessage({cvHash: location.hash}, '*'));
+    window.addEventListener('message', e => { if (e.data && e.data.goHash !== undefined && e.data.goHash !== location.hash) location.hash = e.data.goHash; });
+    return;
+  }
+  const phone = document.getElementById('phone');
+  let frame = null, mobile = false;
+  function setDev(d){
+    mobile = d === 'mobile';
+    document.querySelectorAll('.vbar .dev button').forEach(b => b.classList.toggle('on', b.dataset.d === d));
+    document.body.classList.toggle('mobile-mode', mobile);
+    phone.classList.toggle('on', mobile);
+    if (mobile && !frame) {
+      frame = document.createElement('iframe');
+      frame.title = 'Xem trên mobile';
+      frame.src = location.pathname + '?frame=1' + location.hash;
+      phone.appendChild(frame);
+    } else if (mobile) frame.contentWindow.postMessage({goHash: location.hash}, '*');
+    window.scrollTo(0, 0);
+  }
+  document.querySelector('.vbar .dev').addEventListener('click', e => { const b = e.target.closest('button'); if (b) setDev(b.dataset.d); });
+  /* Thanh trên đổi trang → đổi trong khung điện thoại; bấm link trong khung → cập nhật thanh trên */
+  window.addEventListener('hashchange', () => { if (mobile && frame) frame.contentWindow.postMessage({goHash: location.hash}, '*'); });
+  window.addEventListener('message', e => {
+    if (!e.data || e.data.cvHash === undefined) return;
+    const v = e.data.cvHash.startsWith('#mau-cv') ? 'mau-cv' : 'tao-cv';
+    document.querySelectorAll('.vbar a').forEach(a => a.classList.toggle('on', a.dataset.v === v));
+    try { history.replaceState(null, '', e.data.cvHash || '#tao-cv'); } catch (err) {}
+  });
+})();
+</script>
+</body>
+</html>

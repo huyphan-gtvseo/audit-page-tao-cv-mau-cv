@@ -1,6 +1,5 @@
-<!doctype html>
-<html lang="vi">
-<head>
+<!DOCTYPE html>
+<html lang="vi"><head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Mockup đề xuất</title>
@@ -13,7 +12,7 @@
 <meta name="referrer" content="no-referrer">
 <meta name="description" content="Mockup nội bộ, không index.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600;700&amp;family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet">
 <style>
 /* Thanh chuyển trang của mockup (không thuộc thiết kế trang) */
 .vbar{position:sticky;top:0;z-index:100;display:flex;align-items:center;gap:8px;padding:8px 16px;background:#0F172A;font:600 13px/1 Barlow,system-ui,sans-serif;color:#94A3B8;flex-wrap:wrap}
@@ -615,29 +614,29 @@ body{margin:0;font-family:var(--body);font-weight:500;color:var(--muted);backgro
 <body>
 <nav class="vbar" aria-label="Chuyển trang mockup"><span>Mockup đề xuất</span><div class="dev" role="group" aria-label="Thiết bị"><button type="button" data-d="desktop" class="on">Desktop</button><button type="button" data-d="mobile">Mobile</button></div>
   <a href="#tao-cv" data-v="tao-cv">1. Tạo CV<small> · /cv-hay</small></a>
-  <a href="#mau-cv-vi-tri?vi-tri=nhan-vien-kinh-doanh" data-v="mau-cv-vi-tri">2. Mẫu CV theo vị trí<small> · /cv-hay/mau-cv-nhan-vien-kinh-doanh</small></a>
+  <a href="#mau-cv-vi-tri?vi-tri=nhan-vien-kinh-doanh" data-v="mau-cv-vi-tri">2. Mẫu CV theo ngành nghề<small> · /cv-hay/mau-cv-nhan-vien-kinh-doanh</small></a>
 </nav>
 
 <div class="phone" id="phone"></div>
 
-<div class="view" id="tao-cv" data-view>
+<div class="view" id="tao-cv" data-view="">
 
 
 <!-- 2. MẪU CV: H1 + tab phong cách thiết kế + lọc ngành nghề + lọc ngôn ngữ, 16 mẫu (4 x 4) -->
 <section class="sec mau" id="mau">
   <div class="wrap">
     <div class="sec-head h1-head">
-      <div class="chg-row"><span class="chg-wrap"><button type="button" class="chg edit" aria-expanded="false">Điều chỉnh<span class="pri crit">Critical</span> <i>ⓘ</i></button><div class="chg-note" hidden><b>Hướng điều chỉnh</b><ul><li>Bỏ banner: màn hình đầu là H1 + câu mô tả + bộ lọc + mẫu, như trang danh mục sản phẩm</li><li>Bỏ ô gợi ý AI + nút "Gợi ý bởi AI" (chưa có chức năng) và nút "Tạo CV ngay" (chỉ cuộn xuống)</li><li>Đổi H1 + câu mô tả theo sheet, nhắm "tạo CV online miễn phí"; H1 tách dòng chính + dòng phụ nhỏ hơn để không gãy dòng; H1 + sapo căn trái như TopCV</li><li>Dưới H1: 3 nhãn Miễn phí / Tải PDF / Tạo trên điện thoại</li><li>Bộ lọc: tab phong cách thiết kế (Tất cả, Đơn giản, Chuyên nghiệp, Hiện đại, Ấn tượng, Harvard, ATS; chọn 1, không hiện số mẫu) + ngôn ngữ (dịch nội dung mẫu); mobile thành 2 ô chọn cùng hàng</li><li>Không lọc ngành: đã có section Mẫu CV theo ngành nghề</li></ul><b>Mobile (trang hiện tại)</b><ul><li>Hàng tab hiện tại bị tràn ngang, mất chữ "Xem tất cả mẫu CV"</li></ul></div></span></div>
+      <div class="chg-row"><span class="chg-wrap"><button type="button" class="chg edit" aria-expanded="false">Điều chỉnh<span class="pri crit">Critical</span> <i>ⓘ</i></button><div class="chg-note" hidden=""><b>Hướng điều chỉnh</b><ul><li>Bỏ banner: màn hình đầu là H1 + câu mô tả + bộ lọc + mẫu, như trang danh mục sản phẩm</li><li>Bỏ ô gợi ý AI + nút "Gợi ý bởi AI" (chưa có chức năng) và nút "Tạo CV ngay" (chỉ cuộn xuống)</li><li>Đổi H1 + câu mô tả theo sheet, nhắm "tạo CV online miễn phí"; H1 tách dòng chính + dòng phụ nhỏ hơn để không gãy dòng; H1 + sapo căn trái như TopCV</li><li>Dưới H1: 3 nhãn Miễn phí / Tải PDF / Tạo trên điện thoại</li><li>Bộ lọc: tab phong cách thiết kế (Tất cả, Đơn giản, Chuyên nghiệp, Hiện đại, Ấn tượng, Harvard, ATS; chọn 1, không hiện số mẫu) + ngôn ngữ (dịch nội dung mẫu); mobile thành 2 ô chọn cùng hàng</li><li>Không lọc ngành: đã có section Mẫu CV theo ngành nghề</li><li>Mỗi tab phong cách là 1 link sang /cv-hay/mau-cv-{phong-cach} (vd /cv-hay/mau-cv-an-tuong). Không tạo trang theo ngôn ngữ, ngôn ngữ lọc ngay trên trang</li><li>Trang phong cách dùng chung template trang Tạo CV, chỉ đổi H1, Box content, FAQ</li><li>Breadcrumb trang phong cách chỉ khai báo JSON-LD (Trang chủ / CV Hay / Mẫu CV [phong cách]), không hiển thị</li></ul><b>Mobile (trang hiện tại)</b><ul><li>Hàng tab hiện tại bị tràn ngang, mất chữ "Xem tất cả mẫu CV"</li></ul></div></span></div>
       <h1>Tạo CV online miễn&nbsp;phí với CV&nbsp;Hay <span class="h1-sub">- Gây ấn tượng ngay tức thì với Nhà Tuyển Dụng Hàng Đầu</span></h1>
       <p>Tuyển chọn <b id="tplCount">20</b> mẫu CV đa dạng ngành nghề, phong cách, giúp bạn tạo dấu ấn cá nhân và kết nối mạnh mẽ hơn với nhà tuyển dụng.</p>
       <ul class="trust" aria-label="Điểm nổi bật"><li>Miễn phí</li><li>Tải PDF</li><li>Tạo trên điện thoại</li></ul>
     </div>
     <!-- Tab phong cách (chọn 1) bên trái, Ngôn ngữ bên phải (không lọc ngành: đã có section Mẫu CV theo ngành nghề) -->
     <div class="filter" id="cvFilter"></div>
-    <div class="chg-row"><span class="chg-wrap"><button type="button" class="chg edit" aria-expanded="false">Điều chỉnh<span class="pri high">High</span> <i>ⓘ</i></button><div class="chg-note" hidden><b>Hướng điều chỉnh</b><ul><li>Tên mẫu theo phong cách thiết kế + số (vd: Chuyên nghiệp 2)</li><li>Thẻ mẫu kiểu CareerViet: dòng nhãn phong cách chính · phụ, tên mẫu, chấm màu (bấm đổi màu) + Dùng mẫu</li><li>Ảnh xem trước dùng ảnh đại diện người thật, nội dung thật thay "Nguyen Van A"</li><li>Lưới 16 mẫu (4 x 4), bấm ảnh mở xem trước</li><li>Database: mẫu gắn phong cách chính + phụ và bảng màu; ngành, ngôn ngữ là nội dung đổ vào mẫu</li></ul></div></span></div>
-    <p class="grid-note" id="gridNote" hidden></p>
+    <div class="chg-row"><span class="chg-wrap"><button type="button" class="chg edit" aria-expanded="false">Điều chỉnh<span class="pri high">High</span> <i>ⓘ</i></button><div class="chg-note" hidden=""><b>Hướng điều chỉnh</b><ul><li>Tên mẫu theo phong cách thiết kế + số (vd: Chuyên nghiệp 2)</li><li>Thẻ mẫu kiểu CareerViet: dòng nhãn phong cách chính · phụ, tên mẫu, chấm màu (bấm đổi màu) + Dùng mẫu</li><li>Ảnh xem trước dùng ảnh đại diện người thật, nội dung thật thay "Nguyen Van A"</li><li>Lưới 16 mẫu (4 x 4), bấm ảnh mở xem trước</li><li>Database: mẫu gắn phong cách chính + phụ và bảng màu; ngành, ngôn ngữ là nội dung đổ vào mẫu</li></ul></div></span></div>
+    <p class="grid-note" id="gridNote" hidden=""></p>
     <div class="grid" id="grid1"></div>
-    <div class="chg-row" style="text-align:center;margin:28px 0 -18px"><span class="chg-wrap"><button type="button" class="chg new" aria-expanded="false">Thêm mới<span class="pri high">High</span> <i>ⓘ</i></button><div class="chg-note" hidden><b>Nội dung thêm mới</b><ul><li>1 nút "Xem thêm mẫu CV" dưới lưới: mở thêm mẫu ngay tại trang</li></ul><b>Lý do thêm mới</b><ul><li>Bỏ tab "Xem tất cả" dẫn sang trang khác, xem đủ mẫu ngay trên trang Tạo CV</li></ul></div></span></div>
+    <div class="chg-row" style="text-align:center;margin:28px 0 -18px"><span class="chg-wrap"><button type="button" class="chg new" aria-expanded="false">Thêm mới<span class="pri high">High</span> <i>ⓘ</i></button><div class="chg-note" hidden=""><b>Nội dung thêm mới</b><ul><li>1 nút "Xem thêm mẫu CV" dưới lưới: mở thêm mẫu ngay tại trang</li></ul><b>Lý do thêm mới</b><ul><li>Bỏ tab "Xem tất cả" dẫn sang trang khác, xem đủ mẫu ngay trên trang Tạo CV</li></ul></div></span></div>
     <div class="more-row"><button type="button" class="btn btn-line" id="viewAll">Xem thêm mẫu CV ▾</button></div>
   </div>
 </section>
@@ -645,7 +644,7 @@ body{margin:0;font-family:var(--body);font-weight:500;color:var(--muted);backgro
 <!-- 2b. MẪU CV THEO NGÀNH NGHỀ (dạng tab): chọn ngành → vị trí của ngành. Đủ link vị trí nằm sẵn trong HTML, tab chỉ ẩn / hiện -->
 <section class="sec nganh-sec">
   <div class="wrap">
-    <div class="chg-row"><span class="chg-wrap"><button type="button" class="chg new" aria-expanded="false">Thêm mới <i>ⓘ</i></button><div class="chg-note" hidden><b>Nội dung thêm mới</b><ul><li>Section "Mẫu CV theo ngành nghề" dạng tab: chọn ngành, hiện vị trí của ngành đó</li><li>Đủ link vị trí của mọi ngành nằm sẵn trong HTML, tab chỉ ẩn / hiện</li><li>Mobile: hiện hết ngành trên 1 màn hình (lưới 2 cột, nút nhỏ, không vuốt ngang), vị trí 2 cột</li><li>Bấm vị trí: sang trang Mẫu CV theo vị trí (trang 2)</li></ul><b>Lý do thêm mới</b><ul><li>Phủ keyword "mẫu CV + vị trí" (mẫu CV kế toán, mẫu CV nhân viên kinh doanh...)</li><li>Joboko, TopCV đều có khối này</li></ul></div></span></div>
+    <div class="chg-row"><span class="chg-wrap"><button type="button" class="chg new" aria-expanded="false">Thêm mới<span class="pri high">High</span> <i>ⓘ</i></button><div class="chg-note" hidden=""><b>Nội dung thêm mới</b><ul><li>Section "Mẫu CV theo ngành nghề" dạng tab: chọn ngành, hiện vị trí của ngành đó</li><li>Mockup chỉ minh hoạ section, ngành và vị trí chốt theo tab 3. Bộ KW - Tool</li><li>Đủ link vị trí của mọi ngành nằm sẵn trong HTML, tab chỉ ẩn / hiện</li><li>Mobile: hiện hết ngành trên 1 màn hình (lưới 2 cột, nút nhỏ, không vuốt ngang), vị trí 2 cột</li><li>Bấm vị trí: sang trang Mẫu CV theo vị trí (trang 2)</li></ul><b>Lý do thêm mới</b><ul><li>Phủ keyword "mẫu CV + vị trí" (mẫu CV kế toán, mẫu CV nhân viên kinh doanh...)</li><li>Joboko, TopCV đều có khối này</li></ul></div></span></div>
     <div class="ind">
       <div class="ind-head"><h2>Mẫu CV theo ngành nghề</h2><p>Mẫu có sẵn nội dung gợi ý theo vị trí. Chọn ngành, rồi chọn vị trí.</p></div>
       <div class="ind-tabs" role="tablist" aria-label="Ngành nghề">
@@ -672,7 +671,7 @@ body{margin:0;font-family:var(--body);font-weight:500;color:var(--muted);backgro
 <section class="stats">
   <div class="wrap stats-in">
     <div class="know">
-      <div class="chg-row"><span class="chg-wrap"><button type="button" class="chg edit" aria-expanded="false">Điều chỉnh<span class="pri high">High</span> <i>ⓘ</i></button><div class="chg-note" hidden><b>Hướng điều chỉnh</b><ul><li>Gộp khối Dịch vụ vào: còn 1 khối "Vì sao nên tạo CV trên CareerViet?"</li><li>Đặt ngay sau phần mẫu CV, trước khối việc làm</li><li>USP của CV Hay, mỗi ý gắn với 1 con số bên phải; bỏ mũi tên / link (không có trang đích), rê chuột sáng ô số</li><li>Bỏ dạng câu hỏi FAQ (FAQ đã có section riêng), bỏ trang /cv-hay/faq</li><li>Bỏ section 3 bước tạo CV: trùng khối Dịch vụ, box nội dung và USP</li></ul><b>Mobile (trang hiện tại)</b><ul><li>Khung chữ bị bóp hẹp, mỗi câu xuống dòng nhiều lần: chỉnh lại responsive</li></ul></div></span></div>
+      <div class="chg-row"><span class="chg-wrap"><button type="button" class="chg edit" aria-expanded="false">Điều chỉnh<span class="pri high">High</span> <i>ⓘ</i></button><div class="chg-note" hidden=""><b>Hướng điều chỉnh</b><ul><li>Gộp khối Dịch vụ vào: còn 1 khối "Vì sao nên tạo CV trên CareerViet?"</li><li>Đặt ngay sau phần mẫu CV, trước khối việc làm</li><li>USP của CV Hay, mỗi ý gắn với 1 con số bên phải; bỏ mũi tên / link (không có trang đích), rê chuột sáng ô số</li><li>Bỏ dạng câu hỏi FAQ (FAQ đã có section riêng), gỡ bỏ trang /cv-hay/faq và gỡ link sang trang này</li><li>Bỏ section 3 bước tạo CV: trùng khối Dịch vụ, box nội dung và USP</li></ul><b>Mobile (trang hiện tại)</b><ul><li>Khung chữ bị bóp hẹp, mỗi câu xuống dòng nhiều lần: chỉnh lại responsive</li></ul></div></span></div>
       <h2>Vì sao nên tạo CV trên CareerViet?</h2>
       <p class="know-sub">CV Hay được thiết kế giúp tăng tỷ lệ xem hồ sơ lên đến 90%</p>
       <ul class="usp">
@@ -697,7 +696,7 @@ body{margin:0;font-family:var(--body);font-weight:500;color:var(--muted);backgro
 <section class="jobs" id="jobs1">
   <div class="wrap jobs-in">
     <div>
-      <div class="chg-row"><span class="chg-wrap"><button type="button" class="chg new" aria-expanded="false">Thêm mới<span class="pri high">High</span> <i>ⓘ</i></button><div class="chg-note" hidden><b>Nội dung thêm mới</b><ul><li>Ô tìm việc + 8 vị trí dẫn sang trang danh sách việc làm (job listing), không đặt thẻ tin trên trang Tạo CV</li><li>Anchor Tìm việc làm dẫn về trang tất cả việc làm</li><li>Thay hàng nút việc làm theo ngành</li><li>Mobile: lưới 2 cột không tràn ngang, tên dài cắt bằng dấu ...</li></ul><b>Lý do thêm mới</b><ul><li>Dẫn user từ tạo CV sang ứng tuyển, tăng chuyển đổi</li><li>VietCV, JobsGO đều nhấn mạnh tạo CV xong ứng tuyển ngay</li></ul></div></span></div>
+      <div class="chg-row"><span class="chg-wrap"><button type="button" class="chg new" aria-expanded="false">Thêm mới<span class="pri high">High</span> <i>ⓘ</i></button><div class="chg-note" hidden=""><b>Nội dung thêm mới</b><ul><li>Ô tìm việc + 8 vị trí dẫn sang trang danh sách việc làm (job listing), không đặt thẻ tin trên trang Tạo CV</li><li>Anchor Tìm việc làm dẫn về trang tất cả việc làm</li><li>Thay hàng nút việc làm theo ngành</li><li>Mobile: lưới 2 cột không tràn ngang, tên dài cắt bằng dấu ...</li></ul><b>Lý do thêm mới</b><ul><li>Dẫn user từ tạo CV sang ứng tuyển, tăng chuyển đổi</li><li>VietCV, JobsGO đều nhấn mạnh tạo CV xong ứng tuyển ngay</li></ul></div></span></div>
       <span class="eyebrow">Tạo CV xong?</span>
       <h2>Ứng tuyển ngay việc làm đang tuyển phù hợp với bạn</h2>
       <p class="sub">Dùng CV vừa tạo để ứng tuyển các việc làm đang tuyển trên CareerViet.</p>
@@ -726,7 +725,7 @@ body{margin:0;font-family:var(--body);font-weight:500;color:var(--muted);backgro
 <section class="sec">
   <div class="wrap">
     <div class="guide-box">
-      <div class="chg-row"><span class="chg-wrap"><button type="button" class="chg new" aria-expanded="false">Thêm mới<span class="pri crit">Critical</span> <i>ⓘ</i></button><div class="chg-note" hidden><b>Nội dung thêm mới</b><ul><li>Thêm box nội dung: tiêu đề, tác giả + ngày cập nhật, mục lục, nội dung</li><li>Có nút thu gọn / mở rộng</li><li>Outline theo khung cơ bản của thị trường (TopCV), rút gọn còn 8 H2, không đặt "Hướng dẫn tạo CV" để tránh trùng giữa các site</li><li>Mockup chỉ demo H2, team Content viết nội dung</li></ul><b>Lý do thêm mới</b><ul><li>Trang thiếu nội dung để Google hiểu và xếp hạng "tạo CV", "tạo CV miễn phí"</li><li>Đối thủ đang xếp trên đều có phần nội dung dài</li></ul></div></span></div>
+      <div class="chg-row"><span class="chg-wrap"><button type="button" class="chg new" aria-expanded="false">Thêm mới<span class="pri crit">Critical</span> <i>ⓘ</i></button><div class="chg-note" hidden=""><b>Nội dung thêm mới</b><ul><li>Thêm box nội dung: tiêu đề, tác giả + ngày cập nhật, mục lục, nội dung</li><li>Có nút thu gọn / mở rộng</li><li>Outline theo khung cơ bản của thị trường (TopCV), rút gọn còn 8 H2, không đặt "Hướng dẫn tạo CV" để tránh trùng giữa các site</li><li>Mockup chỉ demo H2, team Content viết nội dung</li></ul><b>Lý do thêm mới</b><ul><li>Trang thiếu nội dung để Google hiểu và xếp hạng "tạo CV", "tạo CV miễn phí"</li><li>Đối thủ đang xếp trên đều có phần nội dung dài</li></ul></div></span></div>
       <span class="eyebrow">Kiến thức CV</span>
       <h2 style="font-size:32px;margin-top:6px">CV xin việc là gì? Những điều cần biết trước khi tạo CV</h2>
       <div class="guide-meta"><span>Tác giả: <b>Ban biên tập CareerViet</b></span><span>Cập nhật: <b>09/11/2026</b></span></div>
@@ -775,10 +774,10 @@ body{margin:0;font-family:var(--body);font-weight:500;color:var(--muted);backgro
 <section class="sec" id="faq" style="padding-top:24px">
   <div class="wrap faq-in">
     <div>
-      <div class="chg-row"><span class="chg-wrap"><button type="button" class="chg new" aria-expanded="false">Thêm mới<span class="pri crit">Critical</span> <i>ⓘ</i></button><div class="chg-note" hidden><b>Nội dung thêm mới</b><ul><li>Thêm FAQ ngay trên trang, câu hỏi xoay quanh tạo CV</li></ul><b>Lý do thêm mới</b><ul><li>Trả lời ngay trên trang thay vì dẫn sang trang FAQ riêng</li><li>Tối ưu nội dung cho keyword target</li></ul></div></span></div>
+      <div class="chg-row"><span class="chg-wrap"><button type="button" class="chg new" aria-expanded="false">Thêm mới<span class="pri crit">Critical</span> <i>ⓘ</i></button><div class="chg-note" hidden=""><b>Nội dung thêm mới</b><ul><li>Thêm FAQ ngay trên trang, câu hỏi xoay quanh tạo CV</li></ul><b>Lý do thêm mới</b><ul><li>Trả lời ngay trên trang thay vì dẫn sang trang FAQ riêng</li><li>Tối ưu nội dung cho keyword target</li></ul></div></span></div>
       <span class="eyebrow">FAQ</span>
       <h2>Các Câu Hỏi &amp; Câu Trả Lời Thường Gặp</h2>
-      <details open><summary>Tạo CV trên CareerViet có mất phí không?</summary><div class="a ph">[Trả lời 40–60 chữ: miễn phí tạo và tải; nêu rõ tính năng nào có tính phí, nếu có.]</div></details>
+      <details open=""><summary>Tạo CV trên CareerViet có mất phí không?</summary><div class="a ph">[Trả lời 40–60 chữ: miễn phí tạo và tải; nêu rõ tính năng nào có tính phí, nếu có.]</div></details>
       <details><summary>Có tạo CV trên điện thoại được không?</summary><div class="a ph">[Trả lời 40–60 chữ.]</div></details>
       <details><summary>Tải CV về dạng PDF như thế nào?</summary><div class="a ph">[Trả lời 40–60 chữ.]</div></details>
       <details><summary>Sau khi tạo, có sửa CV hoặc đổi mẫu được không?</summary><div class="a ph">[Trả lời 40–60 chữ.]</div></details>
@@ -800,7 +799,7 @@ body{margin:0;font-family:var(--body);font-weight:500;color:var(--muted);backgro
     <span class="o">Tuyển dụng</span><span class="x">✱</span><span class="f">Tối ưu hoá</span><span class="x">✱</span><span class="o">Truyền thông</span><span class="x">✱</span><span class="f">Tạo CV</span><span class="x">✱</span>
   </div></div>
   <div class="wrap">
-    <div class="chg-row" style="text-align:center;margin-bottom:12px"><span class="chg-wrap"><button type="button" class="chg edit" aria-expanded="false">Điều chỉnh<span class="pri high">High</span> <i>ⓘ</i></button><div class="chg-note" hidden><b>Hướng điều chỉnh</b><ul><li>Chuyển xuống sau FAQ: khối dẫn sang bài blog</li><li>Thêm 1-2 câu tóm tắt dưới tiêu đề mỗi bài để tối ưu thêm từ khoá</li></ul><b>Mobile (trang hiện tại)</b><ul><li>Ảnh bị cắt, chữ tràn, mũi tên đè nội dung: chỉnh lại responsive</li></ul></div></span></div>
+    <div class="chg-row" style="text-align:center;margin-bottom:12px"><span class="chg-wrap"><button type="button" class="chg edit" aria-expanded="false">Điều chỉnh<span class="pri high">High</span> <i>ⓘ</i></button><div class="chg-note" hidden=""><b>Hướng điều chỉnh</b><ul><li>Chuyển xuống sau FAQ: khối dẫn sang bài blog</li><li>Thêm 1-2 câu tóm tắt dưới tiêu đề mỗi bài để tối ưu thêm từ khoá</li></ul><b>Mobile (trang hiện tại)</b><ul><li>Ảnh bị cắt, chữ tràn, mũi tên đè nội dung: chỉnh lại responsive</li></ul></div></span></div>
     <div class="blog">
       <div class="slides"><div class="rail" id="rail">
         <a class="slide" href="https://careerviet.vn/vi/talentcommunity/mau-cv-ke-toan-truong-dep-huong-dan-cach-viet-cv-chi-tiet-va-an-tuong-nhat.35A52077.html">
@@ -828,7 +827,7 @@ body{margin:0;font-family:var(--body);font-weight:500;color:var(--muted);backgro
     <div class="news-box">
       <img src="https://assets.careerviet.vn/careerviet/_next/static/media/asset-21.dbc535f0.png" alt="">
       <div>
-        <div class="chg-row"><span class="chg keep">Giữ nguyên</span></div>
+        <div class="chg-row"><span class="chg-wrap"><button type="button" class="chg edit" aria-expanded="false">Điều chỉnh <i>ⓘ</i></button><div class="chg-note" hidden=""><b>Hướng điều chỉnh</b><ul><li>Giữ nội dung</li><li>Thu nhỏ chữ tiêu đề trên mobile</li></ul></div></span></div>
       <h2>Đăng ký theo dõi để nhận cập nhật về cơ hội việc làm mới và phù hợp nhất</h2>
         <form class="news-form" onsubmit="return false"><input type="email" placeholder="Nhập địa chỉ email của bạn" aria-label="Email"><button aria-label="Gửi">➤</button></form>
       </div>
@@ -840,7 +839,7 @@ body{margin:0;font-family:var(--body);font-weight:500;color:var(--muted);backgro
 
 </div>
 
-<div class="view" id="mau-cv-vi-tri" data-view>
+<div class="view" id="mau-cv-vi-tri" data-view="">
 
 
 <!-- 1. KHU CHỌN MẪU (centerpiece): H1 + xem trước lớn + chọn mẫu (dải slide) + lọc màu / ngôn ngữ / kinh nghiệm.
@@ -848,7 +847,7 @@ body{margin:0;font-family:var(--body);font-weight:500;color:var(--muted);backgro
 <section class="studio">
   <div class="wrap st-grid">
     <div class="st-head">
-      <div class="chg-row"><span class="chg-wrap"><button type="button" class="chg new" aria-expanded="false">Thêm mới <i>ⓘ</i></button><div class="chg-note" hidden><b>Nội dung thêm mới</b><ul><li>Trang mới /cv-hay/mau-cv-{vi-tri}: 1 trang cho 1 vị trí, centerpiece là mẫu xem trước lớn</li><li>Mobile: H1 → lọc màu + ngôn ngữ 1 dòng (kinh nghiệm dòng dưới) → CV thấy trọn (bỏ tiêu đề mẫu + 2 nút slide, cắt phần trắng đáy) → dải chọn mẫu dạng slide, màn hình đầu thấy 1 phần dải này; nút Tạo CV dính đáy màn hình</li><li>Desktop: cột trái chọn mẫu (dải slide) + lọc màu / ngôn ngữ / kinh nghiệm + Tạo CV, xem trước bên phải</li><li>Mẫu theo kinh nghiệm: thành ô chọn trong bộ chọn, bỏ section 3 thẻ lớn</li></ul><b>Lý do thêm mới</b><ul><li>Phủ keyword "mẫu CV + vị trí" (mẫu CV nhân viên kinh doanh...), CRV chưa có trang đích</li><li>TopCV, Joboko, VietCV đều có trang riêng cho từng vị trí</li></ul></div></span></div>
+      <div class="chg-row"><span class="chg-wrap"><button type="button" class="chg new" aria-expanded="false">Thêm mới<span class="pri crit">Critical</span> <i>ⓘ</i></button><div class="chg-note" hidden=""><b>Nội dung thêm mới</b><ul><li>Trang mới /cv-hay/mau-cv-{vi-tri}: 1 trang cho 1 vị trí, centerpiece là mẫu xem trước lớn</li><li>Breadcrumb chỉ khai báo JSON-LD (Trang chủ / CV Hay / Mẫu CV [vị trí]), không hiển thị</li><li>Mobile: H1 → lọc màu + ngôn ngữ 1 dòng (kinh nghiệm dòng dưới) → CV thấy trọn (bỏ tiêu đề mẫu + 2 nút slide, cắt phần trắng đáy) → dải chọn mẫu dạng slide, màn hình đầu thấy 1 phần dải này; nút Tạo CV dính đáy màn hình</li><li>Desktop: cột trái chọn mẫu (dải slide) + lọc màu / ngôn ngữ / kinh nghiệm + Tạo CV, xem trước bên phải</li><li>Mẫu theo kinh nghiệm: thành ô chọn trong bộ chọn, bỏ section 3 thẻ lớn</li></ul><b>Lý do thêm mới</b><ul><li>Phủ keyword "mẫu CV + vị trí" (mẫu CV nhân viên kinh doanh...), CRV chưa có trang đích</li><li>TopCV, Joboko, VietCV đều có trang riêng cho từng vị trí</li></ul></div></span></div>
       <span class="eyebrow">Mẫu CV theo vị trí</span>
       <h1 id="vtH1">Mẫu CV <span>Nhân viên kinh doanh</span></h1>
       <p class="lead" id="vtLead">20 mẫu CV Nhân viên kinh doanh có sẵn nội dung gợi ý. Đổi mẫu, màu sắc, ngôn ngữ ngay trên trang rồi tạo CV miễn phí, tải PDF và ứng tuyển.</p>
@@ -882,7 +881,7 @@ body{margin:0;font-family:var(--body);font-weight:500;color:var(--muted);backgro
 <!-- 2. MẪU CV THEO VỊ TRÍ KHÁC: tab ngành, ngành của vị trí đang xem chọn sẵn (= vị trí liên quan); đủ link trong HTML -->
 <section class="vp-sec">
   <div class="wrap">
-    <div class="chg-row"><span class="chg-wrap"><button type="button" class="chg new" aria-expanded="false">Thêm mới <i>ⓘ</i></button><div class="chg-note" hidden><b>Nội dung thêm mới</b><ul><li>1 khối tab ngành: ngành của vị trí đang xem chọn sẵn (vị trí liên quan), các tab sau là ngành khác</li><li>Đặt ngay sau khu chọn mẫu; đủ link vị trí trong HTML, tab chỉ ẩn / hiện</li><li>Mobile: hiện hết ngành trên 1 màn hình (lưới 2 cột, nút nhỏ, không vuốt ngang), vị trí 2 cột</li></ul><b>Lý do thêm mới</b><ul><li>Liên kết nội bộ giữa các trang mẫu CV theo vị trí</li><li>Gộp 2 khối cũ (vị trí liên quan + ngành khác) để gọn layout</li></ul></div></span></div>
+    <div class="chg-row"><span class="chg-wrap"><button type="button" class="chg new" aria-expanded="false">Thêm mới<span class="pri high">High</span> <i>ⓘ</i></button><div class="chg-note" hidden=""><b>Nội dung thêm mới</b><ul><li>1 khối tab ngành: ngành của vị trí đang xem chọn sẵn (vị trí liên quan), các tab sau là ngành khác</li><li>Đặt ngay sau khu chọn mẫu; đủ link vị trí trong HTML, tab chỉ ẩn / hiện</li><li>Mobile: hiện hết ngành trên 1 màn hình (lưới 2 cột, nút nhỏ, không vuốt ngang), vị trí 2 cột</li></ul><b>Lý do thêm mới</b><ul><li>Liên kết nội bộ giữa các trang mẫu CV theo vị trí</li><li>Gộp 2 khối cũ (vị trí liên quan + ngành khác) để gọn layout</li></ul></div></span></div>
     <div class="vp">
       <div class="vp-head"><h2>Mẫu CV theo vị trí khác</h2><p>Chưa đúng vị trí? Chọn ngành, rồi chọn vị trí.</p></div>
       <div class="vp-tabs" role="tablist" aria-label="Ngành nghề" id="vtTabs"></div>
@@ -896,7 +895,7 @@ body{margin:0;font-family:var(--body);font-weight:500;color:var(--muted);backgro
 <section class="jl-sec">
   <div class="wrap">
     <div class="jl-head">
-      <div class="chg-row"><span class="chg-wrap"><button type="button" class="chg new" aria-expanded="false">Thêm mới <i>ⓘ</i></button><div class="chg-note" hidden><b>Nội dung thêm mới</b><ul><li>Việc làm mới nhất đúng vị trí, thẻ tin theo job card CareerViet hiện tại (logo, URGENT, tiêu đề, công ty, lương, địa điểm, hạn nộp, cập nhật, lưu việc làm)</li><li>Desktop 2 cột x 4 tin, mobile 4 tin + nút Xem tất cả việc làm theo vị trí</li><li>Dữ liệu mockup là minh hoạ: dev lấy tin thật đang tuyển theo vị trí, sắp xếp mới nhất</li></ul><b>Lý do thêm mới</b><ul><li>Dẫn user từ chọn mẫu sang ứng tuyển tin cụ thể</li><li>TopCV đặt khối Việc làm [vị trí] mới nhất trên trang mẫu CV theo vị trí</li></ul></div></span></div>
+      <div class="chg-row"><span class="chg-wrap"><button type="button" class="chg new" aria-expanded="false">Thêm mới<span class="pri high">High</span> <i>ⓘ</i></button><div class="chg-note" hidden=""><b>Nội dung thêm mới</b><ul><li>Việc làm mới nhất đúng vị trí, thẻ tin theo job card CareerViet hiện tại (logo, URGENT, tiêu đề, công ty, lương, địa điểm, hạn nộp, cập nhật, lưu việc làm)</li><li>Desktop 2 cột x 4 tin, mobile 4 tin + nút Xem tất cả việc làm theo vị trí</li><li>Dữ liệu mockup là minh hoạ: dev lấy tin thật đang tuyển theo vị trí, sắp xếp mới nhất</li></ul><b>Lý do thêm mới</b><ul><li>Dẫn user từ chọn mẫu sang ứng tuyển tin cụ thể</li><li>TopCV đặt khối Việc làm [vị trí] mới nhất trên trang mẫu CV theo vị trí</li></ul></div></span></div>
       <span class="eyebrow">Tạo CV xong? Ứng tuyển ngay</span>
       <h2 id="vtJobH">Việc làm Nhân viên kinh doanh mới nhất</h2>
     </div>
@@ -910,7 +909,7 @@ body{margin:0;font-family:var(--body);font-weight:500;color:var(--muted);backgro
 <section class="jobs">
   <div class="wrap jobs-in">
     <div>
-      <div class="chg-row"><span class="chg-wrap"><button type="button" class="chg new" aria-expanded="false">Thêm mới<span class="pri high">High</span> <i>ⓘ</i></button><div class="chg-note" hidden><b>Nội dung thêm mới</b><ul><li>Khối Tìm việc làm theo vị trí: cùng thiết kế, màu khối việc làm trang Tạo CV</li><li>8 link Việc làm [vị trí] dẫn sang trang job listing (vị trí đang xem + cùng ngành + ngành khác)</li><li>Anchor Tìm việc làm dẫn về trang tất cả việc làm</li></ul><b>Lý do thêm mới</b><ul><li>Giữ đường dẫn từ trang mẫu CV sang job listing theo vị trí</li><li>Đồng nhất với khối việc làm trang Tạo CV</li></ul></div></span></div>
+      <div class="chg-row"><span class="chg-wrap"><button type="button" class="chg new" aria-expanded="false">Thêm mới<span class="pri high">High</span> <i>ⓘ</i></button><div class="chg-note" hidden=""><b>Nội dung thêm mới</b><ul><li>Khối Tìm việc làm theo vị trí: cùng thiết kế, màu khối việc làm trang Tạo CV</li><li>8 link Việc làm [vị trí] dẫn sang trang job listing (vị trí đang xem + cùng ngành + ngành khác)</li><li>Anchor Tìm việc làm dẫn về trang tất cả việc làm</li></ul><b>Lý do thêm mới</b><ul><li>Giữ đường dẫn từ trang mẫu CV sang job listing theo vị trí</li><li>Đồng nhất với khối việc làm trang Tạo CV</li></ul></div></span></div>
       <span class="eyebrow">Tìm việc theo vị trí</span>
       <h2 id="vtNavH">Việc làm Nhân viên kinh doanh và vị trí liên quan</h2>
       <p class="sub">Chọn vị trí để xem toàn bộ việc làm đang tuyển trên CareerViet.</p>
@@ -924,7 +923,7 @@ body{margin:0;font-family:var(--body);font-weight:500;color:var(--muted);backgro
 <section class="sec">
   <div class="wrap">
     <div class="guide-box">
-      <div class="chg-row"><span class="chg-wrap"><button type="button" class="chg new" aria-expanded="false">Thêm mới <i>ⓘ</i></button><div class="chg-note" hidden><b>Nội dung thêm mới</b><ul><li>Hướng dẫn viết CV theo vị trí, dạng thu gọn, có khung Nên / Không nên</li></ul><b>Lý do thêm mới</b><ul><li>Nội dung để xếp hạng keyword vị trí</li><li>Đối thủ đều có bài hướng dẫn dài trên trang</li></ul></div></span></div>
+      <div class="chg-row"><span class="chg-wrap"><button type="button" class="chg new" aria-expanded="false">Thêm mới<span class="pri high">High</span> <i>ⓘ</i></button><div class="chg-note" hidden=""><b>Nội dung thêm mới</b><ul><li>Hướng dẫn viết CV theo vị trí, dạng thu gọn, có khung Nên / Không nên</li></ul><b>Lý do thêm mới</b><ul><li>Nội dung để xếp hạng keyword vị trí</li><li>Đối thủ đều có bài hướng dẫn dài trên trang</li></ul></div></span></div>
       <span class="eyebrow">Hướng dẫn</span>
       <h2 class="g-title">Cách viết CV <span class="js-pos">Nhân viên kinh doanh</span> ấn tượng</h2>
       <div class="g-meta"><span>Tác giả: <b>Ban biên tập CareerViet</b></span><span>Cập nhật: <b>02/11/2026</b></span></div>
@@ -977,7 +976,7 @@ body{margin:0;font-family:var(--body);font-weight:500;color:var(--muted);backgro
 
 </div>
 
-<script>
+<script type="text/mc-later">
 /* ===== Dữ liệu + vẽ mẫu CV dùng chung ===== */
 /* CV Hay mockup kit — dùng chung cho trang Tạo CV (/cv-hay) và trang Mẫu CV.
    - Mẫu CV đặt tên theo phong cách thiết kế (vd "Chuyên nghiệp 2"), kèm phong cách phụ + màu sắc.
@@ -1264,7 +1263,7 @@ function filterBar(el, st, onChange, opts){
     const styles = [['', 'Tất cả']].concat(Object.entries(S));
     el.innerHTML = `<div class="mf${styleDd ? ' mf-sdd' : ''}">
       <div class="mf-tabs" role="tablist" aria-label="Phong cách thiết kế">${styles.map(([k, t]) =>
-        `<button type="button" class="mf-tab ${st.style === k ? 'on' : ''}" data-s="${k}" role="tab" aria-selected="${st.style === k}">${t}</button>`).join('')}</div>
+        `<a href="${k ? '/cv-hay/mau-cv-' + slug(t) : '/cv-hay'}" class="mf-tab ${st.style === k ? 'on' : ''}" data-s="${k}" role="tab" aria-selected="${st.style === k}">${t}</a>`).join('')}</div>
       <div class="mf-dds">${styleDd ? `
         <div class="mf-dd mf-style" data-dd="style"><button type="button" class="mf-btn" aria-haspopup="listbox" aria-label="Phong cách thiết kế"><span class="mf-lbl">${styles.find(([k]) => k === st.style)[1]}</span></button>
           <div class="mf-menu" role="listbox">${styles.map(([k, t]) =>
@@ -1280,7 +1279,7 @@ function filterBar(el, st, onChange, opts){
   }
   el.addEventListener('click', e => {
     const tab = e.target.closest('.mf-tab'), opt = e.target.closest('.mf-opt'), btn = e.target.closest('.mf-btn');
-    if (tab) { st.style = tab.dataset.s; onChange(); return; }
+    if (tab) { e.preventDefault(); st.style = tab.dataset.s; onChange(); return; }
     if (opt) { if (opt.dataset.s !== undefined) st.style = opt.dataset.s;
       else if (opt.dataset.ng !== undefined) { st.nganh = opt.dataset.ng; st.pos = ''; } else st.lang = opt.dataset.lang; onChange(); return; }
     if (btn) { e.stopPropagation(); const dd = btn.parentElement, open = !dd.classList.contains('open');
@@ -1489,7 +1488,7 @@ const css = `
 /* Hàng lọc */
 .mf{display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap}
 .mf-tabs{display:flex;flex-wrap:wrap;gap:10px}
-.mf-tab{background:#fff;color:#FF2458;border:1px solid #FF2458;border-radius:8px;height:44px;padding:0 16px;font:700 14px/1 "Plus Jakarta Sans",sans-serif;cursor:pointer;white-space:nowrap;text-transform:uppercase;letter-spacing:.3px}
+.mf-tab{display:inline-flex;align-items:center;text-decoration:none;background:#fff;color:#FF2458;border:1px solid #FF2458;border-radius:8px;height:44px;padding:0 16px;font:700 14px/1 "Plus Jakarta Sans",sans-serif;cursor:pointer;white-space:nowrap;text-transform:uppercase;letter-spacing:.3px}
 .mf-tab em{font-style:normal;font-weight:700;margin-left:6px;background:#FFE9EF;color:#E0124A;border-radius:99px;padding:2px 7px;font-size:12px}
 .mf-tab:hover{background:#FFE9EF}
 .mf-tab.on{background:#FF2458;color:#fff}
@@ -1633,7 +1632,7 @@ window.CVKit = {S, NG, POS, TPL, LANG, FLAG, name, slug, render, card, list, cou
 })();
 
 </script>
-<script>
+<script type="text/mc-later">
 /* ===== Script trang 1 ===== */
 (() => {
 
@@ -1716,7 +1715,7 @@ if (!window.__chgBound) { window.__chgBound = true;
 
 })();
 </script>
-<script>
+<script type="text/mc-later">
 /* ===== Script trang Mẫu CV theo vị trí ===== */
 (() => {
 
@@ -1826,7 +1825,7 @@ if (!window.__chgBound) { window.__chgBound = true;
 
 })();
 </script>
-<script>
+<script type="text/mc-later">
 /* ===== Chuyển trang theo hash ===== */
 (() => {
   const TITLES = {'tao-cv':'Mockup đề xuất', 'mau-cv-vi-tri':'Mockup đề xuất'};
@@ -1886,5 +1885,817 @@ if (!window.__chgBound) { window.__chgBound = true;
   });
 })();
 </script>
-</body>
-</html>
+<script type="application/json" id="mc-data">[{"id":"cmwevw7vybnxjk","parent":null,"view":"tao-cv","device":"desktop","hash":"","anchor":{"sel":"#tao-cv>section:nth-of-type(2)>div:nth-of-type(1)>div:nth-of-type(1)","fx":0.4240044978009465,"fy":0},"author":"chỗ này rút gọn ngành nghề","text":".","created":"2026-11-13T11:19:02.638Z","updated":"2026-11-13T11:19:02.638Z","status":"open"},{"id":"cmwevwim9nlc62","parent":null,"view":"tao-cv","device":"desktop","hash":"","anchor":{"sel":"#tao-cv>section:nth-of-type(3)>div:nth-of-type(1)>div:nth-of-type(1)>ul:nth-of-type(1)>li:nth-of-type(1)>div:nth-of-type(1)","fx":0.14423839220655646,"fy":0.2572948097508084},"author":"chỗ này rút gọn ngành nghề","text":"ở đây sẽ ghi thông tin gì","created":"2026-11-13T11:19:16.545Z","updated":"2026-11-13T11:19:16.545Z","status":"open"}]</script>
+<script>
+/* Cấu hình lớp comment cho mockup CV Hay tổng hợp (dùng khi chạy them-comment-vao-mockup.py) */
+window.MC_CONFIG = {
+  child: function () { return new URLSearchParams(location.search).get('frame') === '1'; },
+  childDevice: 'mobile',
+  frameDevice: 'mobile',
+  ignore: '.vbar',
+  getView: function () { var v = document.querySelector('[data-view].on'); return v ? v.id : 'tao-cv'; },
+  viewLabel: function (v) { return ({ 'tao-cv': '1. Tạo CV', 'mau-cv-vi-tri': '2. Mẫu CV theo ngành nghề' })[v] || v; },
+  getDevice: function () { return document.body.classList.contains('mobile-mode') ? 'mobile' : 'desktop'; },
+  setDevice: function (d) { var b = document.querySelector('.vbar .dev button[data-d="' + d + '"]'); if (b) b.click(); }
+};
+</script>
+<script>
+/*! Mockup comments v1 (GTV). Comment ngay trên file mockup HTML, bấm Lưu để ghi comment vào chính file.
+ * Không cần mạng, không cần tài khoản. Gửi file đã lưu cho người khác, mở ra là thấy comment.
+ * Gắn vào mockup bằng them-comment-vao-mockup.py (cùng thư mục), không sửa tay file đích.
+ */
+(function () {
+  'use strict';
+  if (window.__mcLoaded) return;
+  window.__mcLoaded = true;
+
+  /* 1. Chụp bản gốc của file TRƯỚC khi script mockup chạy, để lúc Lưu ghi lại đúng file gốc + comment */
+  var DATA_EL = document.getElementById('mc-data');
+  var PRISTINE = '<!DOCTYPE html>\n' + document.documentElement.outerHTML;
+  var DATA_OUTER = DATA_EL ? DATA_EL.outerHTML : '';
+
+  /* 2. Chạy lại script mockup (lúc gắn đã đổi sang type="text/mc-later"), đúng thứ tự */
+  [].forEach.call(document.querySelectorAll('script[type="text/mc-later"]'), function (old) {
+    var s = document.createElement('script');
+    s.textContent = old.textContent;
+    old.parentNode.insertBefore(s, old.nextSibling);
+  });
+
+  start();
+
+  function start() {
+    const CFG = Object.assign({
+      doc: '',
+      child: () => window.parent !== window,
+      childDevice: 'mobile',
+      frameDevice: '',
+      ignore: '',
+      getView: () => 'main',
+      viewLabel: v => v,
+      getDevice: () => 'desktop',
+      setDevice: () => {},
+      goHash: h => { if (location.hash !== h) location.hash = h; }
+    }, window.MC_CONFIG || {});
+    const FILE = CFG.doc || decodeURIComponent(location.pathname.split('/').pop() || '') || 'mockup.html';
+    const CHILD = !!(typeof CFG.child === 'function' ? CFG.child() : CFG.child);
+    const DEV_LABEL = { desktop: 'Desktop', mobile: 'Mobile' };
+    const DRAFT = 'mc-draft:' + FILE;
+
+    const ls = {
+      get: k => { try { return localStorage.getItem(k); } catch (e) { return null; } },
+      set: (k, v) => { try { localStorage.setItem(k, v); } catch (e) {} },
+      del: k => { try { localStorage.removeItem(k); } catch (e) {} }
+    };
+    const hash = s => { let h = 0; for (let i = 0; i < s.length; i++) h = (h * 31 + s.charCodeAt(i)) | 0; return String(h); };
+    const uid = () => 'c' + Date.now().toString(36) + Math.random().toString(36).slice(2, 7);
+    const esc = s => String(s == null ? '' : s).replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
+    const clamp01 = v => Math.max(0, Math.min(1, isFinite(v) ? v : 0.5));
+    const pad = n => String(n).padStart(2, '0');
+    function when(t) {
+      const d = new Date(t); if (!t || isNaN(d)) return '';
+      const s = (Date.now() - d) / 1000;
+      if (s < 60) return 'vừa xong';
+      if (s < 3600) return Math.floor(s / 60) + ' phút trước';
+      if (s < 86400) return Math.floor(s / 3600) + ' giờ trước';
+      return pad(d.getDate()) + '/' + pad(d.getMonth() + 1) + '/' + d.getFullYear() + ' ' + pad(d.getHours()) + ':' + pad(d.getMinutes());
+    }
+    const initials = n => (String(n || '?').trim().split(/\s+/).pop() || '?').charAt(0).toUpperCase();
+    const COLORS = ['#2563EB', '#DB2777', '#059669', '#D97706', '#7C3AED', '#0891B2', '#DC2626', '#4D7C0F'];
+    const colorOf = n => { let h = 0; for (const ch of String(n || '')) h = (h * 31 + ch.charCodeAt(0)) >>> 0; return COLORS[h % COLORS.length]; };
+    const svg = d => '<svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">' + d + '</svg>';
+    const IC = {
+      comment: svg('<path d="M21 12a8 8 0 0 1-11.6 7.1L4 20l1-4.6A8 8 0 1 1 21 12z"/>'),
+      list: svg('<path d="M8 6h13M8 12h13M8 18h13M3 6h.01M3 12h.01M3 18h.01"/>'),
+      eye: svg('<path d="M2 12s3.6-7 10-7 10 7 10 7-3.6 7-10 7S2 12 2 12z"/><circle cx="12" cy="12" r="3"/>'),
+      eyeOff: svg('<path d="M3 3l18 18M10.6 5.1A10.7 10.7 0 0 1 12 5c6.4 0 10 7 10 7a17 17 0 0 1-3.2 4M6.6 6.6A17 17 0 0 0 2 12s3.6 7 10 7a9.7 9.7 0 0 0 5.4-1.6M9.9 9.9a3 3 0 0 0 4.2 4.2"/>'),
+      save: svg('<path d="M19 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11l5 5v11a2 2 0 0 1-2 2z"/><path d="M17 21v-8H7v8M7 3v5h8"/>')
+    };
+
+    /* ---------- Dữ liệu ---------- */
+    let items = [];
+    try {
+      const t = DATA_EL ? DATA_EL.textContent.trim() : '';
+      items = t ? JSON.parse(t) : [];
+      if (!Array.isArray(items)) items = [];
+    } catch (e) { items = []; }
+    let saved = JSON.stringify(items);
+    const S = { mode: false, pins: true, resolved: false, panel: false, filter: 'open', onlyPage: true, name: ls.get('mc-name') || '', openId: null, composer: null, editId: null };
+    let handle = null, pendingOpen = null, pendingTimer = 0, popKey = '', popOff = null;
+    let root, $pins, $hl, $pop, $prev, $hint, $toast, $bar, $panel, $banner, toastTimer = 0;
+
+    const byCreated = (a, b) => (a.created < b.created ? -1 : a.created > b.created ? 1 : 0);
+    const roots = () => items.filter(c => !c.parent).sort(byCreated);
+    const repliesOf = id => items.filter(c => c.parent === id).sort(byCreated);
+    const byId = id => items.find(c => c.id === id);
+    const numMap = () => { const m = {}; roots().forEach((c, i) => { m[c.id] = i + 1; }); return m; };
+    const isDirty = () => JSON.stringify(items) !== saved;
+    const curView = () => { try { return CFG.getView(); } catch (e) { return 'main'; } };
+    const curDev = () => { if (CHILD) return CFG.childDevice; try { return CFG.getDevice(); } catch (e) { return 'desktop'; } };
+    const viewLabel = v => { try { return CFG.viewLabel(v) || v; } catch (e) { return v; } };
+    const frameMode = () => !CHILD && CFG.frameDevice && curDev() === CFG.frameDevice;
+
+    function setName(v) { S.name = v; ls.set('mc-name', v); }
+
+    function apply(op) {
+      if (CHILD) { window.parent.postMessage({ mc: 'op', op: op }, '*'); return; }
+      const now = new Date().toISOString();
+      if (op.name) setName(op.name);
+      if (op.t === 'add') items.push(op.c);
+      else if (op.t === 'edit') { const c = byId(op.id); if (c) { c.text = op.text; c.updated = now; c.edited = true; } }
+      else if (op.t === 'del') {
+        const kill = new Set([op.id]);
+        items.forEach(c => { if (c.parent === op.id) kill.add(c.id); });
+        items = items.filter(c => !kill.has(c.id));
+        if (kill.has(S.openId)) S.openId = null;
+      } else if (op.t === 'status') {
+        const c = byId(op.id);
+        if (c) { c.status = op.status; c.resolvedBy = op.by; c.resolvedAt = now; c.updated = now; }
+      }
+      changed();
+    }
+    function changed() {
+      if (isDirty()) ls.set(DRAFT, JSON.stringify({ base: hash(saved), items: items, at: Date.now() }));
+      else ls.del(DRAFT);
+      render();
+      broadcast();
+    }
+
+    /* ---------- Khung mobile (iframe): trang cha giữ dữ liệu, khung con chỉ hiển thị + gửi thao tác ---------- */
+    const stateMsg = extra => Object.assign({ mc: 'state', items: items, mode: S.mode, pins: S.pins, resolved: S.resolved, name: S.name }, extra || {});
+    const frames = () => [].slice.call(document.querySelectorAll('iframe'));
+    function broadcast(extra) {
+      if (CHILD) return;
+      frames().forEach(f => { try { f.contentWindow.postMessage(stateMsg(extra), '*'); } catch (e) {} });
+    }
+    window.addEventListener('message', e => {
+      const d = e.data;
+      if (!d || !d.mc) return;
+      if (!CHILD) {
+        if (!frames().some(f => f.contentWindow === e.source)) return;
+        if (d.mc === 'hello') e.source.postMessage(stateMsg(pendingOpen ? { open: pendingOpen } : null), '*');
+        else if (d.mc === 'op' && d.op) apply(d.op);
+        else if (d.mc === 'mode') setMode(d.on);
+        else if (d.mc === 'save') save();
+      } else {
+        if (e.source !== window.parent) return;
+        if (d.mc === 'state') {
+          items = Array.isArray(d.items) ? d.items : [];
+          S.mode = !!d.mode; S.pins = d.pins !== false; S.resolved = !!d.resolved;
+          if (d.name) S.name = d.name;
+          applyMode(); render();
+          if (d.open) openWhenReady(d.open);
+        } else if (d.mc === 'open') openWhenReady(d.id);
+      }
+    });
+
+    /* ---------- Neo ghim vào phần tử trên trang (không neo toạ độ màn hình) ---------- */
+    function selOf(el) {
+      const parts = [];
+      while (el && el.nodeType === 1 && el !== document.body && el !== document.documentElement) {
+        if (el.id && document.querySelectorAll('#' + CSS.escape(el.id)).length === 1) { parts.unshift('#' + CSS.escape(el.id)); break; }
+        let i = 1, s = el;
+        while ((s = s.previousElementSibling)) if (s.tagName === el.tagName) i++;
+        parts.unshift(el.tagName.toLowerCase() + ':nth-of-type(' + i + ')');
+        el = el.parentElement;
+      }
+      if (!parts.length || parts[0].charAt(0) !== '#') parts.unshift('body');
+      return parts.join('>');
+    }
+    function anchorPoint(c) {
+      if (!c || !c.anchor) return null;
+      let el = null;
+      try { el = document.querySelector(c.anchor.sel); } catch (e) { el = null; }
+      if (!el || !el.getClientRects().length) return null;
+      const r = el.getBoundingClientRect();
+      const x = r.left + r.width * c.anchor.fx, y = r.top + r.height * c.anchor.fy;
+      for (let p = el.parentElement; p && p !== document.body && p !== document.documentElement; p = p.parentElement) {
+        const st = getComputedStyle(p);
+        if (st.overflowX !== 'visible' || st.overflowY !== 'visible') {
+          const b = p.getBoundingClientRect();
+          if (x < b.left - 2 || x > b.right + 2 || y < b.top - 2 || y > b.bottom + 2) return null;
+        }
+      }
+      return { x: x, y: y };
+    }
+    function shown(c) {
+      if (c.parent || !S.pins || frameMode()) return false;
+      if (c.status === 'resolved' && !S.resolved && S.openId !== c.id) return false;
+      return c.view === curView() && c.device === curDev();
+    }
+
+    /* ---------- Vẽ ---------- */
+    function layout() {
+      if (!root) return;
+      const o = root.getBoundingClientRect();
+      const nums = numMap(), want = new Set();
+      roots().forEach(c => {
+        if (!shown(c)) return;
+        const p = anchorPoint(c);
+        if (!p) return;
+        want.add(c.id);
+        let el = $pins.querySelector('.mc-pin[data-id="' + c.id + '"]');
+        if (!el) {
+          el = document.createElement('button');
+          el.type = 'button'; el.className = 'mc-pin'; el.dataset.id = c.id;
+          $pins.appendChild(el);
+        }
+        const txt = String(nums[c.id]);
+        if (el.textContent !== txt) el.textContent = txt;
+        const res = c.status === 'resolved';
+        el.classList.toggle('res', res);
+        el.classList.toggle('on', S.openId === c.id);
+        el.style.background = res ? '#94A3B8' : colorOf(c.author);
+        el.setAttribute('aria-label', 'Góp ý ' + txt + ' của ' + c.author);
+        el.style.left = (p.x - o.left) + 'px';
+        el.style.top = (p.y - o.top) + 'px';
+      });
+      [].slice.call($pins.querySelectorAll('.mc-pin:not(.tmp)')).forEach(el => { if (!want.has(el.dataset.id)) el.remove(); });
+      let tmp = $pins.querySelector('.mc-pin.tmp');
+      const tp = S.composer ? anchorPoint(S.composer) : null;
+      if (tp) {
+        if (!tmp) { tmp = document.createElement('div'); tmp.className = 'mc-pin tmp'; tmp.textContent = '+'; $pins.appendChild(tmp); }
+        tmp.style.left = (tp.x - o.left) + 'px';
+        tmp.style.top = (tp.y - o.top) + 'px';
+      } else if (tmp) tmp.remove();
+      if ($hint) $hint.hidden = !S.mode || !!frameMode();
+      placePop();
+    }
+
+    function render() { renderBar(); renderPanel(); renderPop(); layout(); }
+
+    function renderBar() {
+      if (CHILD || !$bar) return;
+      const open = roots().filter(c => c.status !== 'resolved').length, dirty = isDirty();
+      $bar.innerHTML =
+        '<button type="button" data-b="mode" class="' + (S.mode ? 'on' : '') + '" title="Bật/tắt chế độ bình luận (phím C)">' + IC.comment + 'Bình luận</button>' +
+        '<button type="button" data-b="panel" class="' + (S.panel ? 'on' : '') + '">' + IC.list + 'Danh sách<span class="mc-cnt">' + open + '</span></button>' +
+        '<button type="button" data-b="pins">' + (S.pins ? IC.eyeOff + 'Ẩn ghim' : IC.eye + 'Hiện ghim') + '</button>' +
+        '<button type="button" data-b="save" class="mc-save' + (dirty ? ' dirty' : '') + '" title="Ghi comment vào file (Ctrl+S)">' + IC.save + (dirty ? 'Lưu file' : 'Đã lưu') + '</button>';
+      $bar.classList.toggle('shift', S.panel);
+    }
+
+    function renderPanel() {
+      if (CHILD || !$panel) return;
+      $panel.hidden = !S.panel;
+      if (!S.panel) return;
+      const listEl = $panel.querySelector('.mc-list');
+      const keep = listEl ? listEl.scrollTop : 0;
+      const view = curView(), nums = numMap();
+      const scoped = roots().filter(c => !S.onlyPage || c.view === view);
+      const cnt = { open: 0, resolved: 0, all: scoped.length };
+      scoped.forEach(c => { cnt[c.status === 'resolved' ? 'resolved' : 'open']++; });
+      const list = scoped.filter(c => S.filter === 'all' || (S.filter === 'open' ? c.status !== 'resolved' : c.status === 'resolved'));
+      const tab = (v, label) => '<button type="button" data-p="f" data-v="' + v + '" class="' + (S.filter === v ? 'on' : '') + '">' + label + ' (' + cnt[v] + ')</button>';
+      $panel.innerHTML =
+        '<div class="mc-ph"><b>Bình luận</b><span class="mc-sub">' + esc(FILE) + '</span><button type="button" class="mc-x" data-p="close" aria-label="Đóng">×</button></div>' +
+        '<div class="mc-tabs">' + tab('open', 'Chưa xử lý') + tab('resolved', 'Đã xử lý') + tab('all', 'Tất cả') + '</div>' +
+        '<label class="mc-chk"><input type="checkbox" data-p="page"' + (S.onlyPage ? ' checked' : '') + '> Chỉ trang đang xem (' + esc(viewLabel(view)) + ')</label>' +
+        '<div class="mc-list">' + (list.length ? list.map(c => {
+          const r = repliesOf(c.id).length, res = c.status === 'resolved';
+          return '<button type="button" class="mc-it' + (S.openId === c.id ? ' on' : '') + '" data-id="' + c.id + '">' +
+            '<span class="mc-n" style="background:' + (res ? '#94A3B8' : colorOf(c.author)) + '">' + nums[c.id] + '</span>' +
+            '<span class="mc-ib"><span class="mc-im"><b>' + esc(c.author) + '</b> · ' + esc(when(c.created)) + '</span>' +
+            '<span class="mc-tx clip2">' + esc(c.text) + '</span>' +
+            '<span class="mc-im">' + esc(viewLabel(c.view)) + ' · ' + esc(DEV_LABEL[c.device] || c.device) + (r ? ' · ' + r + ' trả lời' : '') + (res ? ' · đã xử lý' : '') + '</span></span></button>';
+        }).join('') : '<div class="mc-empty">Chưa có góp ý nào ở mục này.<br>Bấm <b>Bình luận</b> rồi bấm vào chỗ cần góp ý trên thiết kế.</div>') + '</div>' +
+        '<div class="mc-pf">' +
+          '<div>Tên hiển thị: <b>' + esc(S.name || '(chưa đặt)') + '</b> · <button type="button" class="mc-link" data-p="rename">Đổi tên</button></div>' +
+          '<label class="mc-chk0"><input type="checkbox" data-p="resolved"' + (S.resolved ? ' checked' : '') + '> Hiện cả ghim đã xử lý</label>' +
+          '<div><button type="button" class="mc-btn ghost" data-p="merge">Gộp comment từ file khác</button><input type="file" accept=".html,.htm" data-p="file" hidden></div>' +
+          '<p class="mc-help">Bấm <b>Lưu file</b> (Ctrl+S) để ghi comment vào chính file HTML này. Lần lưu đầu, chọn đúng file đang mở để ghi đè. Gửi file đã lưu cho người khác, họ mở bằng Chrome hoặc Edge là thấy toàn bộ comment.</p>' +
+        '</div>';
+      const nl = $panel.querySelector('.mc-list');
+      if (nl) nl.scrollTop = keep;
+    }
+
+    function nameField() { return S.name ? '' : '<input type="text" data-k="name" maxlength="60" placeholder="Tên của bạn (hiện cạnh comment)">'; }
+    function msgHTML(c) {
+      const editing = S.editId === c.id;
+      return '<div class="mc-msg" data-id="' + c.id + '"><span class="mc-av" style="background:' + colorOf(c.author) + '">' + esc(initials(c.author)) + '</span><div class="mc-mb">' +
+        '<div class="mc-mh"><b>' + esc(c.author) + '</b><span>' + esc(when(c.created)) + (c.edited ? ' · đã sửa' : '') + '</span></div>' +
+        (editing
+          ? '<textarea data-k="edit" maxlength="4000">' + esc(c.text) + '</textarea><div class="mc-act"><button type="button" class="mc-btn ghost" data-a="edit-cancel">Huỷ</button><button type="button" class="mc-btn pri" data-a="edit-save" data-id="' + c.id + '">Lưu</button></div>'
+          : '<div class="mc-tx">' + esc(c.text) + '</div><div class="mc-ma"><button type="button" data-a="edit" data-id="' + c.id + '">Sửa</button><button type="button" data-a="del" data-id="' + c.id + '">Xoá</button></div>') +
+        '</div></div>';
+    }
+    function threadHTML(c) {
+      const n = numMap()[c.id], res = c.status === 'resolved';
+      return '<div class="mc-ph"><span class="mc-n" style="background:' + (res ? '#94A3B8' : colorOf(c.author)) + '">' + n + '</span>' +
+        '<span class="mc-sub">' + esc(viewLabel(c.view)) + ' · ' + esc(DEV_LABEL[c.device] || c.device) + '</span>' +
+        '<button type="button" class="mc-res' + (res ? ' on' : '') + '" data-a="resolve">' + (res ? 'Mở lại' : '✓ Đã xử lý') + '</button>' +
+        '<button type="button" class="mc-x" data-a="close" aria-label="Đóng">×</button></div>' +
+        (res ? '<div class="mc-resn">Đã xử lý' + (c.resolvedBy ? ' bởi ' + esc(c.resolvedBy) : '') + ' · ' + esc(when(c.resolvedAt)) + '</div>' : '') +
+        '<div class="mc-msgs">' + [c].concat(repliesOf(c.id)).map(msgHTML).join('') + '</div>' +
+        '<div class="mc-form">' + nameField() + '<textarea data-k="reply" rows="2" maxlength="4000" placeholder="Trả lời... (Ctrl+Enter để gửi)"></textarea>' +
+        '<div class="mc-act"><button type="button" class="mc-btn pri" data-a="reply">Trả lời</button></div></div>';
+    }
+    function composerHTML() {
+      const cp = S.composer;
+      return '<div class="mc-ph"><b>Góp ý mới</b><span class="mc-sub">' + esc(viewLabel(cp.view)) + ' · ' + esc(DEV_LABEL[cp.device] || cp.device) + '</span>' +
+        '<button type="button" class="mc-x" data-a="close" aria-label="Đóng">×</button></div>' +
+        '<div class="mc-form">' + nameField() + '<textarea data-k="new" maxlength="4000" placeholder="Viết góp ý cho vị trí này... (Ctrl+Enter để gửi)"></textarea>' +
+        '<div class="mc-act"><button type="button" class="mc-btn ghost" data-a="close">Huỷ</button><button type="button" class="mc-btn pri" data-a="post">Gửi</button></div></div>';
+    }
+    function grabInput() {
+      const out = {};
+      $pop.querySelectorAll('[data-k]').forEach(el => { out[el.dataset.k] = el.value; });
+      const a = document.activeElement;
+      if (a && $pop.contains(a) && a.dataset && a.dataset.k) { out.__f = a.dataset.k; out.__s = a.selectionStart; out.__e = a.selectionEnd; }
+      return out;
+    }
+    function restoreInput(k) {
+      Object.keys(k).forEach(key => {
+        if (key.indexOf('__') === 0) return;
+        const el = $pop.querySelector('[data-k="' + key + '"]');
+        if (el) el.value = k[key];
+      });
+      if (k.__f) {
+        const el = $pop.querySelector('[data-k="' + k.__f + '"]');
+        if (el) { el.focus(); try { el.setSelectionRange(k.__s, k.__e); } catch (e) {} }
+      }
+    }
+    function renderPop() {
+      if (!$pop) return;
+      const keep = grabInput();
+      let key = '';
+      if (S.composer) { $pop.innerHTML = composerHTML(); key = 'new'; }
+      else if (S.openId && byId(S.openId)) { $pop.innerHTML = threadHTML(byId(S.openId)); key = S.openId; }
+      else { $pop.hidden = true; $pop.innerHTML = ''; popKey = ''; return; }
+      $pop.hidden = false;
+      restoreInput(keep);
+      if (key !== popKey) { popKey = key; computeOffsets(); }
+      placePop();
+    }
+    function computeOffsets() {
+      const c = S.composer || byId(S.openId), p = c ? anchorPoint(c) : null;
+      if (!p) { popOff = popOff || { dx: 40, dy: -34 }; return; }
+      const vw = document.documentElement.clientWidth, vh = window.innerHeight, w = $pop.offsetWidth, h = $pop.offsetHeight;
+      let x = p.x + 40, y = p.y - 34;
+      if (x + w > vw - 8) x = p.x - w - 14;
+      if (x < 8) {
+        x = Math.min(Math.max(8, p.x - w / 2), vw - w - 8);
+        y = p.y + 12;
+        if (y + h > vh - 8) y = p.y - 40 - h;
+      }
+      if (y + h > vh - 8) y = vh - h - 8;
+      if (y < 8) y = 8;
+      popOff = { dx: x - p.x, dy: y - p.y };
+    }
+    function placePop() {
+      if (!$pop || $pop.hidden || !popOff) return;
+      const c = S.composer || byId(S.openId), p = c ? anchorPoint(c) : null;
+      if (!p) return;
+      const o = root.getBoundingClientRect();
+      $pop.style.left = (p.x + popOff.dx - o.left) + 'px';
+      $pop.style.top = (p.y + popOff.dy - o.top) + 'px';
+    }
+    function showPrev(id, pinEl) {
+      const c = byId(id);
+      if (!c) return;
+      const r = repliesOf(id).length;
+      $prev.innerHTML = '<div class="mc-mh"><span class="mc-av sm" style="background:' + colorOf(c.author) + '">' + esc(initials(c.author)) + '</span><b>' + esc(c.author) + '</b><span>' + esc(when(c.created)) + '</span></div>' +
+        '<div class="mc-tx clip">' + esc(c.text) + '</div>' +
+        (r ? '<div class="mc-rc">' + r + ' trả lời · bấm để xem</div>' : '<div class="mc-rc">Bấm để xem và trả lời</div>') +
+        (c.status === 'resolved' ? '<div class="mc-rc ok">Đã xử lý</div>' : '');
+      $prev.hidden = false;
+      const pr = pinEl.getBoundingClientRect(), o = root.getBoundingClientRect(), vw = document.documentElement.clientWidth;
+      const w = $prev.offsetWidth, h = $prev.offsetHeight;
+      let x = pr.right + 8;
+      if (x + w > vw - 8) x = pr.left - w - 8;
+      if (x < 8) x = 8;
+      let y = pr.top;
+      if (y + h > window.innerHeight - 8) y = window.innerHeight - h - 8;
+      if (y < 8) y = 8;
+      $prev.style.left = (x - o.left) + 'px';
+      $prev.style.top = (y - o.top) + 'px';
+    }
+    const hidePrev = () => { if ($prev) $prev.hidden = true; };
+
+    /* ---------- Thao tác ---------- */
+    function closePop() { S.composer = null; S.openId = null; S.editId = null; renderPop(); renderPanel(); layout(); }
+    function openThread(id) { S.composer = null; S.openId = id; S.editId = null; hidePrev(); renderPop(); renderPanel(); layout(); }
+    function getName() {
+      const inp = $pop.querySelector('[data-k="name"]');
+      if (inp) {
+        const v = inp.value.trim().slice(0, 60);
+        if (!v) { inp.classList.add('err'); inp.focus(); return null; }
+        setName(v);
+      }
+      return S.name || null;
+    }
+    function post() {
+      const ta = $pop.querySelector('[data-k="new"]'), text = ta ? ta.value.trim() : '';
+      if (!text) { if (ta) ta.focus(); return; }
+      const name = getName();
+      if (!name) return;
+      const now = new Date().toISOString(), cp = S.composer;
+      const c = { id: uid(), parent: null, view: cp.view, device: cp.device, hash: cp.hash, anchor: cp.anchor, author: name, text: text, created: now, updated: now, status: 'open' };
+      ta.value = '';
+      S.composer = null; S.openId = c.id; S.editId = null;
+      apply({ t: 'add', c: c, name: name });
+      if (CHILD) renderPop();
+    }
+    function reply() {
+      const rootC = byId(S.openId), ta = $pop.querySelector('[data-k="reply"]'), text = ta ? ta.value.trim() : '';
+      if (!rootC || !text) { if (ta) ta.focus(); return; }
+      const name = getName();
+      if (!name) return;
+      const now = new Date().toISOString();
+      ta.value = '';
+      apply({ t: 'add', c: { id: uid(), parent: rootC.id, view: rootC.view, device: rootC.device, author: name, text: text, created: now, updated: now }, name: name });
+    }
+    function openComposer(t, cx, cy) {
+      const r = t.getBoundingClientRect();
+      S.composer = {
+        anchor: { sel: selOf(t), fx: clamp01((cx - r.left) / (r.width || 1)), fy: clamp01((cy - r.top) / (r.height || 1)) },
+        view: curView(), device: curDev(), hash: location.hash
+      };
+      S.openId = null; S.editId = null;
+      renderPop(); layout();
+      const f = $pop.querySelector('[data-k="name"]') || $pop.querySelector('[data-k="new"]');
+      if (f) f.focus();
+    }
+    function setMode(on) {
+      on = !!on;
+      if (CHILD) { window.parent.postMessage({ mc: 'mode', on: on }, '*'); return; }
+      S.mode = on; applyMode(); renderBar(); broadcast();
+    }
+    function applyMode() {
+      document.documentElement.classList.toggle('mc-on', S.mode);
+      if ($hint) $hint.hidden = !S.mode || !!frameMode();
+      if (!S.mode && $hl) $hl.style.display = 'none';
+    }
+    function toast(msg) {
+      if (!$toast) return;
+      $toast.textContent = msg; $toast.hidden = false;
+      clearTimeout(toastTimer);
+      toastTimer = setTimeout(() => { $toast.hidden = true; }, 4500);
+    }
+    function goTo(id) {
+      const c = byId(id);
+      if (!c) return;
+      if (CFG.frameDevice && c.device === CFG.frameDevice) {
+        if (curDev() !== c.device) { try { CFG.setDevice(c.device); } catch (e) {} }
+        if (c.hash != null && location.hash !== c.hash) { try { CFG.goHash(c.hash); } catch (e) {} }
+        S.openId = null; renderPop();
+        pendingOpen = id;
+        clearTimeout(pendingTimer);
+        pendingTimer = setTimeout(() => { pendingOpen = null; }, 6000);
+        setTimeout(() => { frames().forEach(f => { try { f.contentWindow.postMessage({ mc: 'open', id: id }, '*'); } catch (e) {} }); }, 200);
+        return;
+      }
+      if (curDev() !== c.device) { try { CFG.setDevice(c.device); } catch (e) {} }
+      openWhenReady(id);
+    }
+    function openWhenReady(id, tries) {
+      tries = tries || 0;
+      const c = byId(id);
+      if (!c) { if (CHILD && tries < 20) setTimeout(() => openWhenReady(id, tries + 1), 150); return; }
+      if (tries === 0 && c.view !== curView() && c.hash != null) { try { CFG.goHash(c.hash); } catch (e) {} }
+      const p = c.view === curView() && c.device === curDev() ? anchorPoint(c) : null;
+      if (!p) {
+        if (tries < 30) setTimeout(() => openWhenReady(id, tries + 1), 150);
+        else toast('Không tìm thấy vị trí ghim của góp ý #' + numMap()[id] + ' trên trang hiện tại');
+        return;
+      }
+      if (p.y < 90 || p.y > window.innerHeight - 140) window.scrollBy(0, p.y - window.innerHeight * 0.35);
+      setTimeout(() => { popKey = ''; openThread(id); }, 60);
+    }
+
+    async function save() {
+      if (CHILD) return;
+      const json = JSON.stringify(items).replace(/</g, '\\u003c');
+      const i = DATA_OUTER ? PRISTINE.indexOf(DATA_OUTER) : -1;
+      if (i < 0) { toast('Không tìm thấy khối dữ liệu comment trong file, chưa lưu được'); return; }
+      const openTag = DATA_OUTER.slice(0, DATA_OUTER.indexOf('>') + 1);
+      const html = PRISTINE.slice(0, i) + openTag + json + '<\/script>' + PRISTINE.slice(i + DATA_OUTER.length);
+      let where = '';
+      if (window.showSaveFilePicker) {
+        try {
+          if (!handle) handle = await window.showSaveFilePicker({ suggestedName: FILE, types: [{ description: 'Trang HTML', accept: { 'text/html': ['.html', '.htm'] } }] });
+          const w = await handle.createWritable();
+          await w.write(new Blob([html], { type: 'text/html' }));
+          await w.close();
+          where = handle.name;
+        } catch (e) {
+          if (e && e.name === 'AbortError') return;
+          handle = null; where = '';
+        }
+      }
+      if (!where) {
+        const a = document.createElement('a');
+        a.href = URL.createObjectURL(new Blob([html], { type: 'text/html;charset=utf-8' }));
+        a.download = FILE;
+        document.body.appendChild(a); a.click();
+        setTimeout(() => { URL.revokeObjectURL(a.href); a.remove(); }, 1500);
+      }
+      saved = JSON.stringify(items);
+      ls.del(DRAFT);
+      renderBar();
+      toast(where ? 'Đã lưu ' + roots().length + ' góp ý vào file ' + where : 'Đã tải file có comment về máy (thư mục Tải xuống). Gửi file đó cho người khác.');
+    }
+    function mergeFrom(text) {
+      const m = text.match(/<script[^>]*\bid="mc-data"[^>]*>([\s\S]*?)<\/script>/);
+      if (!m) { toast('File này không có dữ liệu comment'); return; }
+      let inc;
+      try { inc = JSON.parse(m[1].trim() || '[]'); } catch (e) { toast('Không đọc được dữ liệu comment trong file'); return; }
+      if (!Array.isArray(inc)) { toast('Dữ liệu comment trong file không đúng định dạng'); return; }
+      let add = 0, upd = 0;
+      inc.forEach(c => {
+        if (!c || !c.id) return;
+        const cur = byId(c.id);
+        if (!cur) { items.push(c); add++; }
+        else if ((c.updated || '') > (cur.updated || '')) { Object.assign(cur, c); upd++; }
+      });
+      changed();
+      toast('Đã gộp ' + add + ' comment mới, ' + upd + ' comment cập nhật. Bấm Lưu file để ghi lại.');
+    }
+    function checkDraft() {
+      let d = null;
+      try { d = JSON.parse(ls.get(DRAFT) || 'null'); } catch (e) { d = null; }
+      if (!d || !Array.isArray(d.items) || d.base !== hash(saved) || JSON.stringify(d.items) === saved) return;
+      $banner.innerHTML = '<span>Có comment chưa lưu vào file từ lần mở trước.</span><button type="button" data-d="restore">Khôi phục</button><button type="button" data-d="drop">Bỏ qua</button>';
+      $banner.hidden = false;
+      $banner.onclick = e => {
+        const b = e.target.closest('[data-d]');
+        if (!b) return;
+        $banner.hidden = true;
+        if (b.dataset.d === 'restore') { items = d.items; changed(); toast('Đã khôi phục. Bấm Lưu file để ghi vào file.'); }
+        else ls.del(DRAFT);
+      };
+    }
+
+    /* ---------- Dựng giao diện ---------- */
+    function build() {
+      const st = document.createElement('style');
+      st.id = 'mc-style';
+      st.textContent = STYLE;
+      document.head.appendChild(st);
+      root = document.createElement('div');
+      root.id = 'mc-root';
+      root.className = 'mc-ui' + (CHILD ? ' child' : '');
+      root.innerHTML = '<div class="mc-pins"></div><div class="mc-hl"></div><div class="mc-prev" hidden></div>' +
+        '<div class="mc-pop" hidden role="dialog" aria-label="Bình luận"></div>' +
+        '<div class="mc-hint" hidden>Bấm vào vị trí cần góp ý · Esc để thoát</div><div class="mc-toast" hidden role="status"></div>' +
+        (CHILD ? '' : '<div class="mc-banner" hidden></div><div class="mc-bar" role="toolbar" aria-label="Bình luận mockup"></div><aside class="mc-panel" hidden aria-label="Danh sách bình luận"></aside>');
+      document.body.appendChild(root);
+      $pins = root.querySelector('.mc-pins'); $hl = root.querySelector('.mc-hl'); $prev = root.querySelector('.mc-prev');
+      $pop = root.querySelector('.mc-pop'); $hint = root.querySelector('.mc-hint'); $toast = root.querySelector('.mc-toast');
+      $bar = root.querySelector('.mc-bar'); $panel = root.querySelector('.mc-panel'); $banner = root.querySelector('.mc-banner');
+
+      $pins.addEventListener('click', e => {
+        const p = e.target.closest('.mc-pin');
+        if (!p || p.classList.contains('tmp')) return;
+        e.stopPropagation();
+        if (S.openId === p.dataset.id) closePop(); else { popKey = ''; openThread(p.dataset.id); }
+      });
+      $pins.addEventListener('mouseover', e => {
+        const p = e.target.closest('.mc-pin');
+        if (p && !p.classList.contains('tmp') && S.openId !== p.dataset.id) showPrev(p.dataset.id, p);
+      });
+      $pins.addEventListener('mouseout', e => { const p = e.target.closest('.mc-pin'); if (p && !p.contains(e.relatedTarget)) hidePrev(); });
+
+      $pop.addEventListener('click', e => {
+        const b = e.target.closest('[data-a]');
+        if (!b) return;
+        const a = b.dataset.a;
+        if (a === 'close') closePop();
+        else if (a === 'post') post();
+        else if (a === 'reply') reply();
+        else if (a === 'resolve') {
+          const c = byId(S.openId);
+          if (c) apply({ t: 'status', id: c.id, status: c.status === 'resolved' ? 'open' : 'resolved', by: S.name || 'Ẩn danh' });
+        } else if (a === 'edit') {
+          S.editId = b.dataset.id; renderPop();
+          const ta = $pop.querySelector('[data-k="edit"]');
+          if (ta) { ta.focus(); ta.setSelectionRange(ta.value.length, ta.value.length); }
+        } else if (a === 'edit-cancel') { S.editId = null; renderPop(); }
+        else if (a === 'edit-save') {
+          const ta = $pop.querySelector('[data-k="edit"]'), t = ta ? ta.value.trim() : '';
+          if (!t) return;
+          S.editId = null;
+          apply({ t: 'edit', id: b.dataset.id, text: t });
+          if (CHILD) renderPop();
+        } else if (a === 'del') {
+          const c = byId(b.dataset.id);
+          if (!c) return;
+          if (!window.confirm(c.parent ? 'Xoá trả lời này?' : 'Xoá góp ý này và toàn bộ trả lời?')) return;
+          if (!c.parent) { S.openId = null; }
+          apply({ t: 'del', id: c.id });
+          if (CHILD) renderPop();
+        }
+      });
+      $pop.addEventListener('keydown', e => {
+        e.stopPropagation();
+        const k = e.target.dataset ? e.target.dataset.k : '';
+        if (e.key === 'Enter' && (e.ctrlKey || e.metaKey)) {
+          e.preventDefault();
+          if (k === 'new' || (k === 'name' && S.composer)) post();
+          else if (k === 'reply' || k === 'name') reply();
+          else if (k === 'edit') { const b = $pop.querySelector('[data-a="edit-save"]'); if (b) b.click(); }
+        } else if (e.key === 'Escape') {
+          e.preventDefault();
+          if (S.editId) { S.editId = null; renderPop(); } else closePop();
+        } else if ((e.ctrlKey || e.metaKey) && (e.key === 's' || e.key === 'S')) {
+          e.preventDefault();
+          if (CHILD) window.parent.postMessage({ mc: 'save' }, '*'); else save();
+        }
+      });
+      $pop.addEventListener('input', e => { if (e.target.classList) e.target.classList.remove('err'); });
+
+      if (!CHILD) {
+        $bar.addEventListener('click', e => {
+          const b = e.target.closest('[data-b]');
+          if (!b) return;
+          const k = b.dataset.b;
+          if (k === 'mode') setMode(!S.mode);
+          else if (k === 'panel') { S.panel = !S.panel; renderBar(); renderPanel(); }
+          else if (k === 'pins') { S.pins = !S.pins; renderBar(); layout(); broadcast(); }
+          else if (k === 'save') save();
+        });
+        $panel.addEventListener('click', e => {
+          const it = e.target.closest('.mc-it');
+          if (it) { goTo(it.dataset.id); return; }
+          const b = e.target.closest('[data-p]');
+          if (!b) return;
+          const k = b.dataset.p;
+          if (k === 'close') { S.panel = false; renderBar(); renderPanel(); }
+          else if (k === 'f') { S.filter = b.dataset.v; renderPanel(); }
+          else if (k === 'rename') {
+            const v = window.prompt('Tên hiển thị cạnh comment của bạn:', S.name || '');
+            if (v != null && v.trim()) { setName(v.trim().slice(0, 60)); renderPanel(); renderPop(); broadcast(); }
+          } else if (k === 'merge') { const f = $panel.querySelector('[data-p="file"]'); if (f) f.click(); }
+        });
+        $panel.addEventListener('change', e => {
+          const k = e.target.dataset ? e.target.dataset.p : '';
+          if (k === 'page') { S.onlyPage = e.target.checked; renderPanel(); }
+          else if (k === 'resolved') { S.resolved = e.target.checked; layout(); broadcast(); }
+          else if (k === 'file') {
+            const f = e.target.files && e.target.files[0];
+            if (!f) return;
+            const r = new FileReader();
+            r.onload = () => mergeFrom(String(r.result));
+            r.readAsText(f, 'utf-8');
+            e.target.value = '';
+          }
+        });
+        window.addEventListener('beforeunload', e => { if (isDirty()) { e.preventDefault(); e.returnValue = ''; } });
+        checkDraft();
+      }
+
+      /* Chế độ bình luận: chặn thao tác của trang, bấm đâu ghim đó */
+      const ignored = t => {
+        if (!t || t.nodeType !== 1) return true;
+        if (t.closest('.mc-ui')) return true;
+        if (CFG.ignore && t.closest(CFG.ignore)) return true;
+        return !!frameMode();
+      };
+      ['pointerdown', 'mousedown', 'pointerup', 'mouseup', 'dblclick'].forEach(ev => document.addEventListener(ev, e => {
+        if (S.mode && !ignored(e.target)) { e.preventDefault(); e.stopImmediatePropagation(); }
+      }, true));
+      document.addEventListener('click', e => {
+        if (S.mode && !ignored(e.target)) {
+          e.preventDefault(); e.stopImmediatePropagation();
+          hidePrev();
+          openComposer(e.target, e.clientX, e.clientY);
+          return;
+        }
+        if (!S.mode && !$pop.hidden && !(e.target.closest && e.target.closest('.mc-ui'))) closePop();
+        setTimeout(layout, 80);
+      }, true);
+      document.addEventListener('mousemove', e => {
+        if (!S.mode) return;
+        const t = e.target;
+        if (ignored(t) || t === document.body || t === document.documentElement) { $hl.style.display = 'none'; return; }
+        const r = t.getBoundingClientRect(), o = root.getBoundingClientRect();
+        $hl.style.display = 'block';
+        $hl.style.left = (r.left - o.left) + 'px';
+        $hl.style.top = (r.top - o.top) + 'px';
+        $hl.style.width = r.width + 'px';
+        $hl.style.height = r.height + 'px';
+      }, true);
+      document.addEventListener('keydown', e => {
+        const t = e.target, typing = t && (/^(INPUT|TEXTAREA|SELECT)$/.test(t.tagName) || t.isContentEditable);
+        if ((e.ctrlKey || e.metaKey) && (e.key === 's' || e.key === 'S')) {
+          e.preventDefault();
+          if (CHILD) window.parent.postMessage({ mc: 'save' }, '*'); else save();
+          return;
+        }
+        if (e.key === 'Escape') {
+          if (!$pop.hidden) closePop(); else if (S.mode) setMode(false);
+          return;
+        }
+        if (!typing && !e.ctrlKey && !e.metaKey && !e.altKey && (e.key === 'c' || e.key === 'C')) setMode(!S.mode);
+      });
+      window.addEventListener('resize', () => { popKey = ''; renderPop(); layout(); });
+      window.addEventListener('hashchange', () => setTimeout(() => { renderPanel(); layout(); }, 60));
+      setInterval(layout, 600);
+      setInterval(() => { if (S.panel) renderPanel(); }, 60000);
+
+      applyMode();
+      render();
+      if (CHILD) window.parent.postMessage({ mc: 'hello' }, '*');
+    }
+
+    const STYLE = [
+      'html.mc-on,html.mc-on *{cursor:crosshair!important}',
+      'html.mc-on #mc-root,html.mc-on #mc-root *{cursor:default!important}',
+      'html.mc-on #mc-root button,html.mc-on #mc-root .mc-pin,html.mc-on #mc-root label{cursor:pointer!important}',
+      'html.mc-on #mc-root textarea,html.mc-on #mc-root input[type=text]{cursor:text!important}',
+      '#mc-root{position:absolute;left:0;top:0;width:0;height:0;z-index:2147483000;font:14px/1.45 system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif;color:#0F172A;text-align:left}',
+      '#mc-root *{box-sizing:border-box;font-family:inherit;letter-spacing:normal;text-transform:none}',
+      '#mc-root [hidden]{display:none!important}',
+      '#mc-root button{font:inherit;margin:0;padding:0;border:0;background:none;color:inherit;cursor:pointer;line-height:1.2;box-shadow:none;text-align:inherit;min-height:0;min-width:0;width:auto;height:auto;border-radius:0}',
+      '#mc-root svg{display:inline-block;vertical-align:middle;flex:none}',
+      '#mc-root textarea,#mc-root input[type=text]{display:block;font:inherit;font-size:14px;color:#0F172A;background:#fff;border:1px solid #CBD5E1;border-radius:8px;padding:8px 10px;width:100%;outline:0;margin:0 0 8px;box-shadow:none;height:auto}',
+      '#mc-root textarea{resize:vertical;min-height:60px;max-height:240px}',
+      '#mc-root textarea:focus,#mc-root input[type=text]:focus{border-color:#2563EB;box-shadow:0 0 0 3px rgba(37,99,235,.15)}',
+      '#mc-root input.err{border-color:#DC2626}',
+      '#mc-root .mc-pins{position:absolute;left:0;top:0}',
+      '#mc-root .mc-pin{position:absolute;width:30px;height:30px;margin-top:-30px;border-radius:50% 50% 50% 3px;background:#2563EB;color:#fff;font-size:12px;font-weight:700;display:flex;align-items:center;justify-content:center;text-align:center;box-shadow:0 0 0 2px #fff,0 3px 10px rgba(15,23,42,.35);transform-origin:0 100%;transition:transform .12s}',
+      '#mc-root .mc-pin:hover,#mc-root .mc-pin.on{transform:scale(1.15)}',
+      '#mc-root .mc-pin.on{box-shadow:0 0 0 2px #fff,0 0 0 4px #0F172A,0 3px 10px rgba(15,23,42,.35)}',
+      '#mc-root .mc-pin.tmp{background:#FF2458;font-size:18px;pointer-events:none;animation:mcp .9s ease-in-out infinite alternate}',
+      '@keyframes mcp{to{transform:scale(1.12)}}',
+      '#mc-root .mc-hl{position:absolute;display:none;pointer-events:none;border:2px solid #2563EB;border-radius:4px;background:rgba(37,99,235,.05)}',
+      '#mc-root .mc-pop,#mc-root .mc-prev{position:absolute;background:#fff;border-radius:12px;box-shadow:0 0 0 1px rgba(15,23,42,.08),0 14px 40px rgba(15,23,42,.25)}',
+      '#mc-root .mc-pop{width:330px;max-width:calc(100vw - 16px);overflow:hidden}',
+      '#mc-root .mc-prev{width:260px;max-width:calc(100vw - 16px);padding:10px 12px;pointer-events:none}',
+      '#mc-root .mc-ph{display:flex;align-items:center;gap:8px;padding:10px 12px;border-bottom:1px solid #E2E8F0;background:#fff}',
+      '#mc-root .mc-ph b{font-size:14px}',
+      '#mc-root .mc-sub{flex:1;min-width:0;font-size:12px;color:#64748B;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}',
+      '#mc-root .mc-x{width:28px;height:28px;border-radius:6px;font-size:20px;line-height:28px;text-align:center;color:#64748B;flex:none}',
+      '#mc-root .mc-x:hover{background:#F1F5F9}',
+      '#mc-root .mc-res{font-size:12px;font-weight:600;padding:6px 10px;border-radius:999px;border:1px solid #CBD5E1;color:#0F172A;white-space:nowrap;flex:none}',
+      '#mc-root .mc-res:hover{border-color:#059669;color:#059669}',
+      '#mc-root .mc-res.on{background:#ECFDF5;border-color:#059669;color:#047857}',
+      '#mc-root .mc-resn{padding:6px 12px;font-size:12px;background:#ECFDF5;color:#047857}',
+      '#mc-root .mc-msgs{max-height:300px;overflow:auto;padding:2px 0}',
+      '#mc-root .mc-msg{display:flex;gap:10px;padding:10px 12px}',
+      '#mc-root .mc-msg+.mc-msg{border-top:1px solid #F1F5F9}',
+      '#mc-root .mc-av{width:26px;height:26px;border-radius:50%;color:#fff;font-size:12px;font-weight:700;display:inline-flex;align-items:center;justify-content:center;flex:none}',
+      '#mc-root .mc-av.sm{width:20px;height:20px;font-size:10px}',
+      '#mc-root .mc-mb{flex:1;min-width:0}',
+      '#mc-root .mc-mh{display:flex;align-items:center;gap:6px;flex-wrap:wrap;margin-bottom:2px}',
+      '#mc-root .mc-mh b{font-size:13px}',
+      '#mc-root .mc-mh span{font-size:12px;color:#94A3B8}',
+      '#mc-root .mc-mh .mc-av{color:#fff}',
+      '#mc-root .mc-tx{font-size:14px;white-space:pre-wrap;word-break:break-word}',
+      '#mc-root .mc-tx.clip{display:-webkit-box;-webkit-line-clamp:4;-webkit-box-orient:vertical;overflow:hidden}',
+      '#mc-root .mc-tx.clip2{display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden;font-size:13px}',
+      '#mc-root .mc-ma{display:flex;gap:12px;margin-top:4px;opacity:0;transition:opacity .12s}',
+      '#mc-root .mc-msg:hover .mc-ma,#mc-root .mc-ma:focus-within{opacity:1}',
+      '#mc-root .mc-ma button{font-size:12px;color:#64748B}',
+      '#mc-root .mc-ma button:hover{color:#2563EB;text-decoration:underline}',
+      '#mc-root .mc-form{padding:10px 12px;border-top:1px solid #E2E8F0;background:#F8FAFC}',
+      '#mc-root .mc-msg .mc-act{margin-top:-2px}',
+      '#mc-root .mc-act{display:flex;justify-content:flex-end;gap:8px}',
+      '#mc-root .mc-btn{font-size:13px;font-weight:600;padding:7px 14px;border-radius:8px}',
+      '#mc-root .mc-btn.pri{background:#2563EB;color:#fff}',
+      '#mc-root .mc-btn.pri:hover{background:#1D4ED8}',
+      '#mc-root .mc-btn.ghost{border:1px solid #CBD5E1;background:#fff}',
+      '#mc-root .mc-btn.ghost:hover{background:#F1F5F9}',
+      '#mc-root .mc-rc{margin-top:4px;font-size:12px;color:#2563EB;font-weight:600}',
+      '#mc-root .mc-rc.ok{color:#047857}',
+      '#mc-root .mc-n{min-width:22px;height:22px;padding:0 6px;border-radius:11px 11px 11px 3px;color:#fff;font-size:11px;font-weight:700;display:inline-flex;align-items:center;justify-content:center;flex:none}',
+      '#mc-root .mc-bar{position:fixed;right:16px;bottom:16px;display:flex;flex-wrap:wrap;gap:4px;padding:5px;background:#0F172A;border-radius:12px;box-shadow:0 10px 30px rgba(15,23,42,.35);transition:right .2s}',
+      '#mc-root .mc-bar.shift{right:356px}',
+      '#mc-root .mc-bar button{display:inline-flex;align-items:center;gap:6px;padding:8px 12px;border-radius:8px;color:#E2E8F0;font-size:13px;font-weight:600}',
+      '#mc-root .mc-bar button:hover{background:#1E293B}',
+      '#mc-root .mc-bar button.on{background:#2563EB;color:#fff}',
+      '#mc-root .mc-cnt{min-width:20px;padding:2px 6px;border-radius:999px;background:#334155;font-size:11px;text-align:center}',
+      '#mc-root .mc-bar button.on .mc-cnt{background:rgba(255,255,255,.25)}',
+      '#mc-root .mc-bar .mc-save.dirty{background:#F59E0B;color:#111827}',
+      '#mc-root .mc-bar .mc-save.dirty:hover{background:#FBBF24}',
+      '#mc-root .mc-panel{position:fixed;top:0;right:0;bottom:0;width:340px;max-width:100vw;background:#fff;border-left:1px solid #E2E8F0;box-shadow:-10px 0 30px rgba(15,23,42,.12);display:flex;flex-direction:column}',
+      '#mc-root .mc-tabs{display:flex;gap:4px;padding:10px 12px 6px}',
+      '#mc-root .mc-tabs button{flex:1;padding:7px 4px;border-radius:8px;font-size:12px;font-weight:600;color:#475569;background:#F1F5F9;text-align:center}',
+      '#mc-root .mc-tabs button.on{background:#0F172A;color:#fff}',
+      '#mc-root .mc-chk,#mc-root .mc-chk0{display:flex;align-items:center;gap:6px;font-size:12px;color:#475569}',
+      '#mc-root .mc-chk{padding:4px 12px 8px}',
+      '#mc-root .mc-chk input,#mc-root .mc-chk0 input{margin:0;width:auto;height:auto}',
+      '#mc-root .mc-list{flex:1;overflow:auto;border-top:1px solid #E2E8F0}',
+      '#mc-root .mc-it{display:flex;gap:10px;width:100%;padding:12px;border-bottom:1px solid #F1F5F9;text-align:left}',
+      '#mc-root .mc-it:hover{background:#F8FAFC}',
+      '#mc-root .mc-it.on{background:#EFF6FF}',
+      '#mc-root .mc-ib{flex:1;min-width:0;display:flex;flex-direction:column;gap:2px}',
+      '#mc-root .mc-im{font-size:12px;color:#64748B}',
+      '#mc-root .mc-im b{color:#0F172A}',
+      '#mc-root .mc-empty{padding:24px 16px;color:#64748B;font-size:13px;text-align:center;line-height:1.6}',
+      '#mc-root .mc-pf{padding:10px 12px;border-top:1px solid #E2E8F0;background:#F8FAFC;font-size:12px;color:#475569;display:flex;flex-direction:column;gap:8px}',
+      '#mc-root .mc-link{color:#2563EB;font-weight:600}',
+      '#mc-root .mc-help{margin:0;font-size:12px;line-height:1.5;color:#64748B}',
+      '#mc-root .mc-hint{position:fixed;left:50%;top:60px;transform:translateX(-50%);padding:8px 14px;border-radius:999px;background:#2563EB;color:#fff;font-size:13px;font-weight:600;box-shadow:0 6px 20px rgba(37,99,235,.35);pointer-events:none;white-space:nowrap;max-width:calc(100vw - 16px);overflow:hidden;text-overflow:ellipsis}',
+      '#mc-root.child .mc-hint{top:10px;font-size:12px;padding:6px 12px}',
+      '#mc-root .mc-toast{position:fixed;right:16px;bottom:76px;max-width:min(420px,calc(100vw - 32px));padding:10px 14px;border-radius:10px;background:#0F172A;color:#fff;font-size:13px;box-shadow:0 10px 30px rgba(15,23,42,.35)}',
+      '#mc-root.child .mc-toast{bottom:16px;right:8px;left:8px}',
+      '#mc-root .mc-banner{position:fixed;left:50%;top:60px;transform:translateX(-50%);display:flex;align-items:center;gap:12px;flex-wrap:wrap;padding:10px 14px;border-radius:12px;background:#FFFBEB;border:1px solid #F59E0B;color:#78350F;font-size:13px;box-shadow:0 10px 30px rgba(15,23,42,.2);max-width:calc(100vw - 16px)}',
+      '#mc-root .mc-banner button{font-weight:700;color:#B45309;text-decoration:underline}',
+      '@media (max-width:640px){#mc-root .mc-bar{left:8px;right:8px;bottom:8px;justify-content:center}#mc-root .mc-bar.shift{right:8px}#mc-root .mc-bar button{padding:8px 9px}}'
+    ].join('\n');
+
+    if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', build);
+    else build();
+  }
+})();
+</script></body></html>
